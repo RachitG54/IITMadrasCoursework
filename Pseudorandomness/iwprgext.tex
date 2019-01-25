@@ -1,0 +1,23 @@
+\section{Impagliazzo and Wigderson PRG to Extractor}
+The main theorem by Impagliazzo and Wigderson in their paper \cite{Impagliazzo:1997:PBE:258533.258590} was that assuming there exists a family of predicates $P_l : \{0,1\}^l \rightarrow \{0,1\}$ that can be decided in time $2^{O(l)}$ and are hard i.e. have circuit complexity at least $2^{\gamma l}$ for some $\gamma > 0$. Then for every constant $\epsilon > 0$ and $m$ there exists a $(O(m),\epsilon)$ PRG and $P=BPP$.
+\\
+This was proved in their paper using a lemma as follows:
+\begin{lemma}
+	\label{IWPRG}
+	Suppose we have an oracle access to a predicate $P: \{0,1\}^l \rightarrow \{0.1\}$ and there exists an algorithm that computes a function $IW_P : \{0,1\}^t \rightarrow \{0,1\}^m$ in $poly(m)$ time, where $t=O(l)$ and $m=2^{\alpha l}$ where $0 < \alpha < \delta$ such that for every $T : \{0,1\}^m \rightarrow \{0,1\}$ if
+	\begin{align*}
+		|Pr[T(IW_P(\mathbb{U}_t)) = 1] - Pr[T(\mathbb{U}_m) = 1]| > \epsilon
+	\end{align*} 
+	then $P$ can be computed by a circuit A, that uses T-gates(meaning T is computed with unit cost) and whose size is at most $2^{\delta l}$.
+\end{lemma}
+We can see how this lemma gives the main theorem as if we have access to predicates that are hard that have complexity atleast $2^{2\delta l}$, then we can look at those $T$ that have size $2^{\delta l}$. If for them the PRG property is not satisfied. (i.e. if ($2^{2\delta l},\epsilon$) distinguishable) $|Pr[T(IW_P(\mathbb{U}_t)) = 1] - Pr[T(\mathbb{U}_m) = 1]| > \epsilon$. This gives a contradiction as the statement of the lemma implies that P can be computed by a circuit of size at most $2^{2\delta l}$ and hence not hard.
+\\
+Next, they use the property of the lemma to show that if the predicate is random instead of hard we can use it to create an extractor. We note here that the notion of statistical indistinguishability follows from the fact that the statement of the lemma considers every $T$. 
+\begin{lemma}
+	The function $Ext : \{0,1\}^n \times \{0,1\}^t \rightarrow \{0,1\}^m$ defined as:
+	\begin{align*}
+		Ext(x,s) = IW_{\langle x \rangle}^{(m)}(s)
+	\end{align*}
+	where $\langle x \rangle : \{0,1\}^l \rightarrow \{0,1\},~n=2^l$ and $t=O(l)$ and $m=n^\alpha$. Then extractor is a $(m\delta n^\delta + \log (1/\epsilon),2\epsilon)$ - extractor. 
+\end{lemma}
+The main idea here is that we count the number of strings for which we can distinguish with probability greater than $\epsilon$. The count of such strings using our choice of parameters is less than $\epsilon \cdot 2^k$(the parameters are chosen such) because the size of the circuit that computes $\langle x \rangle $ is fixed. (From the statement of lemma \ref{IWPRG}, we have that there is a circuit of size $2^{\delta l}$ that uses $T$-gates and computes $\langle x \rangle$, hence the count of all possible circuits is a bound on $\langle x \rangle$). When the random variable is chosen from a $k$-source, we can conclude that the probabilty that we choose a string that has probability greater than $\epsilon$ is bounded by $\epsilon$. We can see using a markov argument that the statistical difference is less than $2\epsilon$ over all $X$. Hence it is a valid $(m\delta n^\delta + \log (1/\epsilon),2\epsilon)$ extractor. 

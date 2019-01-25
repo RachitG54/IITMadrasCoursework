@@ -1,0 +1,15 @@
+\section{Main Theorem}
+The main theorem used in nullstellensatz is as follows:
+\begin{theorem}
+	Let $F$ be an arbitrary field, and let $f = f(x_1 ,\ldots, x_n)$ be a polynomial in $F[x_1 ,\ldots, x_n]$. Suppose the degree $deg(f)$ of $f$ is coefficient of $\sum_{i=1}^n t_i$, where each $t_i$ is a nonnegative integer, and suppose the coefficient of $\Pi_{i=1}^n {x_i}^{t_i}$ in $f$ is nonzero. Then, if $S_1 ,\ldots, S_n$ are subsets of $F$ with $|S_i| > t_i$ , there are $s_1 \in S_1 , s_2 \in S_2 ,\ldots, s_n \in S_n$ so that $f(s_1 , \ldots , s_n ) \neq 0$.
+	\label{theorem}
+\end{theorem}
+We consider the following polynomial for weight colorable.
+\\
+Let $E(G) = \{e_1 , \ldots , e_m\}$ be the set of edges of a simple graph $G$. Let $x_i$ be variables assigned to the edges $e_i$ . For each vertex $u \in V$ , let $E_u$ be the set of edges incident to $u$, and let $X_u = \sum_{e_j \in E_u}x_j$ . Now fix any orientation of $G$ and define a polynomial $P_G$ in variables $x_1 , \ldots , x_m$ by
+\begin{align*}
+	P_G(x_1,\ldots,x_m) = \prod_{(u,v) \in E(G)} (X_u - X_v)
+\end{align*}
+If polynomial is not equal to zero then there exists a valid weight coloring.
+\\
+Suppose $M = cx_1^{k_1} \ldots x_m^{k_m}$ is a monomial in the expansion of $P$ with $c \neq 0$. Let $h(M)$ be the highest exponent of a variable in $M$. Define the monomial index of $P$, denoted by $mind(P)$, as the minimum of $h(M)$ taken over all non-vanishing monomials $M$ in $P$.

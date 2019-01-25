@@ -1,0 +1,38 @@
+\section{Using the Polynomial Method}
+We first define the appropriate terms and lemmas that will be useful in the proof.
+\begin{definition}
+	($(\delta, \gamma)$-Kakeya Set). A set $K \subset \F^n$ is a $(\delta,\gamma)$-Kakeya Set if there exists a set $L \subset \F^n$ of size at least $\delta \cdot q^n$ such that for every $x \in L$ there is a line in direction $x$ that intersects $K$ in at least $\gamma \cdot q$ points.
+\end{definition}
+We mention the schwartz zippel lemma that bounds the number of roots of a n variate degree d polynomial.
+\begin{lemma}
+	(Schwartz-Zippel) Let $f \in \F[x_1 , \ldots , x_n]$ be a non zero polynomial with $deg(f) \leq d$. Then
+	\begin{align*}
+		|\{x \in \F^n | f(x) = 0 \}| \leq d \cdot q^{n-1}
+	\end{align*}
+\end{lemma}
+We now state the theorem:
+\begin{theorem}
+	Let $K \subset \F^n$ be a $(\delta, \gamma)$-Kakeya Set. Then
+	\begin{align*}
+		|K| \geq \binom{d+n-1}{n-1}
+	\end{align*}
+	where
+	\begin{align*}
+		d = \lfloor q \cdot \min{\{\delta,\gamma\}} \rfloor - 2
+	\end{align*}
+\end{theorem}
+Suppose that the theorem is false then the number of monomials of degree $d$ is larger than the size $K$. Therefore, there exists a homogenous $n$ variate degree $d$ polynomial $g$ such that $g$ is not the zero polynomial and $\forall x \in K, g(x) = 0$. Note that this is a consequence of solving a system of linear equations. We now show that $g$ has too many zeros and hence must be identically zero.
+\\
+\begin{comment}
+Consider the set
+\begin{align*}
+	K' = \{c \cdot x | x \in K, c \in \F \}
+\end{align*}
+Since $g$ is zero on $K$ and it is a homogenous polynomial we have that $g$ is zero on $K'$.
+\\
+\end{comment}
+Since $K$ is a $(\delta, \gamma)$-Kakeya set, there exists a set $L \subset \F^n$ of size at least $\delta ·\cdot q^n$ such that for every $y \in L$ there exists a line with direction $y$ that intersects $K$ in at least $\gamma \cdot q$ points. We now claim that $g$ is zero on $L$ as well. The main idea behind this claim is that if a degree $d$ univariate polynomial has $(d+1)$ zeros then it must be identically zero on the entire space.
+\\
+Since size of $L$ is $\delta \cdot q^n$, we have that a $\delta$ fraction of points are roots. But as $\delta > d/q$ we have a contradiction from the schwartz zippel lemma.
+\\
+The paper then presented a similar extension to show that $|K| \geq \binom{q+n-1}{n}$. This gives an answer to the question answered by Wolff. 

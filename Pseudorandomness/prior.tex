@@ -1,0 +1,34 @@
+\section{Prior Work}
+There have been several attempts to study the theory of extractors. Ideally we want that we extract a lot of randomness using very few truly random bits. There are a few bounds on the parameters $n,t,m$ which were studied to show how well we can achieve this. The main question that was studied in the field of extractors was about simulation of randomized algorithms using weak random sources can be stated as follows: suppose that for every $n$ we have access to a $k(n)$-source, and that we are given a polynomial-time randomized algorithm that we want to simulate given only one access to one of the sources: what is the most slowly growing function $k(\cdot)$ such that we can have polynomial-time simulations?
+\\
+Table [\ref{prior}] mentions the comparison of the result of this paper with prior work. This paper shows results that construct an extractor with a better bound on the additional randomness as compared to prior work. It is also worth noting that this paper constructs an extractor rather than a disperser constructed by \cite{Saks:1998:EOP:273865.273915, Ta-Shma:1998:AOD:276698.276736}.
+\bgroup
+\def\arraystretch{1.25}
+	\begin{table}[H]
+		\centering
+		\begin{tabular}{|>{\centering\arraybackslash}m{4cm} | >{\centering\arraybackslash}m{3cm} | >{\centering\arraybackslash}m{3.5cm} | >{\centering\arraybackslash}m{3.2cm} |}
+			\hline
+			\textbf{Reference} & \textbf{Min entropy $k$} & \textbf{Output length $m$} & \textbf{Additional randomness $t$}
+			\\
+			\hline
+			\cite{Goldreich:1997:TFF:280116.280034} & $n-a$ & $n-\Theta(a)$ & $O(a)$ \\
+			\hline
+			\cite{Zuckerman:1996:RSE:237814.237878} & $\Omega(n)$ & $(1-\alpha)k$ & $O(\log n)$\\
+			\hline
+			\cite{Ta-Shma:1996:ERW:237814.237877} & any $k$ & $k$ & $O({(\log n)}^9)$\\
+			\cite{Ta-Shma:1996:ERW:237814.237877} & $n^{\Omega{(1)}}$ & $k^{1-\alpha}$ & $O(\log n \log \log n)$\\
+			\hline
+			\cite{Saks:1998:EOP:273865.273915} (disperser) & $n^{\Omega{(1)}}$ & $k^{1-\alpha}$ & $O(\log n)$\\
+			\cite{Ta-Shma:1998:AOD:276698.276736} (disperser)& any $k$ & $k -$ poly$(\log n)$ & $O(\log n)$\\
+			\hline
+			This Paper & $n^{\Omega{(1)}}$ & $k^{1-\alpha}$ & $O(\log n)$\\
+			           & any $k$ & $k^{1-\alpha}$ & $O((\log^2 n)/\log k)$\\
+			\hline
+			Optimal non-explicit constructions & any $k$ & $k$ & $O(\log n)$\\
+			\hline
+		\end{tabular}
+		
+		\caption{Comparison of the extractor parameters to prior work}
+		\label{prior}
+	\end{table}
+\egroup

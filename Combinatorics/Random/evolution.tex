@@ -1,0 +1,12 @@
+\section{Evolution of random graph}
+The paper categorizes the evolution as we increase $N$(the number of edges) in terms of five clearly distinguishable phases.
+\subsection{Phase 1}
+Corresponds to the range $N = o(n)$. For this phase we can see that the components are trees. Trees of order $k$ appear only when N reaches the magnitude of $n^{\frac{k-2}{k-1}}$. The authors make more observations to the distribution of the number of such trees of order $k$.
+\subsection{Phase 2}
+Corresponds to the range $N \approx cn$ with $0<c<1/2$. This phase contains cycles of any fixed order. The distribution of number of cycles of order $k$ is a poisson distribution with mean dependent on $k$. Here either vertices belong to either trees or components containing exactly one cycle. Still most of the components are trees.
+\subsection{Phase 3}
+Corresponds to the range $N \approx cn$ with $c \geq 1/2$. The phase transition to this phase causes an abrupt change in the graph. While for the previous phase components were mostly trees. This phase has a greatest components of approximately $n^{\frac{2}{3}}$ vertices and has a rather complex structure. Except this giant component all other compenents are relatively small. The evolution in this phase may be explained by the intuition that the small components (most of which are trees) melt, each after another, into the giant component, the smaller components having the larger chance of survival.
+\subsection{Phase 4}
+Corresponds to the range $N \approx cn\log n$ with $c \leq 1/2$. In this phase the graph surely becomes connected. There are only trees of small size outside the connected component here. Here the distribuition of the number of components follows a poisson distribution.
+\subsection{Phase 5}
+Corresponds to the range $N \approx n\log n \omega(n)$ where $w(n) \rightarrow +\inf$. In this range the whole graph is not only almost surely connected, but the orders of all points are almost surely asymptotically equal. Thus the graph becomes in this phase “asymptotically regular”.

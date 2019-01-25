@@ -1,0 +1,8 @@
+\section{Introduction}
+Suppose the edges of a graph G are assigned 3-element lists of real weights. Is it possible to choose a weight for each edge from its list so that the sums of weights around adjacent vertices were different? 
+\\
+Let $S$ be a subset of the field of real numbers $\R$ and let $G$ be a simple graph. $G$ is weight colorable by $S$ if $\exists w : E \rightarrow S$ such that for any two adjacent vertices $u, v \in V(G)$, the sum of weights of the edges incident with $u$ is different than the sum of weights of the edges incident with $v$.
+\\
+This paper explored the idea of proving weight coloring results using algebraic methods. They use the method of combinatorial nullstellensatz by Alon. The basic idea is as follows: associate a multivariable polynomial $P_G$ with a graph $G$, so that a non-zero substitution for variables of $P_G$ gives a desired weighting of $G$. Then by observing the exponents of variables in the expansion of $P_G$ into a linear combination of monomials. If there is a non-vanishing monomial with the highest exponent of a variable less than $3$, then by Combinatorial Nullstellensatz, $G$ is weight colorable by any set of three real weights.
+\\
+They prove the statement that every graph without an isolated edge is $3$-weight choosable for several classes of graphs, including cliques, complete bipartite graphs, and trees, by providing general recursive constructions preserving the desired algebraic properties.

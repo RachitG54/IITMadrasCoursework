@@ -1,0 +1,37 @@
+\section{Some Definitions}
+\par 
+\textit{k-source random variables: }We say that (the distribution of) a random variable X of range $\{0, 1\}^n$ has min entropy at least $k$ if for every $x \in \{0, 1\}^n$ it holds $Pr[X = x] \leq 2^{−k}$. The random variable on such distributions is known as having $k$ source. We use such sources to characterize our weakly random distribution.
+\\~\\
+\textit{Seeded extractors: }A function is called a $(k,\epsilon)$ extractor if:
+\begin{align*}
+	Ext: \{0,1\}^n \times \{ 0,1\}^t \rightarrow \{0,1\}^m
+	\\
+	\forall X \text{ } H_{\infty(X)} \geq k \text{  and  } \Delta(Ext(X,\mathbb{U}_t),\mathbb{U}_m) \leq \epsilon
+\end{align*}
+where $H_{\infty(X)} \geq k$ implies that the min entropy is greater than equal to k.
+\\
+Extractors are used in theory to simulate $BPP$(error on both sides) algorithms. Ideally, what we would like the extractor to do is that make any algorithm $A$ that works correctly when fed perfectly random bits $\mathbb{U}_m$, and produce a new algorithm $A'$ that will work even if it is fed random bits $X \in \{0,1\}^n$ that come from a weak random source.
+\\~\\
+\textit{Disperser: }Dispersers capture a weaker notion than extractors. A function is called a $(k,\epsilon)$ disperser if:
+\begin{align*}
+Disp: \{0,1\}^n \times \{ 0,1\}^t \rightarrow \{0,1\}^m
+\\
+\forall X \text{ } H_{\infty(X)} \geq k \text{  and  } |Supp(Disp(X,\mathbb{U}_t))| \geq (1-\epsilon)2^m
+\end{align*}
+where $H_{\infty(X)} \geq k$ implies that the min entropy is greater than equal to k.
+\\
+While extractors can be used to simulate BPP algorithms with a weak random source, dispersers can be used to simulate RP(error on one side) algorithms with a weak random source.
+\\~\\
+\textit{Pseudorandom Generator: }Random variables $X$ and $Y$ with the same range $\{0,1\}^n$ are $(S,\epsilon)$-indistinguishable if for every $T : \{0,1\}^n \rightarrow \{0,1\}$ computable by a circuit of size $S$ it holds:
+\begin{align*}
+	|Pr[T(X) = 1] - Pr[T(Y) = 1]| \leq \epsilon
+\end{align*}
+A pseudorandom generator is an algorithm $G : \{0, 1\}^t \rightarrow \{0, 1\}^m$ where $t << m$ and $G(\mathbb{U}_t)$ is $(S, \epsilon)$-indistinguishable from $\mathbb{U}_m$ , for large $S$ and small $\epsilon$.
+\\~\\
+Trevisan in this paper discovered that the Nisan–Wigderson pseudorandom generator \cite{Nisan:1994:HVR:192095.192097}, previously only used in a computational setting, could be used to construct extractors. For certain settings of the parameters, Trevisan’s extractor is optimal and improves on previous constructions. Trevisan’s extractor improves over previous constructions in the case of extracting a relatively small number of random bits (e.g., extracting $k^{1-\alpha}$ bits from source with “$k$ bits of randomness”, where $\alpha > 0$ is an arbitrarily small constant) with a relatively large statistical difference from uniform distribution. More formally it is stated that:
+\begin{theorem}
+	There is an algorithm that on input parameters $n, k \leq n, 36 \leq m < k/2, 0 < \epsilon < 2^{-k/12}$ computes in $poly(n, 2^t)$ time a $(k,\epsilon)$-extractor
+	\begin{align*}
+		Ext:\{0,1\}^n \times \{0,1\}^t \rightarrow \{0,1\}^m \text{ where } t = O(\frac{{(\log n/\epsilon)}^2}{\log(k/2m)} \cdot e^{\frac{\ln m}{\log (k/2m)}})
+	\end{align*}
+\end{theorem}

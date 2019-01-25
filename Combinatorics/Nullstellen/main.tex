@@ -1,0 +1,78 @@
+\documentclass[11pt]{article}
+
+%\usepackage{gitinfo}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage[linkcolor=blue,colorlinks=true]{hyperref}
+\usepackage{color}
+%\usepackage{fullpage}
+\usepackage[svgnames]{xcolor}
+\usepackage{caption}
+\usepackage{verbatim,graphicx}
+\usepackage{complexity}
+\usepackage[normalem]{ulem}		% For strike out
+%\usepackage[ruled,vlined]{algorithm2e}
+\usepackage{float}
+\usepackage{framed}
+\usepackage{booktabs} % Allows the use of \toprule, \midrule and \bottomrule in tables
+\usepackage{array}
+\usepackage{natbib}
+\usepackage{geometry}
+\usepackage{changepage}
+
+%Commenting and TODO listing commands
+
+\usepackage{todonotes}
+\newcounter{todocounter}
+\newcommand{\todonum}[2][]{\stepcounter{todocounter}\todo[#1]{\thetodocounter: #2}}
+\newcommand{\rsay}[1]{\todonum[inline,color=green!20]{\small Rachit says: #1}}
+
+\theoremstyle{plain}% default
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{claim}[theorem]{Claim}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{conjecture}[theorem]{Conjecture}
+
+%\theoremstyle{remark}
+\newtheorem{note}[theorem]{Note}
+\newtheorem{observation}[theorem]{Observation}
+\newtheorem{question}[theorem]{Question}
+\newtheorem{remark}[theorem]{Remark}
+
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{exercise}[theorem]{Exercise}
+\newtheorem{problem}[theorem]{Problem}
+
+\newcommand{\field}{\mathbb{F}}
+\newcommand{\F}{{\mathbb{F}}}
+\newcommand{\N}{{\mathbb{N}}}
+\renewcommand{\R}{{\mathbb{R}}}
+
+\newcommand{\size}{\textrm{\bf SIZE}}
+
+\newlang{\MCSP}{MCSP}
+\newlang{\REACH}{REACH}
+
+\newcommand{\set}[1]{\left\{ #1 \right\}}
+\newcommand{\spa}[1]{\textrm{span} \set{#1}}
+
+\title{Paper Summary: Combinatorial Nullstellensatz}
+\author{Original work by \\ Noga Alon \\ \texttt{Tel Aviv University} \and Summarized by \\ Rachit Garg - CS14B050 \\ \texttt{IIT Madras}}
+\date{\today}
+\begin{document}
+
+\maketitle
+\tableofcontents
+
+%\input{Abstract.tex}
+\input{intro.tex}
+\input{theorem.tex}
+\input{applications.tex}
+\input{remarks.tex}
+
+%\bibliography{references}{}
+%\bibliographystyle{abbrvnat}
+%\bibliographystyle{plainnat}
+\end{document}
