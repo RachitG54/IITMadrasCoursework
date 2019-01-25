@@ -1,0 +1,26 @@
+\section{Lemmas}
+\begin{lemma}
+	$H_\Phi$ is closed under rotation, thats if $c \in H_\Phi$, then $rot(c) \in H_\Phi$
+\end{lemma}
+\begin{proof}
+	{
+		\centering
+		$rot(c) = \alpha \cdot c(\alpha)$ mod $(\alpha^n - 1)$
+		\\
+		$(\alpha^n-1) | rot(c) - \alpha \cdot c(\alpha)$
+		\\
+		$\Phi(\alpha) | rot(c) - \alpha \cdot c(\alpha)$
+		\\
+		$\Phi(\alpha) | rot(c)$\par
+	}
+\end{proof}
+We omit other proofs and just mention the lemmas and ideas in the paper.
+\begin{lemma}
+	Let $c \in \mathbb{Z}^n$, and suppose $\Phi(\alpha) \in \mathbb{Z}[\alpha]$ divides $(\alpha^n-1)$ and is coprime to $c(\alpha)$. Then $c, rot(c)....,rot^{deg(\Phi)-1}(c)$ are linearly independent.
+\end{lemma}
+\begin{lemma}
+	Let $a,b \in \mathbb{R}^n$ with $a(\alpha) \cdot b(\alpha) = 0$ mod $(\alpha^n-1)$. Then $\langle a,b \rangle = 0$.
+\end{lemma}
+\begin{lemma}
+	$H_\Phi$ is a linear subspace of $\mathbb{R}^n$ of dimension $n - deg(\Phi)$.
+\end{lemma}

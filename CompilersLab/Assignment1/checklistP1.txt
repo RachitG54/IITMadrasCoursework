@@ -1,0 +1,22 @@
+Checklist for Assignment P1
+
+1) Have you tarred + gzipped the file as XXXXXXXX.tar.gz (your 8-digit roll number) or zipped it to XXXXXXXX.zip?
+Yes.
+
+2) Does your tar.gz / .zip file expand (by using the command tar xvzf) to the base directory named XXXXXXXX (your 8-digit roll number), and which in turns contains all your files?
+Yes.
+
+3) Have you removed the a.out files and other generated files from your tar ball?
+Yes.
+4) Does the above created P1 contains P1.y, P1.l, that can be compiled using bison -d P1.y; flex P1.l; gcc P1.tab.c lex.yy.c -lfl -o P1?
+Yes.
+5) Does your generated P1 take input from Standard Input (for usage of redirection) ?
+Yes.
+6) Does your generated P1 write output to Standard Output (for usage of redirection) ?
+Yes.
+7) Have you removed all the debugging messages that your program may output?
+Yes.
+8) Is (some part of) the assignment plagiarized? 
+No.
+9) Any comments about your evaluation strategy :
+No.

@@ -1,0 +1,6 @@
+The output for the s - box no y are in 'outputs' + y. Where first u see the sbox mapping, then you observe the linear cryptanalysis table, then the differential cryptanalysis. Then we observe the other properties of the s-box for each output bit.
+The same can be obtained from the code by specifying the s-box values as input in the crypt.py file. 
+
+To run : python crpt.py, running takes 10-20 seconds as the analysis was over an 8X8 matrix. 
+
+The sage.py contains the code for the sage server computations, i.e to calculate galois field inverse. To run those copy sage.py contents to sagecell.sagemath.org website and run.  

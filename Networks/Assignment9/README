@@ -1,0 +1,7 @@
+README
+The command line arguments are followed as in the question.
+Type make to compile the scripts.
+To run type: ./cw -i 1 -m 1 -n 0.5 -f 0.1 -s 0.01 -T 100 -o o.txt'
+The parameters are changed according to the problem statement
+To run python script type:  python graph.py
+For running script: scriptreplay --timing=time.txt script.log

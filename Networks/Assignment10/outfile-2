@@ -1,0 +1,20 @@
+Routing table for Node No.2 at Time 20.0055
+Destination		Path		Cost
+0		2-4-0		3.77472
+1		
+2		2		0
+3		2-4-3		3.92654
+4		2-4		1.17878
+5		2-5		2.44577
+6		
+7		
+Routing table for Node No.2 at Time 40.0226
+Destination		Path		Cost
+0		2-0		2.30137
+1		2-1		1.23769
+2		2		0
+3		2-3		2.6737
+4		2-4		2.21885
+5		2-5		1.38138
+6		2-1-6		3.23666
+7		2-7		1.26105

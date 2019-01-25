@@ -1,0 +1,12 @@
+Roll Number - CS14B050
+
+compile using make
+run first version by ./hc
+run second version by ./hc2
+You must give an input file or an output file for the code to run properly.
+Sample Inputs and outputs have been given.
+Input is the input given to the two programs.
+Output is the output of the first version.
+Output2 is the output of the second version.
+
+Algorithm: Parity bit mentioned in class, where even parity bit is assumed, i.e parity is xor of the corresponding message bits.

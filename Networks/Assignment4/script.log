@@ -1,0 +1,73 @@
+Script started on Monday 13 February 2017 10:24:10 AM IST
+rachit@rachit-HP-Pavilion-15-Notebook-PC:~/Documents/Sem6/Networks/LAB4$ make
+g++ -o emailclient -w -pedantic -ansi -g -std=c++11 emailclient.cpp errexit.cpp
+g++ -o emailserver -w -pedantic -ansi -g -std=c++11 emailserver.cpp errexit.cpp
+rachit@rachit-HP-Pavilion-15-Notebook-PC:~/Documents/Sem6/Networks/LAB4$ ./emai lclient localhost 1234
+Main-Prompt> ListUs  users
+Main-Prompt> AddUSer 1
+Invalid command, enter again
+Main-Prompt> AddUser 1
+Invalid command, enter again
+Main-Prompt> Adduser 1
+Main-Prompt> Adduser 2
+Main-Prompt> Adduser 3
+Main-Prompt> Ls  Listusers  
+1 2 3 
+Main-Prompt> SetUser 1
+Sub-Prompt-1>Read
+No More Mail
+Sub-Prompt-1>Send 2
+Type Message (Must terminate by 3 hashes):How do you do?###
+Sub-Prompt-1>Send 3
+Type Message (Must terminate by 3 hashes):What is the to ine  me?###
+Sub-Prompt-1>Send 2
+Type Message (Must terminate by 3 hashes):Is the ATM  working?###
+Sub-Prompt-1>Send 3
+Type Message (Must terminate by 3 hashes):Are you studt ying?$ ###
+Sub-Prompt-1>Send 4
+Type Message (Must terminate by 3 hashes):Hey!###
+Userid invalid
+Sub-Prompt-1>Done
+Main-Prompt> SetUser 2
+Sub-Prompt-2>Read
+How do you do?###
+Sub-Prompt-2>Read
+Is the ATM  working?###
+Sub-Prompt-2>Read
+No More Mail
+Sub-Prompt-2>Done
+Main-Prompt> SetUser 2
+Sub-Prompt-2>Read
+How do you do?###
+Sub-Prompt-2>Delete
+Message Deleted
+Sub-Prompt-2>Read
+No More Mail
+Sub-Prompt-2>Done
+Main-Prompt> SetUser 3
+Sub-Prompt-3>Read
+What is the time?###
+Sub-Prompt-3>Read
+Are you studying?###
+Sub-Prompt-3>Read
+No More Mail
+Sub-Prompt-3>Done
+Main-Prompt> SetUser 3
+Sub-Prompt-3>Delete
+Message Deleted
+Sub-Prompt-3>Don   Read
+Are you studying?###
+Sub-Prompt-3>Read
+No More Mail
+Sub-Prompt-3>Set   Done
+Main-Prompt> SetUser 3
+Sub-Prompt-3>Read
+Are you studying?###
+Sub-Prompt-3>Read
+No More Mail
+Sub-Prompt-3>Done
+Main-Prompt> Quit
+rachit@rachit-HP-Pavilion-15-Notebook-PC:~/Documents/Sem6/Networks/LAB4$ exit
+exit
+
+Script done on Monday 13 February 2017 10:28:46 AM IST

@@ -1,0 +1,3 @@
+Superscalar Processor Design
+
+Convert the scalar pipeline design of processor (designed in Assignment #4) into superscalar processor design that handles out-of-order processing of instructions. The processor needs to take care of all hazards.

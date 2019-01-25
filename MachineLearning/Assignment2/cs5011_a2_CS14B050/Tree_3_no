@@ -1,0 +1,104 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.J48 -C 0.25 -M 3
+Relation:     Q3
+Instances:    7000
+Attributes:   23
+              classes:
+              cap-shape:
+              cap-surface:
+              cap-color:
+              bruises?:
+              odor:
+              gill-attachment:
+              gill-spacing:
+              gill-size:
+              gill-color:
+              stalk-shape:
+              stalk-root:
+              stalk-surface-above-ring:
+              stalk-surface-below-ring:
+              stalk-color-above-ring:
+              stalk-color-below-ring:
+              veil-type:
+              veil-color:
+              ring-number:
+              ring-type:
+              spore-print-color:
+              population:
+              habitat:
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+J48 pruned tree
+------------------
+
+odor: = a: e (400.0)
+odor: = l: e (400.0)
+odor: = c: p (192.0)
+odor: = y: p (379.0)
+odor: = f: p (1952.0)
+odor: = m: p (5.0)
+odor: = n
+|   stalk-shape: = e
+|   |   spore-print-color: = k: e (48.0)
+|   |   spore-print-color: = n: e (52.0)
+|   |   spore-print-color: = b: e (1.0)
+|   |   spore-print-color: = h: e (48.0)
+|   |   spore-print-color: = r: p (72.0)
+|   |   spore-print-color: = o: e (7.0)
+|   |   spore-print-color: = u: e (0.0)
+|   |   spore-print-color: = w
+|   |   |   gill-size: = b: e (240.0)
+|   |   |   gill-size: = n
+|   |   |   |   gill-spacing: = c: p (32.0)
+|   |   |   |   gill-spacing: = w
+|   |   |   |   |   population: = a: e (0.0)
+|   |   |   |   |   population: = c: p (9.0)
+|   |   |   |   |   population: = n: e (0.0)
+|   |   |   |   |   population: = s: e (0.0)
+|   |   |   |   |   population: = v: e (48.0)
+|   |   |   |   |   population: = y: e (0.0)
+|   |   |   |   gill-spacing: = d: e (0.0)
+|   |   spore-print-color: = y: e (4.0)
+|   stalk-shape: = t: e (2496.0)
+odor: = p: p (256.0)
+odor: = s: p (359.0)
+
+Number of Leaves  : 	26
+
+Size of the tree : 	32
+
+
+Time taken to build model: 0.02 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 0.01 seconds
+
+=== Summary ===
+
+Correctly Classified Instances        1124              100      %
+Incorrectly Classified Instances         0                0      %
+Kappa statistic                          1     
+Mean absolute error                      0     
+Root mean squared error                  0     
+Relative absolute error                  0      %
+Root relative squared error              0      %
+Total Number of Instances             1124     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     e
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     p
+Weighted Avg.    1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 464   0 |   a = e
+   0 660 |   b = p
+
+

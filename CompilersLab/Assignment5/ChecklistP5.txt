@@ -1,0 +1,38 @@
+1) Have you tarred + gzipped the file as CSXXXXXX.tar (your 8-digit roll number)?
+Yes
+
+2) Does your tar file expand (by using the command tar xzf) to the base directory named CSXXXXXX (your 8-digit roll number) ?
+Yes
+
+3) Have you removed all the class files and jar files from your tar ball?
+Yes
+
+4) Does your base folder contain P5.java that can be compiled using javac?
+Yes
+
+5) Does your P5.java take input from the standard input (for usage of redirection)?
+Yes
+
+6) IMPORTANT:
+	a. Have you sent the generated miniRA program to the standard output stream (System.out)?
+
+	b. Have you removed *all* the output from standard error stream (System.err)?
+
+6) Have you removed all the debugging messages that your program may output to the standard output?
+Yes
+
+7) Is (some part of) the assignment plagiarized?
+No
+
+8) If yes, Plagiarism Declarations (if any):
+NA
+
+9) Is this checklist present in your folder CSXXXXXX (your 8-digit roll number)?
+Yes
+
+10) Is this checklist named "Checklist-P5.txt" ?
+Yes
+
+Any other comments:
+
+

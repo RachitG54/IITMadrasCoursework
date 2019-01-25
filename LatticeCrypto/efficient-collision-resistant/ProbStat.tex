@@ -1,0 +1,17 @@
+\section{Context and problem statement}
+\textit{Collision resistant functions}: A function family $\{f_a\}, a \in A$ is said to be collision-resistant if given a uniformly chosen $a \in A$, it is infeasible to find elements $x_1 \neq x_2$ so that $f_a(x_1) = f_a(x_2)$.
+\\
+\textit{Generalized Knapsacks}: For a ring R, key $a = (a_1 , . . . , a_m) \in R^m$, and input $x = (x_1 , . . . , x_m)$.
+\begin{center}
+$f_a(x) = \sum_{i=1}^{m}a_i·x_i$
+\end{center}
+where each $x_i$ is restricted to some large subset $S \subseteq R$. This generalization was proposed by Micciancio, who suggested a specific choice of the ring $R$ and subset $S$ for which inverting the function (for random $a$, $x$) is at least as hard as solving certain worst-case problems on cyclic lattices \cite{Micciancio:2002:GCK:645413.652130}.
+\\
+The authors mention that even though many knapsack systems have been broken heuristically, there is still no asymptotically-efficient attack on the general function. The paper studied continued Micciancio’s line of study, and showed that for a different choice of $S \subset R$, the generalized knapsack function can enjoy even stronger cryptographic properties.
+\subsection{Cyclic Lattices}
+Lattices admit worst-case to average-case reductions. Ajtai first constructed a one-way function \cite{Ajtai:1996:GHI:237814.237838}, which was later observed to also be collision-resistant \cite{Bellare:1997:NPC:1754542.1754560}. These constructions tended to be asymptotically more efficient than those based on, e.g., modular exponentiation. An interesting special case is presented by cyclic lattices. 
+\\
+A lattice $L$ is said to be cyclic if for any
+vector $x \in L$, its cyclic rotation also belongs to $L$. The cyclic rotation of $x = (x_0 , . . . , x_{n−1})^T \in R^n$ is defined as $(x_{n-1}, x_0, . . . , x_{n-2})^T$.
+\\
+Currently no hardness results are known for problems on cyclic lattices (even in their exact versions), and the additional structure may indeed reduce the underlying hardness. However, state-of-the-art lattice algorithms appear not to benefit from cyclicity, and it seems reasonable to conjecture that standard problems on cyclic lattices are intractable, at least for small approximation factors.

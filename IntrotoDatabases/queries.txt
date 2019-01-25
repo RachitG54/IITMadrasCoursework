@@ -1,0 +1,36 @@
+1. Show the names and Id's of doctors having salary greater than 350000.
+
+	select s.StaffId, s.Name from Staff as s, Doctors as d where d.Id = s.StaffId and s.salary>=350000;
+
+_________________________________________________________________________________________________________________________________
+
+2. Show appointment records taken by receptionists serving desk 2.
+	
+	select distinct(r.RecordNo),r.DoctorId,r.PName,r.PAge,r.PPhoneNo,r.AppTime from Records as r,Recordstorage as r2 where r2.deskNo = 2;
+_________________________________________________________________________________________________________________________________
+
+3. Show the supervisor of the doctors who have specialization as Gynaecologist.
+	
+	select sup.StaffId, sup.Name from Staff as sup, Supervisor as sub where sup.StaffId = sub.superId and sub.subId = (select Id from Doctors where Doctors.specialization = 'Gynecologist');
+_________________________________________________________________________________________________________________________________
+
+4. Updating the dependent attribute of total bill cost through a query.
+	
+	update bills as b set b.TotalCost  = (select ((e.Price+m.Price)) from Medicine as m, Equipment as e where e.name = b.equipments and m.name = b.meds);
+
+_______________________________________________________________________________________________________________________________
+
+5. Show the patients who are in the room taken by the nurse who gets maximum salary.  
+
+	create view maxnurse as select s.StaffId, s.Name from Staff as s, Nurse as n where n.Id = s.StaffId and s.salary = 
+	(select max(s1.salary) from Staff as s1, Nurse as n1 where n1.Id = s1.StaffId);
+
+	create view maxnurseroom as select distinct(nurse.RoomNo) from Nurse as nurse, maxnurse where maxnurse.StaffId = nurse.Id;
+	
+	select p.PatientId, p.Name from Patients as p, maxnurseroom as m where m.RoomNo = p.RoomId; 
+	
+	drop view maxnurse;
+	drop view maxnurseroom;
+_________________________________________________________________________________________________________________________________
+
+

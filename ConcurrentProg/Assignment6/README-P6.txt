@@ -1,0 +1,3 @@
+README-P6.txt
+Approach used to parallelize is as follows:
+Both open mp and mpi were used in parallelizing. open mp was used to parallelize along the columns of the 2-D array and MPI was used to parallelize the rows. Syncronization in MPI was done using the means of non blocking broadcast. Relevant rows are broadcasted only, (Would have been better to use public memory(rma systems) in such a case no synchronization would be needed).

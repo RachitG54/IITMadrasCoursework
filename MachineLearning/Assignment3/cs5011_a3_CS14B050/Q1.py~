@@ -1,0 +1,13 @@
+import matplotlib.pyplot
+a = []
+for i in xrange(20):
+  a.append(i+1)
+print a
+b = [6.67,13.33,20,26.67,33.34,40,46.67,53.33,60,66.67,73.34,80,86.17,84,89.67,87.834,95.67,91.5,88.17,85.17]
+print b
+plt.plot(a, b)
+
+plt.xlabel('number of clusters(k)')
+plt.ylabel('purity(in percentage)')
+plt.savefig("purity.png")
+plt.show()

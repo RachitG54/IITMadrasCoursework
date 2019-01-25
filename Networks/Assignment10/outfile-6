@@ -1,0 +1,20 @@
+Routing table for Node No.6 at Time 20.0117
+Destination		Path		Cost
+0		6-0		2.48128
+1		
+2		
+3		
+4		
+5		
+6		6		0
+7		
+Routing table for Node No.6 at Time 40.0277
+Destination		Path		Cost
+0		6-0		2.68004
+1		6-1		1.15968
+2		6-1-2		2.63286
+3		6-1-3		3.32639
+4		6-1-4		2.38556
+5		6-1-5		2.9733
+6		6		0
+7		6-1-2-7		3.89391

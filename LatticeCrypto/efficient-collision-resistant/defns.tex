@@ -1,0 +1,26 @@
+\section{Definitions}
+We go through some definitions that will help to show the main worst case to average case reduction.
+\begin{definition}
+	\textit{Cyclotomic Subspace}
+	\begin{align*}
+	H_\Phi = \{x \in \mathbb{R}^n:\Phi(\alpha)\text{ divides }x(\alpha) \in \mathbb{R}[\alpha]\}.
+	\end{align*}
+\end{definition}
+\begin{definition}
+	\textit{SubSIVP} 
+	\par
+	The cyclotomic (generalized) short independent vectors problem, $SubSIVP_\gamma^\zeta$ , given an $n$-dimensional full-rank cyclic lattice basis $B$ and an integer polynomial $\Phi(\alpha) \neq 0$ mod $(\alpha^n - 1)$ that divides $\alpha^n - 1$, asks for a set of $dim(H_\Phi)$ linearly independent
+	(sub)lattice vectors $S \subset \Latt(B) \cap H_\Phi$ such that $||S|| \leq \gamma(n) · \zeta(\Latt(B) \cap H_\Phi )$.
+\end{definition}
+\begin{definition}
+	\textit{SubSVP} 
+	\par
+	The cyclotomic (generalized) short vectors problem,
+	$SubSVP_\gamma^\zeta$ , given an $n$-dimensional full-rank cyclic lattice basis $B$ and an integer polynomial $\Phi(\alpha) \neq 0$ mod $(\alpha^n - 1)$ that divides $\alpha^n - 1$, asks for a (sub)lattice vector $c \in \Latt(B) \cap H_\Phi$ such that $||c|| \leq \gamma(n) · \zeta(\Latt(B) \cap H_\Phi )$.
+\end{definition}
+\begin{definition}
+	\textit{SubIncSVP} 
+	\par
+	The cyclotomic (generalized) short vectors problem,
+	$SubIncSVP_\gamma^\zeta$ , given an $n$-dimensional full-rank cyclic lattice basis $B$ and an integer polynomial $\Phi(\alpha) \neq 0$ mod $(\alpha^n - 1)$ that divides $\alpha^n - 1$, and a nonzero (sub)lattice vector $c \in \Latt(B) \cap H_\Phi$ such that $||c|| > \gamma(n) · \zeta(\Latt(B) \cap H_\Phi )$, asks for a non-zero (sub)lattice vector $c' \in \Latt(B) \cap H_\Phi$ such that $||c'|| \leq ||c||/2$.
+\end{definition}

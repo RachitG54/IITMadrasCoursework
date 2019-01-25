@@ -1,0 +1,4 @@
+README:
+Q1) Update location of Train_features, Train_labels, Test_features, Test_labels.
+Q3) Tree_(minNumObj)_(yes/no) files are created, where minNumObj is the parameter value that is set for that particular decision tree. And yes/no implies that tree is pruned or not.
+

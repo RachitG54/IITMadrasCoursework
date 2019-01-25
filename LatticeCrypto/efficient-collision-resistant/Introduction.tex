@@ -1,0 +1,8 @@
+\section{Problem Motivation}
+Collision-resistant hash functions
+are one of the most widely-employed cryptographic primitives. Their applications include integrity
+checking, user and message authentication, commitment protocols, and more.
+Many of the applications of collision-resistant hashing tend to invoke the hash function only a
+small number of times. Thus, the efficiency of the function has a direct effect on the efficiency of the
+application that uses it. Collision-resistance can be obtained from many well-studied complexity assumptions, but the
+resulting hash functions are not efficient enough for practical use. Instead, faster heuristic constructions such as MD5 and SHA-1 are often employed. Unfortunately, recent cryptanalytic analysis of many popular hash functions casts doubt on the heuristic approach \cite{Wang:2005:FCF:2153419.2153421},\cite{Wang:2005:BMO:2154598.2154601}. This paper proposed an efficient collision-resistant hash function with rigorous security guarantees.

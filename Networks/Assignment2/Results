@@ -1,0 +1,11 @@
+/* Report/ReadMe of Roll number: CS14B050, Name: Rachit Garg.*/
+
+Q1) 
+Output and Input specifications are as asked by the question, the client prints the required options on the console.
+
+
+Q2) 
+Program asks for a filename and the number of bytes from the user, the filename asked must not contain the @ character as that character acts as a demilter seperating the filename and bytes in our message to the server. 
+The client recieves sorry if no file is found in the server directory or it simply prints the required bytes in a new file where it overwrites the file if it exists. 
+The filename of the output file is 1 concatenated with the input file name.
+

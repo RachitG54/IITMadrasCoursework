@@ -1,0 +1,33 @@
+\section{Reductions}
+\begin{proposition}
+	For any $\zeta, \gamma(n)$, there is a deterministic, polynomial-time sublattice-preserving
+	reduction from $SubSVP_\gamma^\zeta$ to $SubIncSVP_\gamma^\zeta$.
+\end{proposition}
+\textit{Informal Proof:} Given an instance of $(B,\Phi(\alpha))$, iteratively reduce the length of $c$ by invoking oracle for $SubIncSVP_\gamma^\zeta$ on $(B,\Phi(\alpha),c)$. If oracle fails we have solved $SubSVP_\gamma^\zeta$. (Note it is easy to show that the iterative process lasts poly number of times).
+\begin{proposition}
+	For any $\zeta, \gamma(n)$, there is a deterministic, polynomial-time sublattice-preserving
+	reduction from $SubSIVP_\gamma^\zeta$ to $SubSVP_\gamma^\zeta$ which makes one oracle call where $\Phi(\alpha) = (\alpha^n - 1)/\Phi_k(\alpha)$ for some $k | n$.
+\end{proposition}
+\textit{Informal Proof:} We use the $SubSVP$ oracle to find a
+short vector in $\Latt(B) \cap H_{\Phi_1}$ , then rotate it to yield $n - 1$ linearly independent vectors, and output that answer for $SSubSIVP$.
+\begin{proposition}
+	For any $\zeta, \gamma(n)$, there is a deterministic, polynomial-time lattice-preserving
+	reduction from $SIVP_{\max(n,2\gamma)}$ on a cyclic lattice of prime dimension to $SubSVP_\gamma^{\lambda_1}$ which makes one oracle call where $\Phi(\alpha) = \Phi_1(\alpha) = \alpha - 1$.
+\end{proposition}
+\textit{Informal Proof:} The main idea behind the proof is as follows: first, we use the $SubSVP$ oracle to find a
+short vector in $\Latt(B) \cap H_{\Phi_1}$ , then rotate it to yield $n - 1$ linearly independent vectors. For the nth
+vector, we take the shortest vector in $\Latt(B) \cap H_{\Phi_n}$ , which can be found efficiently; furthermore, it
+is an n-approximation to the shortest vector in $L(B) \setminus H_{\Phi_1}.$
+\\~\\
+$s_i = \sum_{j=1}^n(\mathbf{b}_i)_j = \mathbf{b}_i(1)$ for $i = 1, . . . n$. Because $\alpha - 1$ cannot divide every $b_i(\alpha)$
+(otherwise $\Latt(B) \subset H_{\Phi_1}$ , so $\Latt(B)$ would not be full-rank), some $s_i$ must be non-zero.
+\\
+$\mathbf{s}_i = \mathbf{b}_i \otimes (1,1,.....) = (s_i,s_i....s_i) \in \Latt(B)$. Let $g = gcd(s_1,s_2....s_n)$. Output $\mathbf{g} = (g,g....g)$ as the shortest vector. By the extended Euclidean algorithm, $g$ is an
+integer combination of the $s_i$ vectors, hence $g \in \Latt(B)$.
+\begin{proposition}
+	For any $\gamma(n)$, there is a deterministic, polynomial-time lattice-preserving
+	reduction from $SVP_{\max(n,\gamma)}$ on a cyclic lattice of prime dimension to $SubSVP_\gamma^{\lambda_1}$ which makes one oracle call where $\Phi(\alpha) = \Phi_1(\alpha) = \alpha - 1$.
+\end{proposition}
+\textit{Informal Proof} The idea is same as in the previous reduction where we used the oracle to solve $SIVP$. To use the oracle to solve $SVP$, output minimum of norm of c, and the norm of the $n^{th}$ vector as chosen before.
+\\~\\
+Hence we have claimed reductions from $SVP_{\max(n,\gamma)}$ to $SubSVP$, and $SubSVP$ to $SubIncSVP$. Thus we now try to show a reduction from $SubIncSVP$ to finding collisions in generalized knapsack with a specific choice of ring. This will show a reduction from $SVP_{\max(n,\gamma)}$ to the main collision resistant hash funcion.

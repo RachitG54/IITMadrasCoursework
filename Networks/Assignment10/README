@@ -1,0 +1,24 @@
+README
+The command line arguments are followed as in the question.
+Type make to compile the scripts.
+
+make
+to make all files
+make clean to remove all executables
+
+To run:
+./SenderOSPF -i 3 -f input -o outfile -h 1 -a 5 -s 20
+open various terminals and run this command to get output into outfile-3 for nodeid 3, as specified in the question
+
+input:
+This is a file with 8 nodes and 20 links between the nodes, used for testing
+
+output:
+outfile-{0,1,2...}
+These are the files with the routing tables showcased and the times at which they are showcased mentioned.
+
+
+Testing:
+The testing was done by opening 8 terminals in random order and opening all nodes and then closing them after a few minutes.
+The output format is same as mentioned in the pdf.
+The topology tested is first 6 vertices form a clique of size 6, the 7th vertex is connected to first two vertices, and the 8th vertex is connected to the subsequent three vertices. 

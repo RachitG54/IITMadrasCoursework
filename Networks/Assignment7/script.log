@@ -1,0 +1,15 @@
+Script started on Tuesday 21 March 2017 02:13:30 AM IST
+rachit@rachit-HP-Pavilion-15-Notebook-PC:~/Documents/Sem6/Networks/SlottedAloha$ make
+g++ -o SlottedAloha -std=c++11 SlottedAloha.cpp
+rachit@rachit-HP-Pavilion-15-Notebook-PC:~/Documents/Sem6/Networks/SlottedAloha$ ./SlottedAloha -N 50 -p 0.01 -W 2 -M 5000
+Number of nodes are 50
+Window size for each node is:
+24 240 108 192 144 144 192 108 256 256 144 256 144 256 31 256 256 60 67 256 256 256 108 108 256 192 256 144 256 192 256 90 192 108 256 256 192 144 256 256 256 144 256 56 169 144 240 144 256 256 
+Probability of packet generation is 0.01
+Mean delay per packet is 99.7902
+Average utilization per slot (throughput) is 0.357705
+Total Simulation Time is 13978
+rachit@rachit-HP-Pavilion-15-Notebook-PC:~/Documents/Sem6/Networks/SlottedAloha$ exit
+exit
+
+Script done on Tuesday 21 March 2017 02:13:55 AM IST

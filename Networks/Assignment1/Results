@@ -1,0 +1,4 @@
+tcpclient_Q4.c and udpclient_Q4.c files print the time average, and tcpclient.c and udpclient.c print the required addresses and the port numbers.
+
+Q4) The time of echo over tcp and udp was averaged over 100 messages. And udp was observed to be faster than tcp by atleast twice the time. Average time for udp observed was 40 microseconds and tcp was 80 microseconds.
+

@@ -1,0 +1,206 @@
+\documentclass[solution,addpoints,12pt]{exam}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amssymb}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+
+\newenvironment{Solution}{\begin{EnvFullwidth}\begin{solution}}{\end{solution}\end{EnvFullwidth}}
+
+\printanswers
+%\unframedsolutions
+\pagestyle{headandfoot}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%% INSTRUCTIONS %%%%%%%%%%%%%%%%%%%%%
+% * Fill in your name and roll number below
+
+% * Answer in place (after each question)
+
+% * Use \begin{solution} and \end{solution} to typeset
+%   your answers.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Fill in the details below
+\def\studentName{\textbf{Name: Rachit Garg}}
+\def\studentRoll{\textbf{Roll: CS14B050}}
+
+\firstpageheader{CS 6841 - Assignment 4}{}{\studentName, \studentRoll}
+\firstpageheadrule
+
+\newcommand{\brac}[1]{\left[ #1 \right]}
+\newcommand{\curly}[1]{\left\{ #1 \right\}}
+\newcommand{\paren}[1]{\left( #1 \right)}
+\newcommand{\card}[1]{\left\lvert #1 \right\rvert}
+
+\newcommand{\prob}{\operatorname{\mathbf{Pr}}}
+\newcommand{\ex}{\operatorname{\mathbf{E}}}
+\newcommand{\from}{\leftarrow}
+
+\newcommand{\field}{\mathbb{F}}
+\newcommand{\reals}{\mathbb{R}}
+\renewcommand{\mod}{\operatorname{mod}}
+\newcommand{\hashFamily}{\mathcal{H}}
+
+\newcommand{\Yes}{\texttt{Yes}}
+\newcommand{\No}{\texttt{No}}
+
+\begin{document}
+
+\begin{questions}
+
+
+\question[30] \textbf{(Designing a Tournament)}  This question will help you understand the applications of Chernoff bound and Union bound more, as you'll deal with tuning parameters to optimize the efficiency of the system. You'll also get an understanding of why NBA tournaments are designed the way they are, with more repeated matches being played as we get closer to the finals. For example, in the NBA, the early rounds are \emph{best-of-five}, and the later rounds become \emph{best-of-seven}. You will understand why, and also learn how to design tournaments with $n$ participants, for large $n$.
+
+Suppose there are $n$ teams, and they are totally ranked. That is, there is a well-defined best team, second ranked team and so on. It's just that we (the tournament designer) don't know the ranking. Moreover, assume that for any given match between two players, the better ranked team will win the match with probability $p = \frac12 + \delta$, \emph{independent of all other matches between these players and all other players also}. Here $\delta$ is a small positive constant. All your answers below will depend on the value of $\delta$.
+
+\begin{parts}
+\part[5] Let $n$ be a power of two, and fix an \emph{arbitrary tournament tree} starting with $n/2$ matches, then $n/4$ matches and so on. That is, initially, team 1 plays team 2, team 3 plays team 4, and so on (each series is only $1$ game). The winners advance, and pair up and play each other once, and so on until one team remains. What is the probability that the best team wins the tournament?
+
+  \begin{solution}
+  \begin{proof}
+  The best team wins if it wins all the matches that it plays. Since there are n teams in total. A team that wins will have to play a total of $\log n$ matches. The probability that the best team wins a match is always $\frac{1}{2} + \delta$ irrespective of the other teams as its the best team. As matches are independent of each other. The probability that the best team wins $\log n$ matches is $(\frac{1}{2}+\delta)^{\log n}$.
+  \end{proof}
+  \end{solution}
+
+\part[10] Now change the tournament to make each series as a \emph{best-of-$k$} series. How large should $k$ be, and so how many games do you end up conducting in total to get a $1-\epsilon$ probability of the best team winning the overall series?
+  \begin{solution}
+  \begin{proof}
+  We first analyze for one series, Probability that the best team loses this round is if it loses in less than equal to $k/2$ rounds. Let X be the random variable that is the number of rounds the best team won in one series. Let $X_i$ be 1 if the outcome of the ith match in the series is a win and zero otherwise. 
+  \begin{align*}
+  \forall i, Pr(X_i = 1) = \frac{1}{2} + \delta
+  \\
+  E[X_i] = \frac{1}{2} + \delta
+  \\
+  Var[X_i] = E[{X_i}^2] - {E[X]}^2
+  \\
+  Var[X_i] = \frac{1}{2} + \delta -{(\frac{1}{2} + \delta)}^2
+  \\
+  Var[X_i] = \frac{1}{4} - {\delta}^2
+  \\
+  X = \sum_{i=1}X_i
+  \\
+  E[X] = \sum_{i=1}E[X_i]
+  \\
+  E[X] = n(\frac{1}{2} + \delta)
+  \end{align*}
+  \begin{align*}
+  Var[X] = \sum_{i=1}Var[X_i] && \text{ as random variables are independent}
+  \end{align*}
+  \begin{align*}
+  Var[X] = n(\frac{1}{4} - {\delta}^2)
+  \\
+  Pr(X \leq \mu (1-\Delta)) \leq e^{\frac{-\mu {\Delta}^2}{2}}
+  \end{align*}
+  We want to calculate the probability that $X$ is greater than $k/2$. Equating $\mu (1-\Delta)$ with $k/2$ we find the value of $\Delta$.
+  \begin{align*}
+  \Delta = 1 - \frac{k}{2 \mu}
+  \\
+  \Delta = 1 - \frac{k}{k+2 \delta k}
+  \\
+  \Delta = 1 - \frac{1}{1+2 \delta}
+  \\
+  \Delta = \frac{2\delta}{1+2 \delta}
+  \end{align*}
+  Putting the value of $\Delta$ in our chernoff bound equation.
+  \begin{align*}
+  Pr( X \leq k/2) \leq e^{(-\frac{k}{2})(\frac{1}{2}+\delta){(\frac{2\delta}{1+2 \delta})}^2}
+  \\
+  Pr( X \leq k/2) \leq e^{\frac{(-k)({\delta}^2)}{1+2 \delta})}  
+  \\
+  Pr(X > k/2) \geq 1 - e^{\frac{(-k)({\delta}^2)}{1+2 \delta})}
+  \\
+  Pr(\text{success in $\log n$ rounds}) \geq {(1 - e^{\frac{(-k)({\delta}^2)}{1+2 \delta}})}^{\log n}
+  \end{align*}
+  If we want the success probability to be greater than $1-\epsilon$. The bound that we have calculated must be greater than $1-\epsilon$.
+  \begin{align*}
+  {(1 - e^{\frac{(-k)({\delta}^2)}{1+2 \delta}})}^{\log n} \geq 1-\epsilon
+  \end{align*}
+  From here we take all terms with k in one side and simplify and find the expression for the number of rounds.
+  \begin{align*}
+  	k \geq (\frac{1+2 \delta}{\delta ^2})(\ln \frac{1}{1-{(1-\epsilon)}^{\frac{1}{\log n}}})
+  \end{align*}
+  \end{proof}
+  \end{solution}
+\part[15] Can you get better dependence on $n$ if you allow different number of games in each round: example, try having $k_1$ games in the first series, $k_2$ games in the next series, etc. and optimize for these values to get a total of $O_{\epsilon}(n)$ games which still retains $1-\epsilon$ probability of the best team winning eventually. Here $O_\epsilon(n)$ means $O(n)$ for all constant $\epsilon>0$.
+  \begin{solution}
+  \begin{proof}
+  Here each round has a different k with it hence each the probability of success formula changes as follows:
+  \begin{align*}
+  	Pr(X > k/2) \geq 1 - e^{\frac{(-k)({\delta}^2)}{1+2 \delta})}
+	\\
+	Pr(X \leq k/2) \leq e^{\frac{(-k)({\delta}^2)}{1+2 \delta})}
+  \end{align*}
+  We also have the added constraint that the total number of rounds must be linear, for this constraint to hold good, the following equation must be satisfied.
+  \begin{align*}
+  	\sum_{s = 1}^{\log n}\frac{(n)(k_s)}{2^s} = O_\epsilon(n)
+  \end{align*}
+  We now try to satisfy the condition that 
+    \begin{align*}
+    Pr(\text{success in $\log n$ rounds}) \geq \prod_{s = 1}^{\log n}1 - e^{\frac{(-2^s \alpha)({\delta}^2)}{(1+2 \delta)(\log n)})}
+    \end{align*}
+    We want that this inequality is greater than $1 - \epsilon$.
+    To get this, we want the bound on alpha, we observe that when s is smaller then the term $1 - e^{\frac{(-2^s \alpha)({\delta}^2)}{(1+2 \delta)(\log n)})}$ is small, and when s is bigger then this term is bigger, if we proved our term to be bigger than some $(1-\epsilon)^{\frac{2s}{\log n *(\log n + 1)}}$ for all s, then the product of all terms must be greater than $(1-\epsilon)$. Hence we need to show the following now:-
+    \begin{align*}
+    	\forall s, 1 - e^{\frac{(-2^s \alpha)({\delta}^2)}{(1+2 \delta)(\log n)})} \geq (1-\epsilon)^{\frac{2s}{\log n *(\log n + 1)}}
+    \end{align*}
+    Solving for $\alpha$ we get,
+    \begin{align*}
+    	\alpha \geq (\frac{(1+2 \delta)(\log n)}{2^s \delta ^2})(\ln \frac{1}{1-{(1-\epsilon)}^{\frac{2s}{\log n *(\log n + 1)}}})
+    \end{align*}
+    Hence if we choose different values for different rounds 
+  \end{proof}
+  \end{solution}
+
+
+
+\end{parts}
+
+\question[15] \textbf{(Who wins the election? Exit Poll Design)} Imagine there are only two parties standing in the national election, and you have access to sampling and calling up uniformly random people from the electorate to find out who they're going to vote for. If the total population size of India is $N$ and an unknown $\frac14 \leq p \leq \frac34$ fraction prefer BJP and $(1-p)$ prefer Congress, approximately how many people do you need to sample in order to estimate $p$ upto an additive error of $\epsilon$? Don't try too hard to optimize the constants, so feel free to use whichever concentration bound you see fit.
+  \begin{solution}
+  \begin{proof}
+  	Lets assume the cardinality of the set of people that we pick to be k. Let X be the random variable that denotes the number of people who support BJP in this set. The probability of BJP supporters that we assume from this set is $X/k$. We want this estimated probability to be within an error of $\epsilon$, hence we want the condition that $|(X/k) - p| \leq \epsilon$. Applying chebychev bound on this random variable and proceding. Let $X_i$ be the random variable such that the ith person in our set supports BJP.
+  	\begin{align*}
+	  	Pr(X_i = 1) = p
+	  	\\
+	  	E[X_i] = p
+	  	\\
+	  	Var[X_i] = E[{X_i}^2] - {E[X]}^2
+	  	\\
+	  	Var[X_i] = p - {p}^2
+	  	\\
+	  	Var[X_i] = p(1-p)
+	  	\\
+	  	X = \sum_{i=1}X_i
+	  	\\
+	  	E[X] = \sum_{i=1}E[X_i]
+	  	\\
+	  	E[X] = kp
+	  	\end{align*}
+	  	\begin{align*}
+	  	Var[X] = \sum_{i=1}Var[X_i] && \text{ as random variables are independent}
+	  	\end{align*}
+	  	\begin{align*}
+	  	Var[X] = kp(1-p)
+	  	\\
+	  	Pr(|X-\mu| \geq t) \leq \frac{\sigma^2}{t^2}
+	  	\\
+	  	Pr(|X-kp| \geq t) \leq \frac{kp(1-p)}{t^2}
+	  	\\
+  		Pr(|\frac{X}{k} - p| \geq \frac{t}{k}) \leq \frac{kp(1-p)}{t^2}
+  		\\
+  		 Pr(|\frac{X}{k} - p| \geq \epsilon) \leq \frac{p(1-p)}{\epsilon^2*k}
+  		\\
+  		p(1-p) \leq \frac{1}{4}
+  		\\
+  		Pr(|\frac{X}{k} - p| \geq \epsilon) \leq \frac{1}{\epsilon^2*4k}
+  		\\
+  		Pr(failure) \leq \frac{1}{\epsilon^2*4k}
+  	\end{align*}
+  	As you increase k the bound becomes better and better for failure, choosing the value of k depends on how much precision you want. If you want the probability of failure to be at max $1/sqrt(n)$ which seems a nice bound for a large population, choose your k as $sqrt(n)/(4*\epsilon^2)$. For the Indian population of 1 billion if we want a max error of 0.05, it means we would have to talk to approximately $32$ lakh people.
+  \end{proof}
+  \end{solution}
+\end{questions}
+\end{document} 

@@ -1,0 +1,9 @@
+In this lab assignment,
+
+1. you will download the TCPclient and TCPServer from moodle and compile it to run it.
+2. you will print the client address and port at the server and print the server address and port at the client.
+
+3. you will change the code as required to convert the above code to UDPclient and UDPserver.
+4. you will compare the time taken for the echo to return for both and tell which one is slower. A notepad file describing your 
+
+Upload the UDP client and server which also print the addresses to moodle. Make sure to show it to a TA first.

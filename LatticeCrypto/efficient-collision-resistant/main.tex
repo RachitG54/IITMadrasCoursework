@@ -1,0 +1,84 @@
+\documentclass[11pt]{article}
+
+\usepackage{gitinfo}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage[linkcolor=blue,colorlinks=true]{hyperref}
+\usepackage{color}
+\usepackage{fullpage}
+\usepackage[svgnames]{xcolor}
+\usepackage{caption}
+\usepackage{verbatim,graphicx}
+\usepackage{complexity}
+\usepackage[normalem]{ulem}		% For strike out
+\usepackage[ruled,vlined]{algorithm2e}
+\usepackage{float}
+\usepackage{multicol}
+\usepackage{array}
+
+\newcommand{\Latt}{\mathcal{L}}
+
+%Commenting and TODO listing commands
+
+\usepackage{todonotes}
+\newcounter{todocounter}
+\newcommand{\todonum}[2][]{\stepcounter{todocounter}\todo[#1]{\thetodocounter: #2}}
+
+\theoremstyle{plain}% default
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{claim}[theorem]{Claim}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{conjecture}[theorem]{Conjecture}
+
+%\theoremstyle{remark}
+\newtheorem{note}[theorem]{Note}
+\newtheorem{observation}[theorem]{Observation}
+\newtheorem{question}[theorem]{Question}
+\newtheorem{remark}[theorem]{Remark}
+
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{exercise}[theorem]{Exercise}
+\newtheorem{problem}[theorem]{Problem}
+
+\newcommand{\field}{\mathbb{F}}
+\newcommand{\F}{{\mathbb{F}}}
+\newcommand{\N}{{\mathbb{N}}}
+\renewcommand{\R}{{\mathbb{R}}}
+
+\newcommand{\size}{\textrm{\bf SIZE}}
+
+\newlang{\MCSP}{MCSP}
+\newlang{\REACH}{REACH}
+
+\newcommand{\set}[1]{\left\{ #1 \right\}}
+\newcommand{\spa}[1]{\textrm{span} \set{#1}}
+
+\title{Efficient Collision-Resistant Hashing}
+\author{Rachit Garg \\ \texttt{CS14B050}}
+\date{\today}
+\begin{document}
+\maketitle
+\begin{center}
+Based on paper\\Efficient Collision-Resistant Hashing from
+Worst-Case Assumptions on Cyclic Lattices \\Published by Chris Peikert  and Alon Rosen\\ Work appeared in 3 rd Theory of Cryptography Conference (TCC 2006) \cite{Peikert:2006:ECH:2180286.2180297}.
+\end{center}
+
+\tableofcontents
+\input{Introduction.tex}
+\input{ProbStat.tex}
+\input{PrevSol.tex}
+\input{PaperResults.tex}
+\input{techs.tex}
+\input{defns.tex}
+\input{Lemmas.tex}
+\input{Reductions.tex}
+\input{Collisions.tex}
+\input{MainReduction.tex}
+\input{FutureWork.tex}
+
+\bibliography{references.bib}{}
+\bibliographystyle{plain}
+
+\end{document}

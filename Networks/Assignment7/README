@@ -1,0 +1,5 @@
+The command line arguments are followed as in the question.
+Type make to compile the scripts.
+The executable name is SlottedAloha - type ./SlottedAloha -N 50 -p 0.01 -W 2 -M 5000 to run.
+To run python script type:  python graph.py 
+For running a repay of the scripts: scriptreplay --timing=time.txt script.log

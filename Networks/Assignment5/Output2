@@ -1,0 +1,4290 @@
+Original String: 10101010101010101010101010
+Original String with Parity: 1011010010101011010101010101010
+Corrupted string: 1011010010101011010101010101011
+Error Location(s) is/are: 31
+Number of errors introduced: 1
+Error Location computed by receiver algorithm is: 31
+Introducing 10 2-bit errors
+Original String: 10101010101010101010101010
+Original String with Parity: 1011010010101011010101010101010
+Corrupted string: 1011010010101010010101010101011
+Error Location(s) is/are: 16 31
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 2 4 8 
+Original String: 10101010101010101010101010
+Original String with Parity: 1011010010101011010101010101010
+Corrupted string: 1011010010001011110101010101010
+Error Location(s) is/are: 11 17
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 8 16 
+Original String: 10101010101010101010101010
+Original String with Parity: 1011010010101011010101010101010
+Corrupted string: 1011010010100011011101010101010
+Error Location(s) is/are: 19 13
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101010101010101010
+Original String with Parity: 1011010010101011010101010101010
+Corrupted string: 1011010010001011010111010101010
+Error Location(s) is/are: 11 21
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101010101010101010
+Original String with Parity: 1011010010101011010101010101010
+Corrupted string: 1001010010101011000101010101010
+Error Location(s) is/are: 18 3
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 16 
+Original String: 10101010101010101010101010
+Original String with Parity: 1011010010101011010101010101010
+Corrupted string: 1011011010101011010101010101000
+Error Location(s) is/are: 30 7
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 8 16 
+Original String: 10101010101010101010101010
+Original String with Parity: 1011010010101011010101010101010
+Corrupted string: 1011010010100011011101010101010
+Error Location(s) is/are: 19 13
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101010101010101010
+Original String with Parity: 1011010010101011010101010101010
+Corrupted string: 1011010010101011011101010101011
+Error Location(s) is/are: 31 19
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 4 8 
+Original String: 10101010101010101010101010
+Original String with Parity: 1011010010101011010101010101010
+Corrupted string: 1011010010101010010101110101010
+Error Location(s) is/are: 16 23
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 2 4 
+Original String: 10101010101010101010101010
+Original String with Parity: 1011010010101011010101010101010
+Corrupted string: 1011010010101001011101010101010
+Error Location(s) is/are: 19 15
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 4 8 16 
+
+Original String: 10101010101010101011101010
+Original String with Parity: 0011010110101010010101011101010
+Corrupted string: 0011010110101010010101011101011
+Error Location(s) is/are: 31
+Number of errors introduced: 1
+Error Location computed by receiver algorithm is: 31
+Introducing 10 2-bit errors
+Original String: 10101010101010101011101010
+Original String with Parity: 0011010110101010010101011101010
+Corrupted string: 0011010110101011010101011101011
+Error Location(s) is/are: 16 31
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 2 4 8 
+Original String: 10101010101010101011101010
+Original String with Parity: 0011010110101010010101011101010
+Corrupted string: 0011010110001010110101011101010
+Error Location(s) is/are: 11 17
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 8 16 
+Original String: 10101010101010101011101010
+Original String with Parity: 0011010110101010010101011101010
+Corrupted string: 0011010110100010011101011101010
+Error Location(s) is/are: 19 13
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101010101011101010
+Original String with Parity: 0011010110101010010101011101010
+Corrupted string: 0011010110001010010111011101010
+Error Location(s) is/are: 11 21
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101010101011101010
+Original String with Parity: 0011010110101010010101011101010
+Corrupted string: 0001010110101010000101011101010
+Error Location(s) is/are: 18 3
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 16 
+Original String: 10101010101010101011101010
+Original String with Parity: 0011010110101010010101011101010
+Corrupted string: 0011011110101010010101011101000
+Error Location(s) is/are: 30 7
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 8 16 
+Original String: 10101010101010101011101010
+Original String with Parity: 0011010110101010010101011101010
+Corrupted string: 0011010110100010011101011101010
+Error Location(s) is/are: 19 13
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101010101011101010
+Original String with Parity: 0011010110101010010101011101010
+Corrupted string: 0011010110101010011101011101011
+Error Location(s) is/are: 31 19
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 4 8 
+Original String: 10101010101010101011101010
+Original String with Parity: 0011010110101010010101011101010
+Corrupted string: 0011010110101011010101111101010
+Error Location(s) is/are: 16 23
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 2 4 
+Original String: 10101010101010101011101010
+Original String with Parity: 0011010110101010010101011101010
+Corrupted string: 0011010110101000011101011101010
+Error Location(s) is/are: 19 15
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 4 8 16 
+
+Original String: 10101010101010101010111010
+Original String with Parity: 0111010110101010010101010111010
+Corrupted string: 0111010110101010010101010111011
+Error Location(s) is/are: 31
+Number of errors introduced: 1
+Error Location computed by receiver algorithm is: 31
+Introducing 10 2-bit errors
+Original String: 10101010101010101010111010
+Original String with Parity: 0111010110101010010101010111010
+Corrupted string: 0111010110101011010101010111011
+Error Location(s) is/are: 16 31
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 2 4 8 
+Original String: 10101010101010101010111010
+Original String with Parity: 0111010110101010010101010111010
+Corrupted string: 0111010110001010110101010111010
+Error Location(s) is/are: 11 17
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 8 16 
+Original String: 10101010101010101010111010
+Original String with Parity: 0111010110101010010101010111010
+Corrupted string: 0111010110100010011101010111010
+Error Location(s) is/are: 19 13
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101010101010111010
+Original String with Parity: 0111010110101010010101010111010
+Corrupted string: 0111010110001010010111010111010
+Error Location(s) is/are: 11 21
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101010101010111010
+Original String with Parity: 0111010110101010010101010111010
+Corrupted string: 0101010110101010000101010111010
+Error Location(s) is/are: 18 3
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 16 
+Original String: 10101010101010101010111010
+Original String with Parity: 0111010110101010010101010111010
+Corrupted string: 0111011110101010010101010111000
+Error Location(s) is/are: 30 7
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 8 16 
+Original String: 10101010101010101010111010
+Original String with Parity: 0111010110101010010101010111010
+Corrupted string: 0111010110100010011101010111010
+Error Location(s) is/are: 19 13
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101010101010111010
+Original String with Parity: 0111010110101010010101010111010
+Corrupted string: 0111010110101010011101010111011
+Error Location(s) is/are: 31 19
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 4 8 
+Original String: 10101010101010101010111010
+Original String with Parity: 0111010110101010010101010111010
+Corrupted string: 0111010110101011010101110111010
+Error Location(s) is/are: 16 23
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 2 4 
+Original String: 10101010101010101010111010
+Original String with Parity: 0111010110101010010101010111010
+Corrupted string: 0111010110101000011101010111010
+Error Location(s) is/are: 19 15
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 4 8 16 
+
+Original String: 10101010101110101010101010
+Original String with Parity: 0011010010101010110101010101010
+Corrupted string: 0011010010101010110101010101011
+Error Location(s) is/are: 31
+Number of errors introduced: 1
+Error Location computed by receiver algorithm is: 31
+Introducing 10 2-bit errors
+Original String: 10101010101110101010101010
+Original String with Parity: 0011010010101010110101010101010
+Corrupted string: 0011010010101011110101010101011
+Error Location(s) is/are: 16 31
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 2 4 8 
+Original String: 10101010101110101010101010
+Original String with Parity: 0011010010101010110101010101010
+Corrupted string: 0011010010001010010101010101010
+Error Location(s) is/are: 11 17
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 8 16 
+Original String: 10101010101110101010101010
+Original String with Parity: 0011010010101010110101010101010
+Corrupted string: 0011010010100010111101010101010
+Error Location(s) is/are: 19 13
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101110101010101010
+Original String with Parity: 0011010010101010110101010101010
+Corrupted string: 0011010010001010110111010101010
+Error Location(s) is/are: 11 21
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101110101010101010
+Original String with Parity: 0011010010101010110101010101010
+Corrupted string: 0001010010101010100101010101010
+Error Location(s) is/are: 18 3
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 16 
+Original String: 10101010101110101010101010
+Original String with Parity: 0011010010101010110101010101010
+Corrupted string: 0011011010101010110101010101000
+Error Location(s) is/are: 30 7
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 8 16 
+Original String: 10101010101110101010101010
+Original String with Parity: 0011010010101010110101010101010
+Corrupted string: 0011010010100010111101010101010
+Error Location(s) is/are: 19 13
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101110101010101010
+Original String with Parity: 0011010010101010110101010101010
+Corrupted string: 0011010010101010111101010101011
+Error Location(s) is/are: 31 19
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 4 8 
+Original String: 10101010101110101010101010
+Original String with Parity: 0011010010101010110101010101010
+Corrupted string: 0011010010101011110101110101010
+Error Location(s) is/are: 16 23
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 2 4 
+Original String: 10101010101110101010101010
+Original String with Parity: 0011010010101010110101010101010
+Corrupted string: 0011010010101000111101010101010
+Error Location(s) is/are: 19 15
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 4 8 16 
+
+Original String: 10101010101010111010101010
+Original String with Parity: 0010010010101010010111010101010
+Corrupted string: 0010010010101010010111010101011
+Error Location(s) is/are: 31
+Number of errors introduced: 1
+Error Location computed by receiver algorithm is: 31
+Introducing 10 2-bit errors
+Original String: 10101010101010111010101010
+Original String with Parity: 0010010010101010010111010101010
+Corrupted string: 0010010010101011010111010101011
+Error Location(s) is/are: 16 31
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 2 4 8 
+Original String: 10101010101010111010101010
+Original String with Parity: 0010010010101010010111010101010
+Corrupted string: 0010010010001010110111010101010
+Error Location(s) is/are: 11 17
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 8 16 
+Original String: 10101010101010111010101010
+Original String with Parity: 0010010010101010010111010101010
+Corrupted string: 0010010010100010011111010101010
+Error Location(s) is/are: 19 13
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101010111010101010
+Original String with Parity: 0010010010101010010111010101010
+Corrupted string: 0010010010001010010101010101010
+Error Location(s) is/are: 11 21
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101010111010101010
+Original String with Parity: 0010010010101010010111010101010
+Corrupted string: 0000010010101010000111010101010
+Error Location(s) is/are: 18 3
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 16 
+Original String: 10101010101010111010101010
+Original String with Parity: 0010010010101010010111010101010
+Corrupted string: 0010011010101010010111010101000
+Error Location(s) is/are: 30 7
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 8 16 
+Original String: 10101010101010111010101010
+Original String with Parity: 0010010010101010010111010101010
+Corrupted string: 0010010010100010011111010101010
+Error Location(s) is/are: 19 13
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101010111010101010
+Original String with Parity: 0010010010101010010111010101010
+Corrupted string: 0010010010101010011111010101011
+Error Location(s) is/are: 31 19
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 4 8 
+Original String: 10101010101010111010101010
+Original String with Parity: 0010010010101010010111010101010
+Corrupted string: 0010010010101011010111110101010
+Error Location(s) is/are: 16 23
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 2 4 
+Original String: 10101010101010111010101010
+Original String with Parity: 0010010010101010010111010101010
+Corrupted string: 0010010010101000011111010101010
+Error Location(s) is/are: 19 15
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 4 8 16 
+
+Original String: 10101010101010101010101010
+Original String with Parity: 1011010010101011010101010101010
+Corrupted string: 1011010010101011010101010101011
+Error Location(s) is/are: 31
+Number of errors introduced: 1
+Error Location computed by receiver algorithm is: 31
+Introducing 10 2-bit errors
+Original String: 10101010101010101010101010
+Original String with Parity: 1011010010101011010101010101010
+Corrupted string: 1011010010101010010101010101011
+Error Location(s) is/are: 16 31
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 2 4 8 
+Original String: 10101010101010101010101010
+Original String with Parity: 1011010010101011010101010101010
+Corrupted string: 1011010010001011110101010101010
+Error Location(s) is/are: 11 17
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 8 16 
+Original String: 10101010101010101010101010
+Original String with Parity: 1011010010101011010101010101010
+Corrupted string: 1011010010100011011101010101010
+Error Location(s) is/are: 19 13
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101010101010101010
+Original String with Parity: 1011010010101011010101010101010
+Corrupted string: 1011010010001011010111010101010
+Error Location(s) is/are: 11 21
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101010101010101010
+Original String with Parity: 1011010010101011010101010101010
+Corrupted string: 1001010010101011000101010101010
+Error Location(s) is/are: 18 3
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 16 
+Original String: 10101010101010101010101010
+Original String with Parity: 1011010010101011010101010101010
+Corrupted string: 1011011010101011010101010101000
+Error Location(s) is/are: 30 7
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 8 16 
+Original String: 10101010101010101010101010
+Original String with Parity: 1011010010101011010101010101010
+Corrupted string: 1011010010100011011101010101010
+Error Location(s) is/are: 19 13
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101010101010101010
+Original String with Parity: 1011010010101011010101010101010
+Corrupted string: 1011010010101011011101010101011
+Error Location(s) is/are: 31 19
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 4 8 
+Original String: 10101010101010101010101010
+Original String with Parity: 1011010010101011010101010101010
+Corrupted string: 1011010010101010010101110101010
+Error Location(s) is/are: 16 23
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 2 4 
+Original String: 10101010101010101010101010
+Original String with Parity: 1011010010101011010101010101010
+Corrupted string: 1011010010101001011101010101010
+Error Location(s) is/are: 19 15
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 4 8 16 
+
+Original String: 10101010101010101011101010
+Original String with Parity: 0011010110101010010101011101010
+Corrupted string: 0011010110101010010101011101011
+Error Location(s) is/are: 31
+Number of errors introduced: 1
+Error Location computed by receiver algorithm is: 31
+Introducing 10 2-bit errors
+Original String: 10101010101010101011101010
+Original String with Parity: 0011010110101010010101011101010
+Corrupted string: 0011010110101011010101011101011
+Error Location(s) is/are: 16 31
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 2 4 8 
+Original String: 10101010101010101011101010
+Original String with Parity: 0011010110101010010101011101010
+Corrupted string: 0011010110001010110101011101010
+Error Location(s) is/are: 11 17
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 8 16 
+Original String: 10101010101010101011101010
+Original String with Parity: 0011010110101010010101011101010
+Corrupted string: 0011010110100010011101011101010
+Error Location(s) is/are: 19 13
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101010101011101010
+Original String with Parity: 0011010110101010010101011101010
+Corrupted string: 0011010110001010010111011101010
+Error Location(s) is/are: 11 21
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101010101011101010
+Original String with Parity: 0011010110101010010101011101010
+Corrupted string: 0001010110101010000101011101010
+Error Location(s) is/are: 18 3
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 16 
+Original String: 10101010101010101011101010
+Original String with Parity: 0011010110101010010101011101010
+Corrupted string: 0011011110101010010101011101000
+Error Location(s) is/are: 30 7
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 8 16 
+Original String: 10101010101010101011101010
+Original String with Parity: 0011010110101010010101011101010
+Corrupted string: 0011010110100010011101011101010
+Error Location(s) is/are: 19 13
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101010101011101010
+Original String with Parity: 0011010110101010010101011101010
+Corrupted string: 0011010110101010011101011101011
+Error Location(s) is/are: 31 19
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 4 8 
+Original String: 10101010101010101011101010
+Original String with Parity: 0011010110101010010101011101010
+Corrupted string: 0011010110101011010101111101010
+Error Location(s) is/are: 16 23
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 2 4 
+Original String: 10101010101010101011101010
+Original String with Parity: 0011010110101010010101011101010
+Corrupted string: 0011010110101000011101011101010
+Error Location(s) is/are: 19 15
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 4 8 16 
+
+Original String: 10101010101010101010111010
+Original String with Parity: 0111010110101010010101010111010
+Corrupted string: 0111010110101010010101010111011
+Error Location(s) is/are: 31
+Number of errors introduced: 1
+Error Location computed by receiver algorithm is: 31
+Introducing 10 2-bit errors
+Original String: 10101010101010101010111010
+Original String with Parity: 0111010110101010010101010111010
+Corrupted string: 0111010110101011010101010111011
+Error Location(s) is/are: 16 31
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 2 4 8 
+Original String: 10101010101010101010111010
+Original String with Parity: 0111010110101010010101010111010
+Corrupted string: 0111010110001010110101010111010
+Error Location(s) is/are: 11 17
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 8 16 
+Original String: 10101010101010101010111010
+Original String with Parity: 0111010110101010010101010111010
+Corrupted string: 0111010110100010011101010111010
+Error Location(s) is/are: 19 13
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101010101010111010
+Original String with Parity: 0111010110101010010101010111010
+Corrupted string: 0111010110001010010111010111010
+Error Location(s) is/are: 11 21
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101010101010111010
+Original String with Parity: 0111010110101010010101010111010
+Corrupted string: 0101010110101010000101010111010
+Error Location(s) is/are: 18 3
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 16 
+Original String: 10101010101010101010111010
+Original String with Parity: 0111010110101010010101010111010
+Corrupted string: 0111011110101010010101010111000
+Error Location(s) is/are: 30 7
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 8 16 
+Original String: 10101010101010101010111010
+Original String with Parity: 0111010110101010010101010111010
+Corrupted string: 0111010110100010011101010111010
+Error Location(s) is/are: 19 13
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101010101010111010
+Original String with Parity: 0111010110101010010101010111010
+Corrupted string: 0111010110101010011101010111011
+Error Location(s) is/are: 31 19
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 4 8 
+Original String: 10101010101010101010111010
+Original String with Parity: 0111010110101010010101010111010
+Corrupted string: 0111010110101011010101110111010
+Error Location(s) is/are: 16 23
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 2 4 
+Original String: 10101010101010101010111010
+Original String with Parity: 0111010110101010010101010111010
+Corrupted string: 0111010110101000011101010111010
+Error Location(s) is/are: 19 15
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 4 8 16 
+
+Original String: 10101010101110101010101010
+Original String with Parity: 0011010010101010110101010101010
+Corrupted string: 0011010010101010110101010101011
+Error Location(s) is/are: 31
+Number of errors introduced: 1
+Error Location computed by receiver algorithm is: 31
+Introducing 10 2-bit errors
+Original String: 10101010101110101010101010
+Original String with Parity: 0011010010101010110101010101010
+Corrupted string: 0011010010101011110101010101011
+Error Location(s) is/are: 16 31
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 2 4 8 
+Original String: 10101010101110101010101010
+Original String with Parity: 0011010010101010110101010101010
+Corrupted string: 0011010010001010010101010101010
+Error Location(s) is/are: 11 17
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 8 16 
+Original String: 10101010101110101010101010
+Original String with Parity: 0011010010101010110101010101010
+Corrupted string: 0011010010100010111101010101010
+Error Location(s) is/are: 19 13
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101110101010101010
+Original String with Parity: 0011010010101010110101010101010
+Corrupted string: 0011010010001010110111010101010
+Error Location(s) is/are: 11 21
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101110101010101010
+Original String with Parity: 0011010010101010110101010101010
+Corrupted string: 0001010010101010100101010101010
+Error Location(s) is/are: 18 3
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 16 
+Original String: 10101010101110101010101010
+Original String with Parity: 0011010010101010110101010101010
+Corrupted string: 0011011010101010110101010101000
+Error Location(s) is/are: 30 7
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 8 16 
+Original String: 10101010101110101010101010
+Original String with Parity: 0011010010101010110101010101010
+Corrupted string: 0011010010100010111101010101010
+Error Location(s) is/are: 19 13
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101110101010101010
+Original String with Parity: 0011010010101010110101010101010
+Corrupted string: 0011010010101010111101010101011
+Error Location(s) is/are: 31 19
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 4 8 
+Original String: 10101010101110101010101010
+Original String with Parity: 0011010010101010110101010101010
+Corrupted string: 0011010010101011110101110101010
+Error Location(s) is/are: 16 23
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 2 4 
+Original String: 10101010101110101010101010
+Original String with Parity: 0011010010101010110101010101010
+Corrupted string: 0011010010101000111101010101010
+Error Location(s) is/are: 19 15
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 4 8 16 
+
+Original String: 10101010101010111010101010
+Original String with Parity: 0010010010101010010111010101010
+Corrupted string: 0010010010101010010111010101011
+Error Location(s) is/are: 31
+Number of errors introduced: 1
+Error Location computed by receiver algorithm is: 31
+Introducing 10 2-bit errors
+Original String: 10101010101010111010101010
+Original String with Parity: 0010010010101010010111010101010
+Corrupted string: 0010010010101011010111010101011
+Error Location(s) is/are: 16 31
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 2 4 8 
+Original String: 10101010101010111010101010
+Original String with Parity: 0010010010101010010111010101010
+Corrupted string: 0010010010001010110111010101010
+Error Location(s) is/are: 11 17
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 8 16 
+Original String: 10101010101010111010101010
+Original String with Parity: 0010010010101010010111010101010
+Corrupted string: 0010010010100010011111010101010
+Error Location(s) is/are: 19 13
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101010111010101010
+Original String with Parity: 0010010010101010010111010101010
+Corrupted string: 0010010010001010010101010101010
+Error Location(s) is/are: 11 21
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101010111010101010
+Original String with Parity: 0010010010101010010111010101010
+Corrupted string: 0000010010101010000111010101010
+Error Location(s) is/are: 18 3
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 16 
+Original String: 10101010101010111010101010
+Original String with Parity: 0010010010101010010111010101010
+Corrupted string: 0010011010101010010111010101000
+Error Location(s) is/are: 30 7
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 8 16 
+Original String: 10101010101010111010101010
+Original String with Parity: 0010010010101010010111010101010
+Corrupted string: 0010010010100010011111010101010
+Error Location(s) is/are: 19 13
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101010111010101010
+Original String with Parity: 0010010010101010010111010101010
+Corrupted string: 0010010010101010011111010101011
+Error Location(s) is/are: 31 19
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 4 8 
+Original String: 10101010101010111010101010
+Original String with Parity: 0010010010101010010111010101010
+Corrupted string: 0010010010101011010111110101010
+Error Location(s) is/are: 16 23
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 2 4 
+Original String: 10101010101010111010101010
+Original String with Parity: 0010010010101010010111010101010
+Corrupted string: 0010010010101000011111010101010
+Error Location(s) is/are: 19 15
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 4 8 16 
+
+Original String: 10101010101010101010101010
+Original String with Parity: 1011010010101011010101010101010
+Corrupted string: 1011010010101011010101010101011
+Error Location(s) is/are: 31
+Number of errors introduced: 1
+Error Location computed by receiver algorithm is: 31
+Introducing 10 2-bit errors
+Original String: 10101010101010101010101010
+Original String with Parity: 1011010010101011010101010101010
+Corrupted string: 1011010010101010010101010101011
+Error Location(s) is/are: 16 31
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 2 4 8 
+Original String: 10101010101010101010101010
+Original String with Parity: 1011010010101011010101010101010
+Corrupted string: 1011010010001011110101010101010
+Error Location(s) is/are: 11 17
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 8 16 
+Original String: 10101010101010101010101010
+Original String with Parity: 1011010010101011010101010101010
+Corrupted string: 1011010010100011011101010101010
+Error Location(s) is/are: 19 13
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101010101010101010
+Original String with Parity: 1011010010101011010101010101010
+Corrupted string: 1011010010001011010111010101010
+Error Location(s) is/are: 11 21
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101010101010101010
+Original String with Parity: 1011010010101011010101010101010
+Corrupted string: 1001010010101011000101010101010
+Error Location(s) is/are: 18 3
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 16 
+Original String: 10101010101010101010101010
+Original String with Parity: 1011010010101011010101010101010
+Corrupted string: 1011011010101011010101010101000
+Error Location(s) is/are: 30 7
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 8 16 
+Original String: 10101010101010101010101010
+Original String with Parity: 1011010010101011010101010101010
+Corrupted string: 1011010010100011011101010101010
+Error Location(s) is/are: 19 13
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101010101010101010
+Original String with Parity: 1011010010101011010101010101010
+Corrupted string: 1011010010101011011101010101011
+Error Location(s) is/are: 31 19
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 4 8 
+Original String: 10101010101010101010101010
+Original String with Parity: 1011010010101011010101010101010
+Corrupted string: 1011010010101010010101110101010
+Error Location(s) is/are: 16 23
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 2 4 
+Original String: 10101010101010101010101010
+Original String with Parity: 1011010010101011010101010101010
+Corrupted string: 1011010010101001011101010101010
+Error Location(s) is/are: 19 15
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 4 8 16 
+
+Original String: 10101010101010101011101010
+Original String with Parity: 0011010110101010010101011101010
+Corrupted string: 0011010110101010010101011101011
+Error Location(s) is/are: 31
+Number of errors introduced: 1
+Error Location computed by receiver algorithm is: 31
+Introducing 10 2-bit errors
+Original String: 10101010101010101011101010
+Original String with Parity: 0011010110101010010101011101010
+Corrupted string: 0011010110101011010101011101011
+Error Location(s) is/are: 16 31
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 2 4 8 
+Original String: 10101010101010101011101010
+Original String with Parity: 0011010110101010010101011101010
+Corrupted string: 0011010110001010110101011101010
+Error Location(s) is/are: 11 17
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 8 16 
+Original String: 10101010101010101011101010
+Original String with Parity: 0011010110101010010101011101010
+Corrupted string: 0011010110100010011101011101010
+Error Location(s) is/are: 19 13
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101010101011101010
+Original String with Parity: 0011010110101010010101011101010
+Corrupted string: 0011010110001010010111011101010
+Error Location(s) is/are: 11 21
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101010101011101010
+Original String with Parity: 0011010110101010010101011101010
+Corrupted string: 0001010110101010000101011101010
+Error Location(s) is/are: 18 3
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 16 
+Original String: 10101010101010101011101010
+Original String with Parity: 0011010110101010010101011101010
+Corrupted string: 0011011110101010010101011101000
+Error Location(s) is/are: 30 7
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 8 16 
+Original String: 10101010101010101011101010
+Original String with Parity: 0011010110101010010101011101010
+Corrupted string: 0011010110100010011101011101010
+Error Location(s) is/are: 19 13
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101010101011101010
+Original String with Parity: 0011010110101010010101011101010
+Corrupted string: 0011010110101010011101011101011
+Error Location(s) is/are: 31 19
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 4 8 
+Original String: 10101010101010101011101010
+Original String with Parity: 0011010110101010010101011101010
+Corrupted string: 0011010110101011010101111101010
+Error Location(s) is/are: 16 23
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 2 4 
+Original String: 10101010101010101011101010
+Original String with Parity: 0011010110101010010101011101010
+Corrupted string: 0011010110101000011101011101010
+Error Location(s) is/are: 19 15
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 4 8 16 
+
+Original String: 10101010101010101010111010
+Original String with Parity: 0111010110101010010101010111010
+Corrupted string: 0111010110101010010101010111011
+Error Location(s) is/are: 31
+Number of errors introduced: 1
+Error Location computed by receiver algorithm is: 31
+Introducing 10 2-bit errors
+Original String: 10101010101010101010111010
+Original String with Parity: 0111010110101010010101010111010
+Corrupted string: 0111010110101011010101010111011
+Error Location(s) is/are: 16 31
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 2 4 8 
+Original String: 10101010101010101010111010
+Original String with Parity: 0111010110101010010101010111010
+Corrupted string: 0111010110001010110101010111010
+Error Location(s) is/are: 11 17
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 8 16 
+Original String: 10101010101010101010111010
+Original String with Parity: 0111010110101010010101010111010
+Corrupted string: 0111010110100010011101010111010
+Error Location(s) is/are: 19 13
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101010101010111010
+Original String with Parity: 0111010110101010010101010111010
+Corrupted string: 0111010110001010010111010111010
+Error Location(s) is/are: 11 21
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101010101010111010
+Original String with Parity: 0111010110101010010101010111010
+Corrupted string: 0101010110101010000101010111010
+Error Location(s) is/are: 18 3
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 16 
+Original String: 10101010101010101010111010
+Original String with Parity: 0111010110101010010101010111010
+Corrupted string: 0111011110101010010101010111000
+Error Location(s) is/are: 30 7
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 8 16 
+Original String: 10101010101010101010111010
+Original String with Parity: 0111010110101010010101010111010
+Corrupted string: 0111010110100010011101010111010
+Error Location(s) is/are: 19 13
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101010101010111010
+Original String with Parity: 0111010110101010010101010111010
+Corrupted string: 0111010110101010011101010111011
+Error Location(s) is/are: 31 19
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 4 8 
+Original String: 10101010101010101010111010
+Original String with Parity: 0111010110101010010101010111010
+Corrupted string: 0111010110101011010101110111010
+Error Location(s) is/are: 16 23
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 2 4 
+Original String: 10101010101010101010111010
+Original String with Parity: 0111010110101010010101010111010
+Corrupted string: 0111010110101000011101010111010
+Error Location(s) is/are: 19 15
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 4 8 16 
+
+Original String: 10101010101110101010101010
+Original String with Parity: 0011010010101010110101010101010
+Corrupted string: 0011010010101010110101010101011
+Error Location(s) is/are: 31
+Number of errors introduced: 1
+Error Location computed by receiver algorithm is: 31
+Introducing 10 2-bit errors
+Original String: 10101010101110101010101010
+Original String with Parity: 0011010010101010110101010101010
+Corrupted string: 0011010010101011110101010101011
+Error Location(s) is/are: 16 31
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 2 4 8 
+Original String: 10101010101110101010101010
+Original String with Parity: 0011010010101010110101010101010
+Corrupted string: 0011010010001010010101010101010
+Error Location(s) is/are: 11 17
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 8 16 
+Original String: 10101010101110101010101010
+Original String with Parity: 0011010010101010110101010101010
+Corrupted string: 0011010010100010111101010101010
+Error Location(s) is/are: 19 13
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101110101010101010
+Original String with Parity: 0011010010101010110101010101010
+Corrupted string: 0011010010001010110111010101010
+Error Location(s) is/are: 11 21
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101110101010101010
+Original String with Parity: 0011010010101010110101010101010
+Corrupted string: 0001010010101010100101010101010
+Error Location(s) is/are: 18 3
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 16 
+Original String: 10101010101110101010101010
+Original String with Parity: 0011010010101010110101010101010
+Corrupted string: 0011011010101010110101010101000
+Error Location(s) is/are: 30 7
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 8 16 
+Original String: 10101010101110101010101010
+Original String with Parity: 0011010010101010110101010101010
+Corrupted string: 0011010010100010111101010101010
+Error Location(s) is/are: 19 13
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101110101010101010
+Original String with Parity: 0011010010101010110101010101010
+Corrupted string: 0011010010101010111101010101011
+Error Location(s) is/are: 31 19
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 4 8 
+Original String: 10101010101110101010101010
+Original String with Parity: 0011010010101010110101010101010
+Corrupted string: 0011010010101011110101110101010
+Error Location(s) is/are: 16 23
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 2 4 
+Original String: 10101010101110101010101010
+Original String with Parity: 0011010010101010110101010101010
+Corrupted string: 0011010010101000111101010101010
+Error Location(s) is/are: 19 15
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 4 8 16 
+
+Original String: 10101010101010111010101010
+Original String with Parity: 0010010010101010010111010101010
+Corrupted string: 0010010010101010010111010101011
+Error Location(s) is/are: 31
+Number of errors introduced: 1
+Error Location computed by receiver algorithm is: 31
+Introducing 10 2-bit errors
+Original String: 10101010101010111010101010
+Original String with Parity: 0010010010101010010111010101010
+Corrupted string: 0010010010101011010111010101011
+Error Location(s) is/are: 16 31
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 2 4 8 
+Original String: 10101010101010111010101010
+Original String with Parity: 0010010010101010010111010101010
+Corrupted string: 0010010010001010110111010101010
+Error Location(s) is/are: 11 17
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 8 16 
+Original String: 10101010101010111010101010
+Original String with Parity: 0010010010101010010111010101010
+Corrupted string: 0010010010100010011111010101010
+Error Location(s) is/are: 19 13
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101010111010101010
+Original String with Parity: 0010010010101010010111010101010
+Corrupted string: 0010010010001010010101010101010
+Error Location(s) is/are: 11 21
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101010111010101010
+Original String with Parity: 0010010010101010010111010101010
+Corrupted string: 0000010010101010000111010101010
+Error Location(s) is/are: 18 3
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 16 
+Original String: 10101010101010111010101010
+Original String with Parity: 0010010010101010010111010101010
+Corrupted string: 0010011010101010010111010101000
+Error Location(s) is/are: 30 7
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 8 16 
+Original String: 10101010101010111010101010
+Original String with Parity: 0010010010101010010111010101010
+Corrupted string: 0010010010100010011111010101010
+Error Location(s) is/are: 19 13
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101010111010101010
+Original String with Parity: 0010010010101010010111010101010
+Corrupted string: 0010010010101010011111010101011
+Error Location(s) is/are: 31 19
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 4 8 
+Original String: 10101010101010111010101010
+Original String with Parity: 0010010010101010010111010101010
+Corrupted string: 0010010010101011010111110101010
+Error Location(s) is/are: 16 23
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 2 4 
+Original String: 10101010101010111010101010
+Original String with Parity: 0010010010101010010111010101010
+Corrupted string: 0010010010101000011111010101010
+Error Location(s) is/are: 19 15
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 4 8 16 
+
+Original String: 10101010101010101010101010
+Original String with Parity: 1011010010101011010101010101010
+Corrupted string: 1011010010101011010101010101011
+Error Location(s) is/are: 31
+Number of errors introduced: 1
+Error Location computed by receiver algorithm is: 31
+Introducing 10 2-bit errors
+Original String: 10101010101010101010101010
+Original String with Parity: 1011010010101011010101010101010
+Corrupted string: 1011010010101010010101010101011
+Error Location(s) is/are: 16 31
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 2 4 8 
+Original String: 10101010101010101010101010
+Original String with Parity: 1011010010101011010101010101010
+Corrupted string: 1011010010001011110101010101010
+Error Location(s) is/are: 11 17
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 8 16 
+Original String: 10101010101010101010101010
+Original String with Parity: 1011010010101011010101010101010
+Corrupted string: 1011010010100011011101010101010
+Error Location(s) is/are: 19 13
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101010101010101010
+Original String with Parity: 1011010010101011010101010101010
+Corrupted string: 1011010010001011010111010101010
+Error Location(s) is/are: 11 21
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101010101010101010
+Original String with Parity: 1011010010101011010101010101010
+Corrupted string: 1001010010101011000101010101010
+Error Location(s) is/are: 18 3
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 16 
+Original String: 10101010101010101010101010
+Original String with Parity: 1011010010101011010101010101010
+Corrupted string: 1011011010101011010101010101000
+Error Location(s) is/are: 30 7
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 8 16 
+Original String: 10101010101010101010101010
+Original String with Parity: 1011010010101011010101010101010
+Corrupted string: 1011010010100011011101010101010
+Error Location(s) is/are: 19 13
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101010101010101010
+Original String with Parity: 1011010010101011010101010101010
+Corrupted string: 1011010010101011011101010101011
+Error Location(s) is/are: 31 19
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 4 8 
+Original String: 10101010101010101010101010
+Original String with Parity: 1011010010101011010101010101010
+Corrupted string: 1011010010101010010101110101010
+Error Location(s) is/are: 16 23
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 2 4 
+Original String: 10101010101010101010101010
+Original String with Parity: 1011010010101011010101010101010
+Corrupted string: 1011010010101001011101010101010
+Error Location(s) is/are: 19 15
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 4 8 16 
+
+Original String: 10101010101010101011101010
+Original String with Parity: 0011010110101010010101011101010
+Corrupted string: 0011010110101010010101011101011
+Error Location(s) is/are: 31
+Number of errors introduced: 1
+Error Location computed by receiver algorithm is: 31
+Introducing 10 2-bit errors
+Original String: 10101010101010101011101010
+Original String with Parity: 0011010110101010010101011101010
+Corrupted string: 0011010110101011010101011101011
+Error Location(s) is/are: 16 31
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 2 4 8 
+Original String: 10101010101010101011101010
+Original String with Parity: 0011010110101010010101011101010
+Corrupted string: 0011010110001010110101011101010
+Error Location(s) is/are: 11 17
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 8 16 
+Original String: 10101010101010101011101010
+Original String with Parity: 0011010110101010010101011101010
+Corrupted string: 0011010110100010011101011101010
+Error Location(s) is/are: 19 13
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101010101011101010
+Original String with Parity: 0011010110101010010101011101010
+Corrupted string: 0011010110001010010111011101010
+Error Location(s) is/are: 11 21
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101010101011101010
+Original String with Parity: 0011010110101010010101011101010
+Corrupted string: 0001010110101010000101011101010
+Error Location(s) is/are: 18 3
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 16 
+Original String: 10101010101010101011101010
+Original String with Parity: 0011010110101010010101011101010
+Corrupted string: 0011011110101010010101011101000
+Error Location(s) is/are: 30 7
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 8 16 
+Original String: 10101010101010101011101010
+Original String with Parity: 0011010110101010010101011101010
+Corrupted string: 0011010110100010011101011101010
+Error Location(s) is/are: 19 13
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101010101011101010
+Original String with Parity: 0011010110101010010101011101010
+Corrupted string: 0011010110101010011101011101011
+Error Location(s) is/are: 31 19
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 4 8 
+Original String: 10101010101010101011101010
+Original String with Parity: 0011010110101010010101011101010
+Corrupted string: 0011010110101011010101111101010
+Error Location(s) is/are: 16 23
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 2 4 
+Original String: 10101010101010101011101010
+Original String with Parity: 0011010110101010010101011101010
+Corrupted string: 0011010110101000011101011101010
+Error Location(s) is/are: 19 15
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 4 8 16 
+
+Original String: 10101010101010101010111010
+Original String with Parity: 0111010110101010010101010111010
+Corrupted string: 0111010110101010010101010111011
+Error Location(s) is/are: 31
+Number of errors introduced: 1
+Error Location computed by receiver algorithm is: 31
+Introducing 10 2-bit errors
+Original String: 10101010101010101010111010
+Original String with Parity: 0111010110101010010101010111010
+Corrupted string: 0111010110101011010101010111011
+Error Location(s) is/are: 16 31
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 2 4 8 
+Original String: 10101010101010101010111010
+Original String with Parity: 0111010110101010010101010111010
+Corrupted string: 0111010110001010110101010111010
+Error Location(s) is/are: 11 17
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 8 16 
+Original String: 10101010101010101010111010
+Original String with Parity: 0111010110101010010101010111010
+Corrupted string: 0111010110100010011101010111010
+Error Location(s) is/are: 19 13
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101010101010111010
+Original String with Parity: 0111010110101010010101010111010
+Corrupted string: 0111010110001010010111010111010
+Error Location(s) is/are: 11 21
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101010101010111010
+Original String with Parity: 0111010110101010010101010111010
+Corrupted string: 0101010110101010000101010111010
+Error Location(s) is/are: 18 3
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 16 
+Original String: 10101010101010101010111010
+Original String with Parity: 0111010110101010010101010111010
+Corrupted string: 0111011110101010010101010111000
+Error Location(s) is/are: 30 7
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 8 16 
+Original String: 10101010101010101010111010
+Original String with Parity: 0111010110101010010101010111010
+Corrupted string: 0111010110100010011101010111010
+Error Location(s) is/are: 19 13
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101010101010111010
+Original String with Parity: 0111010110101010010101010111010
+Corrupted string: 0111010110101010011101010111011
+Error Location(s) is/are: 31 19
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 4 8 
+Original String: 10101010101010101010111010
+Original String with Parity: 0111010110101010010101010111010
+Corrupted string: 0111010110101011010101110111010
+Error Location(s) is/are: 16 23
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 2 4 
+Original String: 10101010101010101010111010
+Original String with Parity: 0111010110101010010101010111010
+Corrupted string: 0111010110101000011101010111010
+Error Location(s) is/are: 19 15
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 4 8 16 
+
+Original String: 10101010101110101010101010
+Original String with Parity: 0011010010101010110101010101010
+Corrupted string: 0011010010101010110101010101011
+Error Location(s) is/are: 31
+Number of errors introduced: 1
+Error Location computed by receiver algorithm is: 31
+Introducing 10 2-bit errors
+Original String: 10101010101110101010101010
+Original String with Parity: 0011010010101010110101010101010
+Corrupted string: 0011010010101011110101010101011
+Error Location(s) is/are: 16 31
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 2 4 8 
+Original String: 10101010101110101010101010
+Original String with Parity: 0011010010101010110101010101010
+Corrupted string: 0011010010001010010101010101010
+Error Location(s) is/are: 11 17
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 8 16 
+Original String: 10101010101110101010101010
+Original String with Parity: 0011010010101010110101010101010
+Corrupted string: 0011010010100010111101010101010
+Error Location(s) is/are: 19 13
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101110101010101010
+Original String with Parity: 0011010010101010110101010101010
+Corrupted string: 0011010010001010110111010101010
+Error Location(s) is/are: 11 21
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101110101010101010
+Original String with Parity: 0011010010101010110101010101010
+Corrupted string: 0001010010101010100101010101010
+Error Location(s) is/are: 18 3
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 16 
+Original String: 10101010101110101010101010
+Original String with Parity: 0011010010101010110101010101010
+Corrupted string: 0011011010101010110101010101000
+Error Location(s) is/are: 30 7
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 8 16 
+Original String: 10101010101110101010101010
+Original String with Parity: 0011010010101010110101010101010
+Corrupted string: 0011010010100010111101010101010
+Error Location(s) is/are: 19 13
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101110101010101010
+Original String with Parity: 0011010010101010110101010101010
+Corrupted string: 0011010010101010111101010101011
+Error Location(s) is/are: 31 19
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 4 8 
+Original String: 10101010101110101010101010
+Original String with Parity: 0011010010101010110101010101010
+Corrupted string: 0011010010101011110101110101010
+Error Location(s) is/are: 16 23
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 2 4 
+Original String: 10101010101110101010101010
+Original String with Parity: 0011010010101010110101010101010
+Corrupted string: 0011010010101000111101010101010
+Error Location(s) is/are: 19 15
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 4 8 16 
+
+Original String: 10101010101010111010101010
+Original String with Parity: 0010010010101010010111010101010
+Corrupted string: 0010010010101010010111010101011
+Error Location(s) is/are: 31
+Number of errors introduced: 1
+Error Location computed by receiver algorithm is: 31
+Introducing 10 2-bit errors
+Original String: 10101010101010111010101010
+Original String with Parity: 0010010010101010010111010101010
+Corrupted string: 0010010010101011010111010101011
+Error Location(s) is/are: 16 31
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 2 4 8 
+Original String: 10101010101010111010101010
+Original String with Parity: 0010010010101010010111010101010
+Corrupted string: 0010010010001010110111010101010
+Error Location(s) is/are: 11 17
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 8 16 
+Original String: 10101010101010111010101010
+Original String with Parity: 0010010010101010010111010101010
+Corrupted string: 0010010010100010011111010101010
+Error Location(s) is/are: 19 13
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101010111010101010
+Original String with Parity: 0010010010101010010111010101010
+Corrupted string: 0010010010001010010101010101010
+Error Location(s) is/are: 11 21
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101010111010101010
+Original String with Parity: 0010010010101010010111010101010
+Corrupted string: 0000010010101010000111010101010
+Error Location(s) is/are: 18 3
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 16 
+Original String: 10101010101010111010101010
+Original String with Parity: 0010010010101010010111010101010
+Corrupted string: 0010011010101010010111010101000
+Error Location(s) is/are: 30 7
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 8 16 
+Original String: 10101010101010111010101010
+Original String with Parity: 0010010010101010010111010101010
+Corrupted string: 0010010010100010011111010101010
+Error Location(s) is/are: 19 13
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101010111010101010
+Original String with Parity: 0010010010101010010111010101010
+Corrupted string: 0010010010101010011111010101011
+Error Location(s) is/are: 31 19
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 4 8 
+Original String: 10101010101010111010101010
+Original String with Parity: 0010010010101010010111010101010
+Corrupted string: 0010010010101011010111110101010
+Error Location(s) is/are: 16 23
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 2 4 
+Original String: 10101010101010111010101010
+Original String with Parity: 0010010010101010010111010101010
+Corrupted string: 0010010010101000011111010101010
+Error Location(s) is/are: 19 15
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 4 8 16 
+
+Original String: 10101010101010101010101010
+Original String with Parity: 1011010010101011010101010101010
+Corrupted string: 1011010010101011010101010101011
+Error Location(s) is/are: 31
+Number of errors introduced: 1
+Error Location computed by receiver algorithm is: 31
+Introducing 10 2-bit errors
+Original String: 10101010101010101010101010
+Original String with Parity: 1011010010101011010101010101010
+Corrupted string: 1011010010101010010101010101011
+Error Location(s) is/are: 16 31
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 2 4 8 
+Original String: 10101010101010101010101010
+Original String with Parity: 1011010010101011010101010101010
+Corrupted string: 1011010010001011110101010101010
+Error Location(s) is/are: 11 17
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 8 16 
+Original String: 10101010101010101010101010
+Original String with Parity: 1011010010101011010101010101010
+Corrupted string: 1011010010100011011101010101010
+Error Location(s) is/are: 19 13
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101010101010101010
+Original String with Parity: 1011010010101011010101010101010
+Corrupted string: 1011010010001011010111010101010
+Error Location(s) is/are: 11 21
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101010101010101010
+Original String with Parity: 1011010010101011010101010101010
+Corrupted string: 1001010010101011000101010101010
+Error Location(s) is/are: 18 3
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 16 
+Original String: 10101010101010101010101010
+Original String with Parity: 1011010010101011010101010101010
+Corrupted string: 1011011010101011010101010101000
+Error Location(s) is/are: 30 7
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 8 16 
+Original String: 10101010101010101010101010
+Original String with Parity: 1011010010101011010101010101010
+Corrupted string: 1011010010100011011101010101010
+Error Location(s) is/are: 19 13
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101010101010101010
+Original String with Parity: 1011010010101011010101010101010
+Corrupted string: 1011010010101011011101010101011
+Error Location(s) is/are: 31 19
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 4 8 
+Original String: 10101010101010101010101010
+Original String with Parity: 1011010010101011010101010101010
+Corrupted string: 1011010010101010010101110101010
+Error Location(s) is/are: 16 23
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 2 4 
+Original String: 10101010101010101010101010
+Original String with Parity: 1011010010101011010101010101010
+Corrupted string: 1011010010101001011101010101010
+Error Location(s) is/are: 19 15
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 4 8 16 
+
+Original String: 10101010101010101011101010
+Original String with Parity: 0011010110101010010101011101010
+Corrupted string: 0011010110101010010101011101011
+Error Location(s) is/are: 31
+Number of errors introduced: 1
+Error Location computed by receiver algorithm is: 31
+Introducing 10 2-bit errors
+Original String: 10101010101010101011101010
+Original String with Parity: 0011010110101010010101011101010
+Corrupted string: 0011010110101011010101011101011
+Error Location(s) is/are: 16 31
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 2 4 8 
+Original String: 10101010101010101011101010
+Original String with Parity: 0011010110101010010101011101010
+Corrupted string: 0011010110001010110101011101010
+Error Location(s) is/are: 11 17
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 8 16 
+Original String: 10101010101010101011101010
+Original String with Parity: 0011010110101010010101011101010
+Corrupted string: 0011010110100010011101011101010
+Error Location(s) is/are: 19 13
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101010101011101010
+Original String with Parity: 0011010110101010010101011101010
+Corrupted string: 0011010110001010010111011101010
+Error Location(s) is/are: 11 21
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101010101011101010
+Original String with Parity: 0011010110101010010101011101010
+Corrupted string: 0001010110101010000101011101010
+Error Location(s) is/are: 18 3
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 16 
+Original String: 10101010101010101011101010
+Original String with Parity: 0011010110101010010101011101010
+Corrupted string: 0011011110101010010101011101000
+Error Location(s) is/are: 30 7
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 8 16 
+Original String: 10101010101010101011101010
+Original String with Parity: 0011010110101010010101011101010
+Corrupted string: 0011010110100010011101011101010
+Error Location(s) is/are: 19 13
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101010101011101010
+Original String with Parity: 0011010110101010010101011101010
+Corrupted string: 0011010110101010011101011101011
+Error Location(s) is/are: 31 19
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 4 8 
+Original String: 10101010101010101011101010
+Original String with Parity: 0011010110101010010101011101010
+Corrupted string: 0011010110101011010101111101010
+Error Location(s) is/are: 16 23
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 2 4 
+Original String: 10101010101010101011101010
+Original String with Parity: 0011010110101010010101011101010
+Corrupted string: 0011010110101000011101011101010
+Error Location(s) is/are: 19 15
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 4 8 16 
+
+Original String: 10101010101010101010111010
+Original String with Parity: 0111010110101010010101010111010
+Corrupted string: 0111010110101010010101010111011
+Error Location(s) is/are: 31
+Number of errors introduced: 1
+Error Location computed by receiver algorithm is: 31
+Introducing 10 2-bit errors
+Original String: 10101010101010101010111010
+Original String with Parity: 0111010110101010010101010111010
+Corrupted string: 0111010110101011010101010111011
+Error Location(s) is/are: 16 31
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 2 4 8 
+Original String: 10101010101010101010111010
+Original String with Parity: 0111010110101010010101010111010
+Corrupted string: 0111010110001010110101010111010
+Error Location(s) is/are: 11 17
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 8 16 
+Original String: 10101010101010101010111010
+Original String with Parity: 0111010110101010010101010111010
+Corrupted string: 0111010110100010011101010111010
+Error Location(s) is/are: 19 13
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101010101010111010
+Original String with Parity: 0111010110101010010101010111010
+Corrupted string: 0111010110001010010111010111010
+Error Location(s) is/are: 11 21
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101010101010111010
+Original String with Parity: 0111010110101010010101010111010
+Corrupted string: 0101010110101010000101010111010
+Error Location(s) is/are: 18 3
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 16 
+Original String: 10101010101010101010111010
+Original String with Parity: 0111010110101010010101010111010
+Corrupted string: 0111011110101010010101010111000
+Error Location(s) is/are: 30 7
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 8 16 
+Original String: 10101010101010101010111010
+Original String with Parity: 0111010110101010010101010111010
+Corrupted string: 0111010110100010011101010111010
+Error Location(s) is/are: 19 13
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101010101010111010
+Original String with Parity: 0111010110101010010101010111010
+Corrupted string: 0111010110101010011101010111011
+Error Location(s) is/are: 31 19
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 4 8 
+Original String: 10101010101010101010111010
+Original String with Parity: 0111010110101010010101010111010
+Corrupted string: 0111010110101011010101110111010
+Error Location(s) is/are: 16 23
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 2 4 
+Original String: 10101010101010101010111010
+Original String with Parity: 0111010110101010010101010111010
+Corrupted string: 0111010110101000011101010111010
+Error Location(s) is/are: 19 15
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 4 8 16 
+
+Original String: 10101010101110101010101010
+Original String with Parity: 0011010010101010110101010101010
+Corrupted string: 0011010010101010110101010101011
+Error Location(s) is/are: 31
+Number of errors introduced: 1
+Error Location computed by receiver algorithm is: 31
+Introducing 10 2-bit errors
+Original String: 10101010101110101010101010
+Original String with Parity: 0011010010101010110101010101010
+Corrupted string: 0011010010101011110101010101011
+Error Location(s) is/are: 16 31
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 2 4 8 
+Original String: 10101010101110101010101010
+Original String with Parity: 0011010010101010110101010101010
+Corrupted string: 0011010010001010010101010101010
+Error Location(s) is/are: 11 17
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 8 16 
+Original String: 10101010101110101010101010
+Original String with Parity: 0011010010101010110101010101010
+Corrupted string: 0011010010100010111101010101010
+Error Location(s) is/are: 19 13
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101110101010101010
+Original String with Parity: 0011010010101010110101010101010
+Corrupted string: 0011010010001010110111010101010
+Error Location(s) is/are: 11 21
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101110101010101010
+Original String with Parity: 0011010010101010110101010101010
+Corrupted string: 0001010010101010100101010101010
+Error Location(s) is/are: 18 3
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 16 
+Original String: 10101010101110101010101010
+Original String with Parity: 0011010010101010110101010101010
+Corrupted string: 0011011010101010110101010101000
+Error Location(s) is/are: 30 7
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 8 16 
+Original String: 10101010101110101010101010
+Original String with Parity: 0011010010101010110101010101010
+Corrupted string: 0011010010100010111101010101010
+Error Location(s) is/are: 19 13
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101110101010101010
+Original String with Parity: 0011010010101010110101010101010
+Corrupted string: 0011010010101010111101010101011
+Error Location(s) is/are: 31 19
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 4 8 
+Original String: 10101010101110101010101010
+Original String with Parity: 0011010010101010110101010101010
+Corrupted string: 0011010010101011110101110101010
+Error Location(s) is/are: 16 23
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 2 4 
+Original String: 10101010101110101010101010
+Original String with Parity: 0011010010101010110101010101010
+Corrupted string: 0011010010101000111101010101010
+Error Location(s) is/are: 19 15
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 4 8 16 
+
+Original String: 10101010101010111010101010
+Original String with Parity: 0010010010101010010111010101010
+Corrupted string: 0010010010101010010111010101011
+Error Location(s) is/are: 31
+Number of errors introduced: 1
+Error Location computed by receiver algorithm is: 31
+Introducing 10 2-bit errors
+Original String: 10101010101010111010101010
+Original String with Parity: 0010010010101010010111010101010
+Corrupted string: 0010010010101011010111010101011
+Error Location(s) is/are: 16 31
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 2 4 8 
+Original String: 10101010101010111010101010
+Original String with Parity: 0010010010101010010111010101010
+Corrupted string: 0010010010001010110111010101010
+Error Location(s) is/are: 11 17
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 8 16 
+Original String: 10101010101010111010101010
+Original String with Parity: 0010010010101010010111010101010
+Corrupted string: 0010010010100010011111010101010
+Error Location(s) is/are: 19 13
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101010111010101010
+Original String with Parity: 0010010010101010010111010101010
+Corrupted string: 0010010010001010010101010101010
+Error Location(s) is/are: 11 21
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101010111010101010
+Original String with Parity: 0010010010101010010111010101010
+Corrupted string: 0000010010101010000111010101010
+Error Location(s) is/are: 18 3
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 16 
+Original String: 10101010101010111010101010
+Original String with Parity: 0010010010101010010111010101010
+Corrupted string: 0010011010101010010111010101000
+Error Location(s) is/are: 30 7
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 8 16 
+Original String: 10101010101010111010101010
+Original String with Parity: 0010010010101010010111010101010
+Corrupted string: 0010010010100010011111010101010
+Error Location(s) is/are: 19 13
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101010111010101010
+Original String with Parity: 0010010010101010010111010101010
+Corrupted string: 0010010010101010011111010101011
+Error Location(s) is/are: 31 19
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 4 8 
+Original String: 10101010101010111010101010
+Original String with Parity: 0010010010101010010111010101010
+Corrupted string: 0010010010101011010111110101010
+Error Location(s) is/are: 16 23
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 2 4 
+Original String: 10101010101010111010101010
+Original String with Parity: 0010010010101010010111010101010
+Corrupted string: 0010010010101000011111010101010
+Error Location(s) is/are: 19 15
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 4 8 16 
+
+Original String: 10101010101010101010101010
+Original String with Parity: 1011010010101011010101010101010
+Corrupted string: 1011010010101011010101010101011
+Error Location(s) is/are: 31
+Number of errors introduced: 1
+Error Location computed by receiver algorithm is: 31
+Introducing 10 2-bit errors
+Original String: 10101010101010101010101010
+Original String with Parity: 1011010010101011010101010101010
+Corrupted string: 1011010010101010010101010101011
+Error Location(s) is/are: 16 31
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 2 4 8 
+Original String: 10101010101010101010101010
+Original String with Parity: 1011010010101011010101010101010
+Corrupted string: 1011010010001011110101010101010
+Error Location(s) is/are: 11 17
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 8 16 
+Original String: 10101010101010101010101010
+Original String with Parity: 1011010010101011010101010101010
+Corrupted string: 1011010010100011011101010101010
+Error Location(s) is/are: 19 13
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101010101010101010
+Original String with Parity: 1011010010101011010101010101010
+Corrupted string: 1011010010001011010111010101010
+Error Location(s) is/are: 11 21
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101010101010101010
+Original String with Parity: 1011010010101011010101010101010
+Corrupted string: 1001010010101011000101010101010
+Error Location(s) is/are: 18 3
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 16 
+Original String: 10101010101010101010101010
+Original String with Parity: 1011010010101011010101010101010
+Corrupted string: 1011011010101011010101010101000
+Error Location(s) is/are: 30 7
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 8 16 
+Original String: 10101010101010101010101010
+Original String with Parity: 1011010010101011010101010101010
+Corrupted string: 1011010010100011011101010101010
+Error Location(s) is/are: 19 13
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101010101010101010
+Original String with Parity: 1011010010101011010101010101010
+Corrupted string: 1011010010101011011101010101011
+Error Location(s) is/are: 31 19
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 4 8 
+Original String: 10101010101010101010101010
+Original String with Parity: 1011010010101011010101010101010
+Corrupted string: 1011010010101010010101110101010
+Error Location(s) is/are: 16 23
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 2 4 
+Original String: 10101010101010101010101010
+Original String with Parity: 1011010010101011010101010101010
+Corrupted string: 1011010010101001011101010101010
+Error Location(s) is/are: 19 15
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 4 8 16 
+
+Original String: 10101010101010101011101010
+Original String with Parity: 0011010110101010010101011101010
+Corrupted string: 0011010110101010010101011101011
+Error Location(s) is/are: 31
+Number of errors introduced: 1
+Error Location computed by receiver algorithm is: 31
+Introducing 10 2-bit errors
+Original String: 10101010101010101011101010
+Original String with Parity: 0011010110101010010101011101010
+Corrupted string: 0011010110101011010101011101011
+Error Location(s) is/are: 16 31
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 2 4 8 
+Original String: 10101010101010101011101010
+Original String with Parity: 0011010110101010010101011101010
+Corrupted string: 0011010110001010110101011101010
+Error Location(s) is/are: 11 17
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 8 16 
+Original String: 10101010101010101011101010
+Original String with Parity: 0011010110101010010101011101010
+Corrupted string: 0011010110100010011101011101010
+Error Location(s) is/are: 19 13
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101010101011101010
+Original String with Parity: 0011010110101010010101011101010
+Corrupted string: 0011010110001010010111011101010
+Error Location(s) is/are: 11 21
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101010101011101010
+Original String with Parity: 0011010110101010010101011101010
+Corrupted string: 0001010110101010000101011101010
+Error Location(s) is/are: 18 3
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 16 
+Original String: 10101010101010101011101010
+Original String with Parity: 0011010110101010010101011101010
+Corrupted string: 0011011110101010010101011101000
+Error Location(s) is/are: 30 7
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 8 16 
+Original String: 10101010101010101011101010
+Original String with Parity: 0011010110101010010101011101010
+Corrupted string: 0011010110100010011101011101010
+Error Location(s) is/are: 19 13
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101010101011101010
+Original String with Parity: 0011010110101010010101011101010
+Corrupted string: 0011010110101010011101011101011
+Error Location(s) is/are: 31 19
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 4 8 
+Original String: 10101010101010101011101010
+Original String with Parity: 0011010110101010010101011101010
+Corrupted string: 0011010110101011010101111101010
+Error Location(s) is/are: 16 23
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 2 4 
+Original String: 10101010101010101011101010
+Original String with Parity: 0011010110101010010101011101010
+Corrupted string: 0011010110101000011101011101010
+Error Location(s) is/are: 19 15
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 4 8 16 
+
+Original String: 10101010101010101010111010
+Original String with Parity: 0111010110101010010101010111010
+Corrupted string: 0111010110101010010101010111011
+Error Location(s) is/are: 31
+Number of errors introduced: 1
+Error Location computed by receiver algorithm is: 31
+Introducing 10 2-bit errors
+Original String: 10101010101010101010111010
+Original String with Parity: 0111010110101010010101010111010
+Corrupted string: 0111010110101011010101010111011
+Error Location(s) is/are: 16 31
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 2 4 8 
+Original String: 10101010101010101010111010
+Original String with Parity: 0111010110101010010101010111010
+Corrupted string: 0111010110001010110101010111010
+Error Location(s) is/are: 11 17
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 8 16 
+Original String: 10101010101010101010111010
+Original String with Parity: 0111010110101010010101010111010
+Corrupted string: 0111010110100010011101010111010
+Error Location(s) is/are: 19 13
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101010101010111010
+Original String with Parity: 0111010110101010010101010111010
+Corrupted string: 0111010110001010010111010111010
+Error Location(s) is/are: 11 21
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101010101010111010
+Original String with Parity: 0111010110101010010101010111010
+Corrupted string: 0101010110101010000101010111010
+Error Location(s) is/are: 18 3
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 16 
+Original String: 10101010101010101010111010
+Original String with Parity: 0111010110101010010101010111010
+Corrupted string: 0111011110101010010101010111000
+Error Location(s) is/are: 30 7
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 8 16 
+Original String: 10101010101010101010111010
+Original String with Parity: 0111010110101010010101010111010
+Corrupted string: 0111010110100010011101010111010
+Error Location(s) is/are: 19 13
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101010101010111010
+Original String with Parity: 0111010110101010010101010111010
+Corrupted string: 0111010110101010011101010111011
+Error Location(s) is/are: 31 19
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 4 8 
+Original String: 10101010101010101010111010
+Original String with Parity: 0111010110101010010101010111010
+Corrupted string: 0111010110101011010101110111010
+Error Location(s) is/are: 16 23
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 2 4 
+Original String: 10101010101010101010111010
+Original String with Parity: 0111010110101010010101010111010
+Corrupted string: 0111010110101000011101010111010
+Error Location(s) is/are: 19 15
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 4 8 16 
+
+Original String: 10101010101110101010101010
+Original String with Parity: 0011010010101010110101010101010
+Corrupted string: 0011010010101010110101010101011
+Error Location(s) is/are: 31
+Number of errors introduced: 1
+Error Location computed by receiver algorithm is: 31
+Introducing 10 2-bit errors
+Original String: 10101010101110101010101010
+Original String with Parity: 0011010010101010110101010101010
+Corrupted string: 0011010010101011110101010101011
+Error Location(s) is/are: 16 31
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 2 4 8 
+Original String: 10101010101110101010101010
+Original String with Parity: 0011010010101010110101010101010
+Corrupted string: 0011010010001010010101010101010
+Error Location(s) is/are: 11 17
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 8 16 
+Original String: 10101010101110101010101010
+Original String with Parity: 0011010010101010110101010101010
+Corrupted string: 0011010010100010111101010101010
+Error Location(s) is/are: 19 13
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101110101010101010
+Original String with Parity: 0011010010101010110101010101010
+Corrupted string: 0011010010001010110111010101010
+Error Location(s) is/are: 11 21
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101110101010101010
+Original String with Parity: 0011010010101010110101010101010
+Corrupted string: 0001010010101010100101010101010
+Error Location(s) is/are: 18 3
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 16 
+Original String: 10101010101110101010101010
+Original String with Parity: 0011010010101010110101010101010
+Corrupted string: 0011011010101010110101010101000
+Error Location(s) is/are: 30 7
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 8 16 
+Original String: 10101010101110101010101010
+Original String with Parity: 0011010010101010110101010101010
+Corrupted string: 0011010010100010111101010101010
+Error Location(s) is/are: 19 13
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101110101010101010
+Original String with Parity: 0011010010101010110101010101010
+Corrupted string: 0011010010101010111101010101011
+Error Location(s) is/are: 31 19
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 4 8 
+Original String: 10101010101110101010101010
+Original String with Parity: 0011010010101010110101010101010
+Corrupted string: 0011010010101011110101110101010
+Error Location(s) is/are: 16 23
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 2 4 
+Original String: 10101010101110101010101010
+Original String with Parity: 0011010010101010110101010101010
+Corrupted string: 0011010010101000111101010101010
+Error Location(s) is/are: 19 15
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 4 8 16 
+
+Original String: 10101010101010111010101010
+Original String with Parity: 0010010010101010010111010101010
+Corrupted string: 0010010010101010010111010101011
+Error Location(s) is/are: 31
+Number of errors introduced: 1
+Error Location computed by receiver algorithm is: 31
+Introducing 10 2-bit errors
+Original String: 10101010101010111010101010
+Original String with Parity: 0010010010101010010111010101010
+Corrupted string: 0010010010101011010111010101011
+Error Location(s) is/are: 16 31
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 2 4 8 
+Original String: 10101010101010111010101010
+Original String with Parity: 0010010010101010010111010101010
+Corrupted string: 0010010010001010110111010101010
+Error Location(s) is/are: 11 17
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 8 16 
+Original String: 10101010101010111010101010
+Original String with Parity: 0010010010101010010111010101010
+Corrupted string: 0010010010100010011111010101010
+Error Location(s) is/are: 19 13
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101010111010101010
+Original String with Parity: 0010010010101010010111010101010
+Corrupted string: 0010010010001010010101010101010
+Error Location(s) is/are: 11 21
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101010111010101010
+Original String with Parity: 0010010010101010010111010101010
+Corrupted string: 0000010010101010000111010101010
+Error Location(s) is/are: 18 3
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 16 
+Original String: 10101010101010111010101010
+Original String with Parity: 0010010010101010010111010101010
+Corrupted string: 0010011010101010010111010101000
+Error Location(s) is/are: 30 7
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 8 16 
+Original String: 10101010101010111010101010
+Original String with Parity: 0010010010101010010111010101010
+Corrupted string: 0010010010100010011111010101010
+Error Location(s) is/are: 19 13
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101010111010101010
+Original String with Parity: 0010010010101010010111010101010
+Corrupted string: 0010010010101010011111010101011
+Error Location(s) is/are: 31 19
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 4 8 
+Original String: 10101010101010111010101010
+Original String with Parity: 0010010010101010010111010101010
+Corrupted string: 0010010010101011010111110101010
+Error Location(s) is/are: 16 23
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 2 4 
+Original String: 10101010101010111010101010
+Original String with Parity: 0010010010101010010111010101010
+Corrupted string: 0010010010101000011111010101010
+Error Location(s) is/are: 19 15
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 4 8 16 
+
+Original String: 10101010101010101010101010
+Original String with Parity: 1011010010101011010101010101010
+Corrupted string: 1011010010101011010101010101011
+Error Location(s) is/are: 31
+Number of errors introduced: 1
+Error Location computed by receiver algorithm is: 31
+Introducing 10 2-bit errors
+Original String: 10101010101010101010101010
+Original String with Parity: 1011010010101011010101010101010
+Corrupted string: 1011010010101010010101010101011
+Error Location(s) is/are: 16 31
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 2 4 8 
+Original String: 10101010101010101010101010
+Original String with Parity: 1011010010101011010101010101010
+Corrupted string: 1011010010001011110101010101010
+Error Location(s) is/are: 11 17
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 8 16 
+Original String: 10101010101010101010101010
+Original String with Parity: 1011010010101011010101010101010
+Corrupted string: 1011010010100011011101010101010
+Error Location(s) is/are: 19 13
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101010101010101010
+Original String with Parity: 1011010010101011010101010101010
+Corrupted string: 1011010010001011010111010101010
+Error Location(s) is/are: 11 21
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101010101010101010
+Original String with Parity: 1011010010101011010101010101010
+Corrupted string: 1001010010101011000101010101010
+Error Location(s) is/are: 18 3
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 16 
+Original String: 10101010101010101010101010
+Original String with Parity: 1011010010101011010101010101010
+Corrupted string: 1011011010101011010101010101000
+Error Location(s) is/are: 30 7
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 8 16 
+Original String: 10101010101010101010101010
+Original String with Parity: 1011010010101011010101010101010
+Corrupted string: 1011010010100011011101010101010
+Error Location(s) is/are: 19 13
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101010101010101010
+Original String with Parity: 1011010010101011010101010101010
+Corrupted string: 1011010010101011011101010101011
+Error Location(s) is/are: 31 19
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 4 8 
+Original String: 10101010101010101010101010
+Original String with Parity: 1011010010101011010101010101010
+Corrupted string: 1011010010101010010101110101010
+Error Location(s) is/are: 16 23
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 2 4 
+Original String: 10101010101010101010101010
+Original String with Parity: 1011010010101011010101010101010
+Corrupted string: 1011010010101001011101010101010
+Error Location(s) is/are: 19 15
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 4 8 16 
+
+Original String: 10101010101010101011101010
+Original String with Parity: 0011010110101010010101011101010
+Corrupted string: 0011010110101010010101011101011
+Error Location(s) is/are: 31
+Number of errors introduced: 1
+Error Location computed by receiver algorithm is: 31
+Introducing 10 2-bit errors
+Original String: 10101010101010101011101010
+Original String with Parity: 0011010110101010010101011101010
+Corrupted string: 0011010110101011010101011101011
+Error Location(s) is/are: 16 31
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 2 4 8 
+Original String: 10101010101010101011101010
+Original String with Parity: 0011010110101010010101011101010
+Corrupted string: 0011010110001010110101011101010
+Error Location(s) is/are: 11 17
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 8 16 
+Original String: 10101010101010101011101010
+Original String with Parity: 0011010110101010010101011101010
+Corrupted string: 0011010110100010011101011101010
+Error Location(s) is/are: 19 13
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101010101011101010
+Original String with Parity: 0011010110101010010101011101010
+Corrupted string: 0011010110001010010111011101010
+Error Location(s) is/are: 11 21
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101010101011101010
+Original String with Parity: 0011010110101010010101011101010
+Corrupted string: 0001010110101010000101011101010
+Error Location(s) is/are: 18 3
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 16 
+Original String: 10101010101010101011101010
+Original String with Parity: 0011010110101010010101011101010
+Corrupted string: 0011011110101010010101011101000
+Error Location(s) is/are: 30 7
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 8 16 
+Original String: 10101010101010101011101010
+Original String with Parity: 0011010110101010010101011101010
+Corrupted string: 0011010110100010011101011101010
+Error Location(s) is/are: 19 13
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101010101011101010
+Original String with Parity: 0011010110101010010101011101010
+Corrupted string: 0011010110101010011101011101011
+Error Location(s) is/are: 31 19
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 4 8 
+Original String: 10101010101010101011101010
+Original String with Parity: 0011010110101010010101011101010
+Corrupted string: 0011010110101011010101111101010
+Error Location(s) is/are: 16 23
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 2 4 
+Original String: 10101010101010101011101010
+Original String with Parity: 0011010110101010010101011101010
+Corrupted string: 0011010110101000011101011101010
+Error Location(s) is/are: 19 15
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 4 8 16 
+
+Original String: 10101010101010101010111010
+Original String with Parity: 0111010110101010010101010111010
+Corrupted string: 0111010110101010010101010111011
+Error Location(s) is/are: 31
+Number of errors introduced: 1
+Error Location computed by receiver algorithm is: 31
+Introducing 10 2-bit errors
+Original String: 10101010101010101010111010
+Original String with Parity: 0111010110101010010101010111010
+Corrupted string: 0111010110101011010101010111011
+Error Location(s) is/are: 16 31
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 2 4 8 
+Original String: 10101010101010101010111010
+Original String with Parity: 0111010110101010010101010111010
+Corrupted string: 0111010110001010110101010111010
+Error Location(s) is/are: 11 17
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 8 16 
+Original String: 10101010101010101010111010
+Original String with Parity: 0111010110101010010101010111010
+Corrupted string: 0111010110100010011101010111010
+Error Location(s) is/are: 19 13
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101010101010111010
+Original String with Parity: 0111010110101010010101010111010
+Corrupted string: 0111010110001010010111010111010
+Error Location(s) is/are: 11 21
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101010101010111010
+Original String with Parity: 0111010110101010010101010111010
+Corrupted string: 0101010110101010000101010111010
+Error Location(s) is/are: 18 3
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 16 
+Original String: 10101010101010101010111010
+Original String with Parity: 0111010110101010010101010111010
+Corrupted string: 0111011110101010010101010111000
+Error Location(s) is/are: 30 7
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 8 16 
+Original String: 10101010101010101010111010
+Original String with Parity: 0111010110101010010101010111010
+Corrupted string: 0111010110100010011101010111010
+Error Location(s) is/are: 19 13
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101010101010111010
+Original String with Parity: 0111010110101010010101010111010
+Corrupted string: 0111010110101010011101010111011
+Error Location(s) is/are: 31 19
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 4 8 
+Original String: 10101010101010101010111010
+Original String with Parity: 0111010110101010010101010111010
+Corrupted string: 0111010110101011010101110111010
+Error Location(s) is/are: 16 23
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 2 4 
+Original String: 10101010101010101010111010
+Original String with Parity: 0111010110101010010101010111010
+Corrupted string: 0111010110101000011101010111010
+Error Location(s) is/are: 19 15
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 4 8 16 
+
+Original String: 10101010101110101010101010
+Original String with Parity: 0011010010101010110101010101010
+Corrupted string: 0011010010101010110101010101011
+Error Location(s) is/are: 31
+Number of errors introduced: 1
+Error Location computed by receiver algorithm is: 31
+Introducing 10 2-bit errors
+Original String: 10101010101110101010101010
+Original String with Parity: 0011010010101010110101010101010
+Corrupted string: 0011010010101011110101010101011
+Error Location(s) is/are: 16 31
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 2 4 8 
+Original String: 10101010101110101010101010
+Original String with Parity: 0011010010101010110101010101010
+Corrupted string: 0011010010001010010101010101010
+Error Location(s) is/are: 11 17
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 8 16 
+Original String: 10101010101110101010101010
+Original String with Parity: 0011010010101010110101010101010
+Corrupted string: 0011010010100010111101010101010
+Error Location(s) is/are: 19 13
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101110101010101010
+Original String with Parity: 0011010010101010110101010101010
+Corrupted string: 0011010010001010110111010101010
+Error Location(s) is/are: 11 21
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101110101010101010
+Original String with Parity: 0011010010101010110101010101010
+Corrupted string: 0001010010101010100101010101010
+Error Location(s) is/are: 18 3
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 16 
+Original String: 10101010101110101010101010
+Original String with Parity: 0011010010101010110101010101010
+Corrupted string: 0011011010101010110101010101000
+Error Location(s) is/are: 30 7
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 8 16 
+Original String: 10101010101110101010101010
+Original String with Parity: 0011010010101010110101010101010
+Corrupted string: 0011010010100010111101010101010
+Error Location(s) is/are: 19 13
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101110101010101010
+Original String with Parity: 0011010010101010110101010101010
+Corrupted string: 0011010010101010111101010101011
+Error Location(s) is/are: 31 19
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 4 8 
+Original String: 10101010101110101010101010
+Original String with Parity: 0011010010101010110101010101010
+Corrupted string: 0011010010101011110101110101010
+Error Location(s) is/are: 16 23
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 2 4 
+Original String: 10101010101110101010101010
+Original String with Parity: 0011010010101010110101010101010
+Corrupted string: 0011010010101000111101010101010
+Error Location(s) is/are: 19 15
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 4 8 16 
+
+Original String: 10101010101010111010101010
+Original String with Parity: 0010010010101010010111010101010
+Corrupted string: 0010010010101010010111010101011
+Error Location(s) is/are: 31
+Number of errors introduced: 1
+Error Location computed by receiver algorithm is: 31
+Introducing 10 2-bit errors
+Original String: 10101010101010111010101010
+Original String with Parity: 0010010010101010010111010101010
+Corrupted string: 0010010010101011010111010101011
+Error Location(s) is/are: 16 31
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 2 4 8 
+Original String: 10101010101010111010101010
+Original String with Parity: 0010010010101010010111010101010
+Corrupted string: 0010010010001010110111010101010
+Error Location(s) is/are: 11 17
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 8 16 
+Original String: 10101010101010111010101010
+Original String with Parity: 0010010010101010010111010101010
+Corrupted string: 0010010010100010011111010101010
+Error Location(s) is/are: 19 13
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101010111010101010
+Original String with Parity: 0010010010101010010111010101010
+Corrupted string: 0010010010001010010101010101010
+Error Location(s) is/are: 11 21
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101010111010101010
+Original String with Parity: 0010010010101010010111010101010
+Corrupted string: 0000010010101010000111010101010
+Error Location(s) is/are: 18 3
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 16 
+Original String: 10101010101010111010101010
+Original String with Parity: 0010010010101010010111010101010
+Corrupted string: 0010011010101010010111010101000
+Error Location(s) is/are: 30 7
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 8 16 
+Original String: 10101010101010111010101010
+Original String with Parity: 0010010010101010010111010101010
+Corrupted string: 0010010010100010011111010101010
+Error Location(s) is/are: 19 13
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101010111010101010
+Original String with Parity: 0010010010101010010111010101010
+Corrupted string: 0010010010101010011111010101011
+Error Location(s) is/are: 31 19
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 4 8 
+Original String: 10101010101010111010101010
+Original String with Parity: 0010010010101010010111010101010
+Corrupted string: 0010010010101011010111110101010
+Error Location(s) is/are: 16 23
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 2 4 
+Original String: 10101010101010111010101010
+Original String with Parity: 0010010010101010010111010101010
+Corrupted string: 0010010010101000011111010101010
+Error Location(s) is/are: 19 15
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 4 8 16 
+
+Original String: 10101010101010101010101010
+Original String with Parity: 1011010010101011010101010101010
+Corrupted string: 1011010010101011010101010101011
+Error Location(s) is/are: 31
+Number of errors introduced: 1
+Error Location computed by receiver algorithm is: 31
+Introducing 10 2-bit errors
+Original String: 10101010101010101010101010
+Original String with Parity: 1011010010101011010101010101010
+Corrupted string: 1011010010101010010101010101011
+Error Location(s) is/are: 16 31
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 2 4 8 
+Original String: 10101010101010101010101010
+Original String with Parity: 1011010010101011010101010101010
+Corrupted string: 1011010010001011110101010101010
+Error Location(s) is/are: 11 17
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 8 16 
+Original String: 10101010101010101010101010
+Original String with Parity: 1011010010101011010101010101010
+Corrupted string: 1011010010100011011101010101010
+Error Location(s) is/are: 19 13
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101010101010101010
+Original String with Parity: 1011010010101011010101010101010
+Corrupted string: 1011010010001011010111010101010
+Error Location(s) is/are: 11 21
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101010101010101010
+Original String with Parity: 1011010010101011010101010101010
+Corrupted string: 1001010010101011000101010101010
+Error Location(s) is/are: 18 3
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 16 
+Original String: 10101010101010101010101010
+Original String with Parity: 1011010010101011010101010101010
+Corrupted string: 1011011010101011010101010101000
+Error Location(s) is/are: 30 7
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 8 16 
+Original String: 10101010101010101010101010
+Original String with Parity: 1011010010101011010101010101010
+Corrupted string: 1011010010100011011101010101010
+Error Location(s) is/are: 19 13
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101010101010101010
+Original String with Parity: 1011010010101011010101010101010
+Corrupted string: 1011010010101011011101010101011
+Error Location(s) is/are: 31 19
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 4 8 
+Original String: 10101010101010101010101010
+Original String with Parity: 1011010010101011010101010101010
+Corrupted string: 1011010010101010010101110101010
+Error Location(s) is/are: 16 23
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 2 4 
+Original String: 10101010101010101010101010
+Original String with Parity: 1011010010101011010101010101010
+Corrupted string: 1011010010101001011101010101010
+Error Location(s) is/are: 19 15
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 4 8 16 
+
+Original String: 10101010101010101011101010
+Original String with Parity: 0011010110101010010101011101010
+Corrupted string: 0011010110101010010101011101011
+Error Location(s) is/are: 31
+Number of errors introduced: 1
+Error Location computed by receiver algorithm is: 31
+Introducing 10 2-bit errors
+Original String: 10101010101010101011101010
+Original String with Parity: 0011010110101010010101011101010
+Corrupted string: 0011010110101011010101011101011
+Error Location(s) is/are: 16 31
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 2 4 8 
+Original String: 10101010101010101011101010
+Original String with Parity: 0011010110101010010101011101010
+Corrupted string: 0011010110001010110101011101010
+Error Location(s) is/are: 11 17
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 8 16 
+Original String: 10101010101010101011101010
+Original String with Parity: 0011010110101010010101011101010
+Corrupted string: 0011010110100010011101011101010
+Error Location(s) is/are: 19 13
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101010101011101010
+Original String with Parity: 0011010110101010010101011101010
+Corrupted string: 0011010110001010010111011101010
+Error Location(s) is/are: 11 21
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101010101011101010
+Original String with Parity: 0011010110101010010101011101010
+Corrupted string: 0001010110101010000101011101010
+Error Location(s) is/are: 18 3
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 16 
+Original String: 10101010101010101011101010
+Original String with Parity: 0011010110101010010101011101010
+Corrupted string: 0011011110101010010101011101000
+Error Location(s) is/are: 30 7
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 8 16 
+Original String: 10101010101010101011101010
+Original String with Parity: 0011010110101010010101011101010
+Corrupted string: 0011010110100010011101011101010
+Error Location(s) is/are: 19 13
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101010101011101010
+Original String with Parity: 0011010110101010010101011101010
+Corrupted string: 0011010110101010011101011101011
+Error Location(s) is/are: 31 19
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 4 8 
+Original String: 10101010101010101011101010
+Original String with Parity: 0011010110101010010101011101010
+Corrupted string: 0011010110101011010101111101010
+Error Location(s) is/are: 16 23
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 2 4 
+Original String: 10101010101010101011101010
+Original String with Parity: 0011010110101010010101011101010
+Corrupted string: 0011010110101000011101011101010
+Error Location(s) is/are: 19 15
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 4 8 16 
+
+Original String: 10101010101010101010111010
+Original String with Parity: 0111010110101010010101010111010
+Corrupted string: 0111010110101010010101010111011
+Error Location(s) is/are: 31
+Number of errors introduced: 1
+Error Location computed by receiver algorithm is: 31
+Introducing 10 2-bit errors
+Original String: 10101010101010101010111010
+Original String with Parity: 0111010110101010010101010111010
+Corrupted string: 0111010110101011010101010111011
+Error Location(s) is/are: 16 31
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 2 4 8 
+Original String: 10101010101010101010111010
+Original String with Parity: 0111010110101010010101010111010
+Corrupted string: 0111010110001010110101010111010
+Error Location(s) is/are: 11 17
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 8 16 
+Original String: 10101010101010101010111010
+Original String with Parity: 0111010110101010010101010111010
+Corrupted string: 0111010110100010011101010111010
+Error Location(s) is/are: 19 13
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101010101010111010
+Original String with Parity: 0111010110101010010101010111010
+Corrupted string: 0111010110001010010111010111010
+Error Location(s) is/are: 11 21
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101010101010111010
+Original String with Parity: 0111010110101010010101010111010
+Corrupted string: 0101010110101010000101010111010
+Error Location(s) is/are: 18 3
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 16 
+Original String: 10101010101010101010111010
+Original String with Parity: 0111010110101010010101010111010
+Corrupted string: 0111011110101010010101010111000
+Error Location(s) is/are: 30 7
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 8 16 
+Original String: 10101010101010101010111010
+Original String with Parity: 0111010110101010010101010111010
+Corrupted string: 0111010110100010011101010111010
+Error Location(s) is/are: 19 13
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101010101010111010
+Original String with Parity: 0111010110101010010101010111010
+Corrupted string: 0111010110101010011101010111011
+Error Location(s) is/are: 31 19
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 4 8 
+Original String: 10101010101010101010111010
+Original String with Parity: 0111010110101010010101010111010
+Corrupted string: 0111010110101011010101110111010
+Error Location(s) is/are: 16 23
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 2 4 
+Original String: 10101010101010101010111010
+Original String with Parity: 0111010110101010010101010111010
+Corrupted string: 0111010110101000011101010111010
+Error Location(s) is/are: 19 15
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 4 8 16 
+
+Original String: 10101010101110101010101010
+Original String with Parity: 0011010010101010110101010101010
+Corrupted string: 0011010010101010110101010101011
+Error Location(s) is/are: 31
+Number of errors introduced: 1
+Error Location computed by receiver algorithm is: 31
+Introducing 10 2-bit errors
+Original String: 10101010101110101010101010
+Original String with Parity: 0011010010101010110101010101010
+Corrupted string: 0011010010101011110101010101011
+Error Location(s) is/are: 16 31
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 2 4 8 
+Original String: 10101010101110101010101010
+Original String with Parity: 0011010010101010110101010101010
+Corrupted string: 0011010010001010010101010101010
+Error Location(s) is/are: 11 17
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 8 16 
+Original String: 10101010101110101010101010
+Original String with Parity: 0011010010101010110101010101010
+Corrupted string: 0011010010100010111101010101010
+Error Location(s) is/are: 19 13
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101110101010101010
+Original String with Parity: 0011010010101010110101010101010
+Corrupted string: 0011010010001010110111010101010
+Error Location(s) is/are: 11 21
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101110101010101010
+Original String with Parity: 0011010010101010110101010101010
+Corrupted string: 0001010010101010100101010101010
+Error Location(s) is/are: 18 3
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 16 
+Original String: 10101010101110101010101010
+Original String with Parity: 0011010010101010110101010101010
+Corrupted string: 0011011010101010110101010101000
+Error Location(s) is/are: 30 7
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 8 16 
+Original String: 10101010101110101010101010
+Original String with Parity: 0011010010101010110101010101010
+Corrupted string: 0011010010100010111101010101010
+Error Location(s) is/are: 19 13
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101110101010101010
+Original String with Parity: 0011010010101010110101010101010
+Corrupted string: 0011010010101010111101010101011
+Error Location(s) is/are: 31 19
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 4 8 
+Original String: 10101010101110101010101010
+Original String with Parity: 0011010010101010110101010101010
+Corrupted string: 0011010010101011110101110101010
+Error Location(s) is/are: 16 23
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 2 4 
+Original String: 10101010101110101010101010
+Original String with Parity: 0011010010101010110101010101010
+Corrupted string: 0011010010101000111101010101010
+Error Location(s) is/are: 19 15
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 4 8 16 
+
+Original String: 10101010101010111010101010
+Original String with Parity: 0010010010101010010111010101010
+Corrupted string: 0010010010101010010111010101011
+Error Location(s) is/are: 31
+Number of errors introduced: 1
+Error Location computed by receiver algorithm is: 31
+Introducing 10 2-bit errors
+Original String: 10101010101010111010101010
+Original String with Parity: 0010010010101010010111010101010
+Corrupted string: 0010010010101011010111010101011
+Error Location(s) is/are: 16 31
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 2 4 8 
+Original String: 10101010101010111010101010
+Original String with Parity: 0010010010101010010111010101010
+Corrupted string: 0010010010001010110111010101010
+Error Location(s) is/are: 11 17
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 8 16 
+Original String: 10101010101010111010101010
+Original String with Parity: 0010010010101010010111010101010
+Corrupted string: 0010010010100010011111010101010
+Error Location(s) is/are: 19 13
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101010111010101010
+Original String with Parity: 0010010010101010010111010101010
+Corrupted string: 0010010010001010010101010101010
+Error Location(s) is/are: 11 21
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101010111010101010
+Original String with Parity: 0010010010101010010111010101010
+Corrupted string: 0000010010101010000111010101010
+Error Location(s) is/are: 18 3
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 16 
+Original String: 10101010101010111010101010
+Original String with Parity: 0010010010101010010111010101010
+Corrupted string: 0010011010101010010111010101000
+Error Location(s) is/are: 30 7
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 8 16 
+Original String: 10101010101010111010101010
+Original String with Parity: 0010010010101010010111010101010
+Corrupted string: 0010010010100010011111010101010
+Error Location(s) is/are: 19 13
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101010111010101010
+Original String with Parity: 0010010010101010010111010101010
+Corrupted string: 0010010010101010011111010101011
+Error Location(s) is/are: 31 19
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 4 8 
+Original String: 10101010101010111010101010
+Original String with Parity: 0010010010101010010111010101010
+Corrupted string: 0010010010101011010111110101010
+Error Location(s) is/are: 16 23
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 2 4 
+Original String: 10101010101010111010101010
+Original String with Parity: 0010010010101010010111010101010
+Corrupted string: 0010010010101000011111010101010
+Error Location(s) is/are: 19 15
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 4 8 16 
+
+Original String: 10101010101010101010101010
+Original String with Parity: 1011010010101011010101010101010
+Corrupted string: 1011010010101011010101010101011
+Error Location(s) is/are: 31
+Number of errors introduced: 1
+Error Location computed by receiver algorithm is: 31
+Introducing 10 2-bit errors
+Original String: 10101010101010101010101010
+Original String with Parity: 1011010010101011010101010101010
+Corrupted string: 1011010010101010010101010101011
+Error Location(s) is/are: 16 31
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 2 4 8 
+Original String: 10101010101010101010101010
+Original String with Parity: 1011010010101011010101010101010
+Corrupted string: 1011010010001011110101010101010
+Error Location(s) is/are: 11 17
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 8 16 
+Original String: 10101010101010101010101010
+Original String with Parity: 1011010010101011010101010101010
+Corrupted string: 1011010010100011011101010101010
+Error Location(s) is/are: 19 13
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101010101010101010
+Original String with Parity: 1011010010101011010101010101010
+Corrupted string: 1011010010001011010111010101010
+Error Location(s) is/are: 11 21
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101010101010101010
+Original String with Parity: 1011010010101011010101010101010
+Corrupted string: 1001010010101011000101010101010
+Error Location(s) is/are: 18 3
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 16 
+Original String: 10101010101010101010101010
+Original String with Parity: 1011010010101011010101010101010
+Corrupted string: 1011011010101011010101010101000
+Error Location(s) is/are: 30 7
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 8 16 
+Original String: 10101010101010101010101010
+Original String with Parity: 1011010010101011010101010101010
+Corrupted string: 1011010010100011011101010101010
+Error Location(s) is/are: 19 13
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101010101010101010
+Original String with Parity: 1011010010101011010101010101010
+Corrupted string: 1011010010101011011101010101011
+Error Location(s) is/are: 31 19
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 4 8 
+Original String: 10101010101010101010101010
+Original String with Parity: 1011010010101011010101010101010
+Corrupted string: 1011010010101010010101110101010
+Error Location(s) is/are: 16 23
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 2 4 
+Original String: 10101010101010101010101010
+Original String with Parity: 1011010010101011010101010101010
+Corrupted string: 1011010010101001011101010101010
+Error Location(s) is/are: 19 15
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 4 8 16 
+
+Original String: 10101010101010101011101010
+Original String with Parity: 0011010110101010010101011101010
+Corrupted string: 0011010110101010010101011101011
+Error Location(s) is/are: 31
+Number of errors introduced: 1
+Error Location computed by receiver algorithm is: 31
+Introducing 10 2-bit errors
+Original String: 10101010101010101011101010
+Original String with Parity: 0011010110101010010101011101010
+Corrupted string: 0011010110101011010101011101011
+Error Location(s) is/are: 16 31
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 2 4 8 
+Original String: 10101010101010101011101010
+Original String with Parity: 0011010110101010010101011101010
+Corrupted string: 0011010110001010110101011101010
+Error Location(s) is/are: 11 17
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 8 16 
+Original String: 10101010101010101011101010
+Original String with Parity: 0011010110101010010101011101010
+Corrupted string: 0011010110100010011101011101010
+Error Location(s) is/are: 19 13
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101010101011101010
+Original String with Parity: 0011010110101010010101011101010
+Corrupted string: 0011010110001010010111011101010
+Error Location(s) is/are: 11 21
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101010101011101010
+Original String with Parity: 0011010110101010010101011101010
+Corrupted string: 0001010110101010000101011101010
+Error Location(s) is/are: 18 3
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 16 
+Original String: 10101010101010101011101010
+Original String with Parity: 0011010110101010010101011101010
+Corrupted string: 0011011110101010010101011101000
+Error Location(s) is/are: 30 7
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 8 16 
+Original String: 10101010101010101011101010
+Original String with Parity: 0011010110101010010101011101010
+Corrupted string: 0011010110100010011101011101010
+Error Location(s) is/are: 19 13
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101010101011101010
+Original String with Parity: 0011010110101010010101011101010
+Corrupted string: 0011010110101010011101011101011
+Error Location(s) is/are: 31 19
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 4 8 
+Original String: 10101010101010101011101010
+Original String with Parity: 0011010110101010010101011101010
+Corrupted string: 0011010110101011010101111101010
+Error Location(s) is/are: 16 23
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 2 4 
+Original String: 10101010101010101011101010
+Original String with Parity: 0011010110101010010101011101010
+Corrupted string: 0011010110101000011101011101010
+Error Location(s) is/are: 19 15
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 4 8 16 
+
+Original String: 10101010101010101010111010
+Original String with Parity: 0111010110101010010101010111010
+Corrupted string: 0111010110101010010101010111011
+Error Location(s) is/are: 31
+Number of errors introduced: 1
+Error Location computed by receiver algorithm is: 31
+Introducing 10 2-bit errors
+Original String: 10101010101010101010111010
+Original String with Parity: 0111010110101010010101010111010
+Corrupted string: 0111010110101011010101010111011
+Error Location(s) is/are: 16 31
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 2 4 8 
+Original String: 10101010101010101010111010
+Original String with Parity: 0111010110101010010101010111010
+Corrupted string: 0111010110001010110101010111010
+Error Location(s) is/are: 11 17
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 8 16 
+Original String: 10101010101010101010111010
+Original String with Parity: 0111010110101010010101010111010
+Corrupted string: 0111010110100010011101010111010
+Error Location(s) is/are: 19 13
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101010101010111010
+Original String with Parity: 0111010110101010010101010111010
+Corrupted string: 0111010110001010010111010111010
+Error Location(s) is/are: 11 21
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101010101010111010
+Original String with Parity: 0111010110101010010101010111010
+Corrupted string: 0101010110101010000101010111010
+Error Location(s) is/are: 18 3
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 16 
+Original String: 10101010101010101010111010
+Original String with Parity: 0111010110101010010101010111010
+Corrupted string: 0111011110101010010101010111000
+Error Location(s) is/are: 30 7
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 8 16 
+Original String: 10101010101010101010111010
+Original String with Parity: 0111010110101010010101010111010
+Corrupted string: 0111010110100010011101010111010
+Error Location(s) is/are: 19 13
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101010101010111010
+Original String with Parity: 0111010110101010010101010111010
+Corrupted string: 0111010110101010011101010111011
+Error Location(s) is/are: 31 19
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 4 8 
+Original String: 10101010101010101010111010
+Original String with Parity: 0111010110101010010101010111010
+Corrupted string: 0111010110101011010101110111010
+Error Location(s) is/are: 16 23
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 2 4 
+Original String: 10101010101010101010111010
+Original String with Parity: 0111010110101010010101010111010
+Corrupted string: 0111010110101000011101010111010
+Error Location(s) is/are: 19 15
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 4 8 16 
+
+Original String: 10101010101110101010101010
+Original String with Parity: 0011010010101010110101010101010
+Corrupted string: 0011010010101010110101010101011
+Error Location(s) is/are: 31
+Number of errors introduced: 1
+Error Location computed by receiver algorithm is: 31
+Introducing 10 2-bit errors
+Original String: 10101010101110101010101010
+Original String with Parity: 0011010010101010110101010101010
+Corrupted string: 0011010010101011110101010101011
+Error Location(s) is/are: 16 31
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 2 4 8 
+Original String: 10101010101110101010101010
+Original String with Parity: 0011010010101010110101010101010
+Corrupted string: 0011010010001010010101010101010
+Error Location(s) is/are: 11 17
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 8 16 
+Original String: 10101010101110101010101010
+Original String with Parity: 0011010010101010110101010101010
+Corrupted string: 0011010010100010111101010101010
+Error Location(s) is/are: 19 13
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101110101010101010
+Original String with Parity: 0011010010101010110101010101010
+Corrupted string: 0011010010001010110111010101010
+Error Location(s) is/are: 11 21
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101110101010101010
+Original String with Parity: 0011010010101010110101010101010
+Corrupted string: 0001010010101010100101010101010
+Error Location(s) is/are: 18 3
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 16 
+Original String: 10101010101110101010101010
+Original String with Parity: 0011010010101010110101010101010
+Corrupted string: 0011011010101010110101010101000
+Error Location(s) is/are: 30 7
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 8 16 
+Original String: 10101010101110101010101010
+Original String with Parity: 0011010010101010110101010101010
+Corrupted string: 0011010010100010111101010101010
+Error Location(s) is/are: 19 13
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101110101010101010
+Original String with Parity: 0011010010101010110101010101010
+Corrupted string: 0011010010101010111101010101011
+Error Location(s) is/are: 31 19
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 4 8 
+Original String: 10101010101110101010101010
+Original String with Parity: 0011010010101010110101010101010
+Corrupted string: 0011010010101011110101110101010
+Error Location(s) is/are: 16 23
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 2 4 
+Original String: 10101010101110101010101010
+Original String with Parity: 0011010010101010110101010101010
+Corrupted string: 0011010010101000111101010101010
+Error Location(s) is/are: 19 15
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 4 8 16 
+
+Original String: 10101010101010111010101010
+Original String with Parity: 0010010010101010010111010101010
+Corrupted string: 0010010010101010010111010101011
+Error Location(s) is/are: 31
+Number of errors introduced: 1
+Error Location computed by receiver algorithm is: 31
+Introducing 10 2-bit errors
+Original String: 10101010101010111010101010
+Original String with Parity: 0010010010101010010111010101010
+Corrupted string: 0010010010101011010111010101011
+Error Location(s) is/are: 16 31
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 2 4 8 
+Original String: 10101010101010111010101010
+Original String with Parity: 0010010010101010010111010101010
+Corrupted string: 0010010010001010110111010101010
+Error Location(s) is/are: 11 17
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 8 16 
+Original String: 10101010101010111010101010
+Original String with Parity: 0010010010101010010111010101010
+Corrupted string: 0010010010100010011111010101010
+Error Location(s) is/are: 19 13
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101010111010101010
+Original String with Parity: 0010010010101010010111010101010
+Corrupted string: 0010010010001010010101010101010
+Error Location(s) is/are: 11 21
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101010111010101010
+Original String with Parity: 0010010010101010010111010101010
+Corrupted string: 0000010010101010000111010101010
+Error Location(s) is/are: 18 3
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 16 
+Original String: 10101010101010111010101010
+Original String with Parity: 0010010010101010010111010101010
+Corrupted string: 0010011010101010010111010101000
+Error Location(s) is/are: 30 7
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 8 16 
+Original String: 10101010101010111010101010
+Original String with Parity: 0010010010101010010111010101010
+Corrupted string: 0010010010100010011111010101010
+Error Location(s) is/are: 19 13
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101010111010101010
+Original String with Parity: 0010010010101010010111010101010
+Corrupted string: 0010010010101010011111010101011
+Error Location(s) is/are: 31 19
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 4 8 
+Original String: 10101010101010111010101010
+Original String with Parity: 0010010010101010010111010101010
+Corrupted string: 0010010010101011010111110101010
+Error Location(s) is/are: 16 23
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 2 4 
+Original String: 10101010101010111010101010
+Original String with Parity: 0010010010101010010111010101010
+Corrupted string: 0010010010101000011111010101010
+Error Location(s) is/are: 19 15
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 4 8 16 
+
+Original String: 10101010101010101010101010
+Original String with Parity: 1011010010101011010101010101010
+Corrupted string: 1011010010101011010101010101011
+Error Location(s) is/are: 31
+Number of errors introduced: 1
+Error Location computed by receiver algorithm is: 31
+Introducing 10 2-bit errors
+Original String: 10101010101010101010101010
+Original String with Parity: 1011010010101011010101010101010
+Corrupted string: 1011010010101010010101010101011
+Error Location(s) is/are: 16 31
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 2 4 8 
+Original String: 10101010101010101010101010
+Original String with Parity: 1011010010101011010101010101010
+Corrupted string: 1011010010001011110101010101010
+Error Location(s) is/are: 11 17
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 8 16 
+Original String: 10101010101010101010101010
+Original String with Parity: 1011010010101011010101010101010
+Corrupted string: 1011010010100011011101010101010
+Error Location(s) is/are: 19 13
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101010101010101010
+Original String with Parity: 1011010010101011010101010101010
+Corrupted string: 1011010010001011010111010101010
+Error Location(s) is/are: 11 21
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101010101010101010
+Original String with Parity: 1011010010101011010101010101010
+Corrupted string: 1001010010101011000101010101010
+Error Location(s) is/are: 18 3
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 16 
+Original String: 10101010101010101010101010
+Original String with Parity: 1011010010101011010101010101010
+Corrupted string: 1011011010101011010101010101000
+Error Location(s) is/are: 30 7
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 8 16 
+Original String: 10101010101010101010101010
+Original String with Parity: 1011010010101011010101010101010
+Corrupted string: 1011010010100011011101010101010
+Error Location(s) is/are: 19 13
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101010101010101010
+Original String with Parity: 1011010010101011010101010101010
+Corrupted string: 1011010010101011011101010101011
+Error Location(s) is/are: 31 19
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 4 8 
+Original String: 10101010101010101010101010
+Original String with Parity: 1011010010101011010101010101010
+Corrupted string: 1011010010101010010101110101010
+Error Location(s) is/are: 16 23
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 2 4 
+Original String: 10101010101010101010101010
+Original String with Parity: 1011010010101011010101010101010
+Corrupted string: 1011010010101001011101010101010
+Error Location(s) is/are: 19 15
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 4 8 16 
+
+Original String: 10101010101010101011101010
+Original String with Parity: 0011010110101010010101011101010
+Corrupted string: 0011010110101010010101011101011
+Error Location(s) is/are: 31
+Number of errors introduced: 1
+Error Location computed by receiver algorithm is: 31
+Introducing 10 2-bit errors
+Original String: 10101010101010101011101010
+Original String with Parity: 0011010110101010010101011101010
+Corrupted string: 0011010110101011010101011101011
+Error Location(s) is/are: 16 31
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 2 4 8 
+Original String: 10101010101010101011101010
+Original String with Parity: 0011010110101010010101011101010
+Corrupted string: 0011010110001010110101011101010
+Error Location(s) is/are: 11 17
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 8 16 
+Original String: 10101010101010101011101010
+Original String with Parity: 0011010110101010010101011101010
+Corrupted string: 0011010110100010011101011101010
+Error Location(s) is/are: 19 13
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101010101011101010
+Original String with Parity: 0011010110101010010101011101010
+Corrupted string: 0011010110001010010111011101010
+Error Location(s) is/are: 11 21
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101010101011101010
+Original String with Parity: 0011010110101010010101011101010
+Corrupted string: 0001010110101010000101011101010
+Error Location(s) is/are: 18 3
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 16 
+Original String: 10101010101010101011101010
+Original String with Parity: 0011010110101010010101011101010
+Corrupted string: 0011011110101010010101011101000
+Error Location(s) is/are: 30 7
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 8 16 
+Original String: 10101010101010101011101010
+Original String with Parity: 0011010110101010010101011101010
+Corrupted string: 0011010110100010011101011101010
+Error Location(s) is/are: 19 13
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101010101011101010
+Original String with Parity: 0011010110101010010101011101010
+Corrupted string: 0011010110101010011101011101011
+Error Location(s) is/are: 31 19
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 4 8 
+Original String: 10101010101010101011101010
+Original String with Parity: 0011010110101010010101011101010
+Corrupted string: 0011010110101011010101111101010
+Error Location(s) is/are: 16 23
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 2 4 
+Original String: 10101010101010101011101010
+Original String with Parity: 0011010110101010010101011101010
+Corrupted string: 0011010110101000011101011101010
+Error Location(s) is/are: 19 15
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 4 8 16 
+
+Original String: 10101010101010101010111010
+Original String with Parity: 0111010110101010010101010111010
+Corrupted string: 0111010110101010010101010111011
+Error Location(s) is/are: 31
+Number of errors introduced: 1
+Error Location computed by receiver algorithm is: 31
+Introducing 10 2-bit errors
+Original String: 10101010101010101010111010
+Original String with Parity: 0111010110101010010101010111010
+Corrupted string: 0111010110101011010101010111011
+Error Location(s) is/are: 16 31
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 2 4 8 
+Original String: 10101010101010101010111010
+Original String with Parity: 0111010110101010010101010111010
+Corrupted string: 0111010110001010110101010111010
+Error Location(s) is/are: 11 17
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 8 16 
+Original String: 10101010101010101010111010
+Original String with Parity: 0111010110101010010101010111010
+Corrupted string: 0111010110100010011101010111010
+Error Location(s) is/are: 19 13
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101010101010111010
+Original String with Parity: 0111010110101010010101010111010
+Corrupted string: 0111010110001010010111010111010
+Error Location(s) is/are: 11 21
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101010101010111010
+Original String with Parity: 0111010110101010010101010111010
+Corrupted string: 0101010110101010000101010111010
+Error Location(s) is/are: 18 3
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 16 
+Original String: 10101010101010101010111010
+Original String with Parity: 0111010110101010010101010111010
+Corrupted string: 0111011110101010010101010111000
+Error Location(s) is/are: 30 7
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 8 16 
+Original String: 10101010101010101010111010
+Original String with Parity: 0111010110101010010101010111010
+Corrupted string: 0111010110100010011101010111010
+Error Location(s) is/are: 19 13
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101010101010111010
+Original String with Parity: 0111010110101010010101010111010
+Corrupted string: 0111010110101010011101010111011
+Error Location(s) is/are: 31 19
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 4 8 
+Original String: 10101010101010101010111010
+Original String with Parity: 0111010110101010010101010111010
+Corrupted string: 0111010110101011010101110111010
+Error Location(s) is/are: 16 23
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 2 4 
+Original String: 10101010101010101010111010
+Original String with Parity: 0111010110101010010101010111010
+Corrupted string: 0111010110101000011101010111010
+Error Location(s) is/are: 19 15
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 4 8 16 
+
+Original String: 10101010101110101010101010
+Original String with Parity: 0011010010101010110101010101010
+Corrupted string: 0011010010101010110101010101011
+Error Location(s) is/are: 31
+Number of errors introduced: 1
+Error Location computed by receiver algorithm is: 31
+Introducing 10 2-bit errors
+Original String: 10101010101110101010101010
+Original String with Parity: 0011010010101010110101010101010
+Corrupted string: 0011010010101011110101010101011
+Error Location(s) is/are: 16 31
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 2 4 8 
+Original String: 10101010101110101010101010
+Original String with Parity: 0011010010101010110101010101010
+Corrupted string: 0011010010001010010101010101010
+Error Location(s) is/are: 11 17
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 8 16 
+Original String: 10101010101110101010101010
+Original String with Parity: 0011010010101010110101010101010
+Corrupted string: 0011010010100010111101010101010
+Error Location(s) is/are: 19 13
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101110101010101010
+Original String with Parity: 0011010010101010110101010101010
+Corrupted string: 0011010010001010110111010101010
+Error Location(s) is/are: 11 21
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101110101010101010
+Original String with Parity: 0011010010101010110101010101010
+Corrupted string: 0001010010101010100101010101010
+Error Location(s) is/are: 18 3
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 16 
+Original String: 10101010101110101010101010
+Original String with Parity: 0011010010101010110101010101010
+Corrupted string: 0011011010101010110101010101000
+Error Location(s) is/are: 30 7
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 8 16 
+Original String: 10101010101110101010101010
+Original String with Parity: 0011010010101010110101010101010
+Corrupted string: 0011010010100010111101010101010
+Error Location(s) is/are: 19 13
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101110101010101010
+Original String with Parity: 0011010010101010110101010101010
+Corrupted string: 0011010010101010111101010101011
+Error Location(s) is/are: 31 19
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 4 8 
+Original String: 10101010101110101010101010
+Original String with Parity: 0011010010101010110101010101010
+Corrupted string: 0011010010101011110101110101010
+Error Location(s) is/are: 16 23
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 2 4 
+Original String: 10101010101110101010101010
+Original String with Parity: 0011010010101010110101010101010
+Corrupted string: 0011010010101000111101010101010
+Error Location(s) is/are: 19 15
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 4 8 16 
+
+Original String: 10101010101010111010101010
+Original String with Parity: 0010010010101010010111010101010
+Corrupted string: 0010010010101010010111010101011
+Error Location(s) is/are: 31
+Number of errors introduced: 1
+Error Location computed by receiver algorithm is: 31
+Introducing 10 2-bit errors
+Original String: 10101010101010111010101010
+Original String with Parity: 0010010010101010010111010101010
+Corrupted string: 0010010010101011010111010101011
+Error Location(s) is/are: 16 31
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 2 4 8 
+Original String: 10101010101010111010101010
+Original String with Parity: 0010010010101010010111010101010
+Corrupted string: 0010010010001010110111010101010
+Error Location(s) is/are: 11 17
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 8 16 
+Original String: 10101010101010111010101010
+Original String with Parity: 0010010010101010010111010101010
+Corrupted string: 0010010010100010011111010101010
+Error Location(s) is/are: 19 13
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101010111010101010
+Original String with Parity: 0010010010101010010111010101010
+Corrupted string: 0010010010001010010101010101010
+Error Location(s) is/are: 11 21
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101010111010101010
+Original String with Parity: 0010010010101010010111010101010
+Corrupted string: 0000010010101010000111010101010
+Error Location(s) is/are: 18 3
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 16 
+Original String: 10101010101010111010101010
+Original String with Parity: 0010010010101010010111010101010
+Corrupted string: 0010011010101010010111010101000
+Error Location(s) is/are: 30 7
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 8 16 
+Original String: 10101010101010111010101010
+Original String with Parity: 0010010010101010010111010101010
+Corrupted string: 0010010010100010011111010101010
+Error Location(s) is/are: 19 13
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101010111010101010
+Original String with Parity: 0010010010101010010111010101010
+Corrupted string: 0010010010101010011111010101011
+Error Location(s) is/are: 31 19
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 4 8 
+Original String: 10101010101010111010101010
+Original String with Parity: 0010010010101010010111010101010
+Corrupted string: 0010010010101011010111110101010
+Error Location(s) is/are: 16 23
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 2 4 
+Original String: 10101010101010111010101010
+Original String with Parity: 0010010010101010010111010101010
+Corrupted string: 0010010010101000011111010101010
+Error Location(s) is/are: 19 15
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 4 8 16 
+
+Original String: 10101010101010101010101010
+Original String with Parity: 1011010010101011010101010101010
+Corrupted string: 1011010010101011010101010101011
+Error Location(s) is/are: 31
+Number of errors introduced: 1
+Error Location computed by receiver algorithm is: 31
+Introducing 10 2-bit errors
+Original String: 10101010101010101010101010
+Original String with Parity: 1011010010101011010101010101010
+Corrupted string: 1011010010101010010101010101011
+Error Location(s) is/are: 16 31
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 2 4 8 
+Original String: 10101010101010101010101010
+Original String with Parity: 1011010010101011010101010101010
+Corrupted string: 1011010010001011110101010101010
+Error Location(s) is/are: 11 17
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 8 16 
+Original String: 10101010101010101010101010
+Original String with Parity: 1011010010101011010101010101010
+Corrupted string: 1011010010100011011101010101010
+Error Location(s) is/are: 19 13
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101010101010101010
+Original String with Parity: 1011010010101011010101010101010
+Corrupted string: 1011010010001011010111010101010
+Error Location(s) is/are: 11 21
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101010101010101010
+Original String with Parity: 1011010010101011010101010101010
+Corrupted string: 1001010010101011000101010101010
+Error Location(s) is/are: 18 3
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 16 
+Original String: 10101010101010101010101010
+Original String with Parity: 1011010010101011010101010101010
+Corrupted string: 1011011010101011010101010101000
+Error Location(s) is/are: 30 7
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 8 16 
+Original String: 10101010101010101010101010
+Original String with Parity: 1011010010101011010101010101010
+Corrupted string: 1011010010100011011101010101010
+Error Location(s) is/are: 19 13
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101010101010101010
+Original String with Parity: 1011010010101011010101010101010
+Corrupted string: 1011010010101011011101010101011
+Error Location(s) is/are: 31 19
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 4 8 
+Original String: 10101010101010101010101010
+Original String with Parity: 1011010010101011010101010101010
+Corrupted string: 1011010010101010010101110101010
+Error Location(s) is/are: 16 23
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 2 4 
+Original String: 10101010101010101010101010
+Original String with Parity: 1011010010101011010101010101010
+Corrupted string: 1011010010101001011101010101010
+Error Location(s) is/are: 19 15
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 4 8 16 
+
+Original String: 10101010101010101011101010
+Original String with Parity: 0011010110101010010101011101010
+Corrupted string: 0011010110101010010101011101011
+Error Location(s) is/are: 31
+Number of errors introduced: 1
+Error Location computed by receiver algorithm is: 31
+Introducing 10 2-bit errors
+Original String: 10101010101010101011101010
+Original String with Parity: 0011010110101010010101011101010
+Corrupted string: 0011010110101011010101011101011
+Error Location(s) is/are: 16 31
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 2 4 8 
+Original String: 10101010101010101011101010
+Original String with Parity: 0011010110101010010101011101010
+Corrupted string: 0011010110001010110101011101010
+Error Location(s) is/are: 11 17
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 8 16 
+Original String: 10101010101010101011101010
+Original String with Parity: 0011010110101010010101011101010
+Corrupted string: 0011010110100010011101011101010
+Error Location(s) is/are: 19 13
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101010101011101010
+Original String with Parity: 0011010110101010010101011101010
+Corrupted string: 0011010110001010010111011101010
+Error Location(s) is/are: 11 21
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101010101011101010
+Original String with Parity: 0011010110101010010101011101010
+Corrupted string: 0001010110101010000101011101010
+Error Location(s) is/are: 18 3
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 16 
+Original String: 10101010101010101011101010
+Original String with Parity: 0011010110101010010101011101010
+Corrupted string: 0011011110101010010101011101000
+Error Location(s) is/are: 30 7
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 8 16 
+Original String: 10101010101010101011101010
+Original String with Parity: 0011010110101010010101011101010
+Corrupted string: 0011010110100010011101011101010
+Error Location(s) is/are: 19 13
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101010101011101010
+Original String with Parity: 0011010110101010010101011101010
+Corrupted string: 0011010110101010011101011101011
+Error Location(s) is/are: 31 19
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 4 8 
+Original String: 10101010101010101011101010
+Original String with Parity: 0011010110101010010101011101010
+Corrupted string: 0011010110101011010101111101010
+Error Location(s) is/are: 16 23
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 2 4 
+Original String: 10101010101010101011101010
+Original String with Parity: 0011010110101010010101011101010
+Corrupted string: 0011010110101000011101011101010
+Error Location(s) is/are: 19 15
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 4 8 16 
+
+Original String: 10101010101010101010111010
+Original String with Parity: 0111010110101010010101010111010
+Corrupted string: 0111010110101010010101010111011
+Error Location(s) is/are: 31
+Number of errors introduced: 1
+Error Location computed by receiver algorithm is: 31
+Introducing 10 2-bit errors
+Original String: 10101010101010101010111010
+Original String with Parity: 0111010110101010010101010111010
+Corrupted string: 0111010110101011010101010111011
+Error Location(s) is/are: 16 31
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 2 4 8 
+Original String: 10101010101010101010111010
+Original String with Parity: 0111010110101010010101010111010
+Corrupted string: 0111010110001010110101010111010
+Error Location(s) is/are: 11 17
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 8 16 
+Original String: 10101010101010101010111010
+Original String with Parity: 0111010110101010010101010111010
+Corrupted string: 0111010110100010011101010111010
+Error Location(s) is/are: 19 13
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101010101010111010
+Original String with Parity: 0111010110101010010101010111010
+Corrupted string: 0111010110001010010111010111010
+Error Location(s) is/are: 11 21
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101010101010111010
+Original String with Parity: 0111010110101010010101010111010
+Corrupted string: 0101010110101010000101010111010
+Error Location(s) is/are: 18 3
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 16 
+Original String: 10101010101010101010111010
+Original String with Parity: 0111010110101010010101010111010
+Corrupted string: 0111011110101010010101010111000
+Error Location(s) is/are: 30 7
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 8 16 
+Original String: 10101010101010101010111010
+Original String with Parity: 0111010110101010010101010111010
+Corrupted string: 0111010110100010011101010111010
+Error Location(s) is/are: 19 13
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101010101010111010
+Original String with Parity: 0111010110101010010101010111010
+Corrupted string: 0111010110101010011101010111011
+Error Location(s) is/are: 31 19
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 4 8 
+Original String: 10101010101010101010111010
+Original String with Parity: 0111010110101010010101010111010
+Corrupted string: 0111010110101011010101110111010
+Error Location(s) is/are: 16 23
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 2 4 
+Original String: 10101010101010101010111010
+Original String with Parity: 0111010110101010010101010111010
+Corrupted string: 0111010110101000011101010111010
+Error Location(s) is/are: 19 15
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 4 8 16 
+
+Original String: 10101010101110101010101010
+Original String with Parity: 0011010010101010110101010101010
+Corrupted string: 0011010010101010110101010101011
+Error Location(s) is/are: 31
+Number of errors introduced: 1
+Error Location computed by receiver algorithm is: 31
+Introducing 10 2-bit errors
+Original String: 10101010101110101010101010
+Original String with Parity: 0011010010101010110101010101010
+Corrupted string: 0011010010101011110101010101011
+Error Location(s) is/are: 16 31
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 2 4 8 
+Original String: 10101010101110101010101010
+Original String with Parity: 0011010010101010110101010101010
+Corrupted string: 0011010010001010010101010101010
+Error Location(s) is/are: 11 17
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 8 16 
+Original String: 10101010101110101010101010
+Original String with Parity: 0011010010101010110101010101010
+Corrupted string: 0011010010100010111101010101010
+Error Location(s) is/are: 19 13
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101110101010101010
+Original String with Parity: 0011010010101010110101010101010
+Corrupted string: 0011010010001010110111010101010
+Error Location(s) is/are: 11 21
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101110101010101010
+Original String with Parity: 0011010010101010110101010101010
+Corrupted string: 0001010010101010100101010101010
+Error Location(s) is/are: 18 3
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 16 
+Original String: 10101010101110101010101010
+Original String with Parity: 0011010010101010110101010101010
+Corrupted string: 0011011010101010110101010101000
+Error Location(s) is/are: 30 7
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 8 16 
+Original String: 10101010101110101010101010
+Original String with Parity: 0011010010101010110101010101010
+Corrupted string: 0011010010100010111101010101010
+Error Location(s) is/are: 19 13
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101110101010101010
+Original String with Parity: 0011010010101010110101010101010
+Corrupted string: 0011010010101010111101010101011
+Error Location(s) is/are: 31 19
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 4 8 
+Original String: 10101010101110101010101010
+Original String with Parity: 0011010010101010110101010101010
+Corrupted string: 0011010010101011110101110101010
+Error Location(s) is/are: 16 23
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 2 4 
+Original String: 10101010101110101010101010
+Original String with Parity: 0011010010101010110101010101010
+Corrupted string: 0011010010101000111101010101010
+Error Location(s) is/are: 19 15
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 4 8 16 
+
+Original String: 10101010101010111010101010
+Original String with Parity: 0010010010101010010111010101010
+Corrupted string: 0010010010101010010111010101011
+Error Location(s) is/are: 31
+Number of errors introduced: 1
+Error Location computed by receiver algorithm is: 31
+Introducing 10 2-bit errors
+Original String: 10101010101010111010101010
+Original String with Parity: 0010010010101010010111010101010
+Corrupted string: 0010010010101011010111010101011
+Error Location(s) is/are: 16 31
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 2 4 8 
+Original String: 10101010101010111010101010
+Original String with Parity: 0010010010101010010111010101010
+Corrupted string: 0010010010001010110111010101010
+Error Location(s) is/are: 11 17
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 8 16 
+Original String: 10101010101010111010101010
+Original String with Parity: 0010010010101010010111010101010
+Corrupted string: 0010010010100010011111010101010
+Error Location(s) is/are: 19 13
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101010111010101010
+Original String with Parity: 0010010010101010010111010101010
+Corrupted string: 0010010010001010010101010101010
+Error Location(s) is/are: 11 21
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101010111010101010
+Original String with Parity: 0010010010101010010111010101010
+Corrupted string: 0000010010101010000111010101010
+Error Location(s) is/are: 18 3
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 16 
+Original String: 10101010101010111010101010
+Original String with Parity: 0010010010101010010111010101010
+Corrupted string: 0010011010101010010111010101000
+Error Location(s) is/are: 30 7
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 8 16 
+Original String: 10101010101010111010101010
+Original String with Parity: 0010010010101010010111010101010
+Corrupted string: 0010010010100010011111010101010
+Error Location(s) is/are: 19 13
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 2 4 8 16 
+Original String: 10101010101010111010101010
+Original String with Parity: 0010010010101010010111010101010
+Corrupted string: 0010010010101010011111010101011
+Error Location(s) is/are: 31 19
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 4 8 
+Original String: 10101010101010111010101010
+Original String with Parity: 0010010010101010010111010101010
+Corrupted string: 0010010010101011010111110101010
+Error Location(s) is/are: 16 23
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 1 2 4 
+Original String: 10101010101010111010101010
+Original String with Parity: 0010010010101010010111010101010
+Corrupted string: 0010010010101000011111010101010
+Error Location(s) is/are: 19 15
+Number of errors introduced: 2
+Error Detected (Yes/No): Yes
+Parity bits that failed are at locations: 4 8 16 
+

@@ -1,0 +1,3 @@
+sample.txt sample2.txt and sample3.txt are the three files of sizes 512KB, 1MB, 2MB respectively.
+httpserver.py has code for hosting a simple http server.
+o is the file that has the output of all the results that were obtained from running the script, plot.py uses this output file to produce graphs that show the effect of verious parameters on network, all the obervations are present in the report. And the graphs are also shown here that are put in the report.	

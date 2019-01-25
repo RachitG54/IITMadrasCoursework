@@ -1,0 +1,21 @@
+\section{Techniques and ideas}
+The techniques used in the paper use the fact that cyclic lattices are closed under cyclic convolution with integer vectors. Furthermore, the lattice points naturally correspond to polynomials in $\mathbb{Z}[\alpha]/(\alpha^n - 1)$.
+\\
+Convolution is defined as follows. For any $x = (x_0 , . . . , x_{n-1})^T \in \mathbb{R}^n$ , define the rotation of $x$,
+denoted as $rot(x)$, to be the vector $(x_{n-1} , x_0 , . . . , x_{n−2})^T$ ; similarly $rot_i(x) = rot(· · · rot(x) · · · )$ is
+defined to be the rotation of $x$, taken $i$ times. A lattice $\Latt$ is cyclic if for all $x \in \Latt$, $rot(x) \in \Latt$. For any integer $d \geq 1$, define the rotation matrix $Rot^d (x)$ to be the matrix $[x|rot(x)| · · · |rot^{d-1}(x)]$.
+\par
+For any ring $R$, the (cyclic) convolution product of $x, y \in R^n$ is the vector $x \otimes y = Rot^n(x) \cdot y$,
+with entries 
+\begin{align*}
+ (x \otimes y)_k = \sum_{i+j = k \text{ mod }n} x_i \cdot y_j
+\end{align*}
+Hence we observe that in a cyclic lattice $\Latt$, the convolution of any $x \in \Latt$ with any integer vector $y \in \mathbb{Z}_n$ is also in the lattice: $x \otimes y \in \Latt$. This is because all the columns of $Rot^n(x)$ are in $\Latt$, and any integer combination of points in $\Latt$ is also in $\Latt$.
+\par
+The divisors of $(\alpha^n - 1)$ in $\mathbb{Z}[\alpha]$ correspond to special cyclotomic linear subspaces of $\mathbb{R}^n$ . These
+subspaces admit a natural partitioning into complementary pairs of orthogonal subspaces. Even more importantly, the subspaces are closed under cyclic rotation of vector coordinates, and under certain other conditions, these rotations are linearly independent. These facts imply a new connection between the SIVP and SVP problems in cyclic lattices.
+\par
+The security of the knapsack function comes from using all this structure to impose an algebraic
+restriction on the function domain. Looking ahead to the security reduction, this restriction ensures
+that collisions in the function are very likely to yield "useful" and short lattice points in a desired
+subspace.

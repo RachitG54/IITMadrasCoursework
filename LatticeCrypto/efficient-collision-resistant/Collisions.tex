@@ -1,0 +1,30 @@
+\section{Finding Collisions}
+We try to find collisions in the general knapsack function and try to motivate the papers choice of ring $R$ and subset $S$.
+\\~\\
+\textbf{Generalized Compact Knapsacks}: For any ring R, subset $S \subset R$ and integer $m \geq 1$, the generalized function family $H(R,S,m) = \{f_a : S^m \rightarrow R\}_{a\in R^m}$ is defined by:
+\begin{align*}
+f_a(x) = \sum_{i=1}^{m}x_i \cdot a_i
+\end{align*}
+We observe that $f_A$ is linear:
+\begin{align*}
+f_A(X) + f_A(X') = f_A (X + X')
+\end{align*}
+For random key $A$, to find a collision with $X'$ it suffices to find a non-zero $X \in S^m$ such that $f_A(X) = 0$, and $||X||_\infty$ is small.(So that the bound on $||X||_\infty$ is still satisfied).
+\\~\\
+\begin{align*}
+f_a(x) = \sum_{i=1}^{m}x_i(\alpha) \cdot a_i(\alpha) mod (\alpha^n - 1)
+\end{align*}
+We define $X = (x_1,x_2...x_m)$ as follows, for any q that is a divisor of n:
+\begin{align*}
+x_1(\alpha) = \frac{\alpha^n-1}{\alpha^q-1}
+\\
+x_j(\alpha) = 0 | j \neq 1
+\end{align*}
+Now $f_A(X) = 0$ if $a_1(\alpha)$ is divisible by $a^q - 1$, note that this happens with probability $1/p^q$. Over a uniform choice of A, so we have found a specific $X \neq 0$, such that $f_A(X) \neq 0$ with non-negligible probability.
+\\~\\
+The fact enabling this attack is that $(\alpha^n-1)$ is not irreducible in $\mathbb{Z}_p[\alpha]$. So it easy to find $x(\alpha)$ with small coefficients such that $a(\alpha)x(\alpha) = 0$ mod $(\alpha^n-1)$ and for each divisor of $(\alpha^n-1)$ either $x(\alpha) = 0$ or $a(\alpha) = 0$.
+\\
+To prevent this we enforce an algebraic constraint on X, informally we require every $x_i(\alpha)$ to be divisible over $\mathbb{Z}[\alpha]$ by $\frac{\alpha^n-1}{\Phi_k(\alpha)}$ for some fixed $k$ dividing $n$. Now essentially the evaluation is performed mod $\Phi_k(\alpha)$. Their choice of subset $S_{D,\Phi}$ is as follows.
+\begin{center}
+	$S_{D,\Phi} = \{x \in \mathbb{Z}^n_p : ||x||_\infty \leq D$ and $\Phi(\alpha)$ divides $x_\mathbb{Z}(\alpha)$ in $\mathbb{Z}[\alpha]\}$
+\end{center}

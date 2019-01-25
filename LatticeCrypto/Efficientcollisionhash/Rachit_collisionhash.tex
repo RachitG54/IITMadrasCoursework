@@ -1,0 +1,535 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Beamer Presentation
+% LaTeX Template
+% Version 1.0 (10/11/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0--------------------/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND THEMES
+%----------------------------------------------------------------------------------------
+
+\documentclass{beamer}
+
+\mode<presentation> {
+
+% The Beamer class comes with a number of default slide themes
+% which change the colors and layouts of slides. Below this is a list
+% of all the themes, uncomment each in turn to see what they look like.
+
+%\usetheme{default}
+%\usetheme{AnnArbor}
+%\usetheme{Antibes}
+%\usetheme{Bergen}
+%\usetheme{Berkeley}
+%\usetheme{Berlin}
+%\usetheme{Boadilla}
+%\usetheme{CambridgeUS}
+%\usetheme{Copenhagen}
+%\usetheme{Darmstadt}
+%\usetheme{Dresden}
+%\usetheme{Frankfurt}
+%\usetheme{Goettingen}
+%\usetheme{Hannover}
+%\usetheme{Ilmenau}
+%\usetheme{JuanLesPins}
+%\usetheme{Luebeck}
+\usetheme{Madrid}
+%\usetheme{Malmoe}
+%\usetheme{Marburg}
+%\usetheme{Montpellier}
+%\usetheme{PaloAlto}
+%\usetheme{Pittsburgh}
+%\usetheme{Rochester}
+%\usetheme{Singapore}
+%\usetheme{Szeged}
+%\usetheme{Warsaw}
+
+% As well as themes, the Beamer class has a number of color themes
+% for any slide theme. Uncomment each of these in turn to see how it
+% changes the colors of your current slide theme.
+
+%\usecolortheme{albatross}
+%\usecolortheme{beaver}
+%\usecolortheme{beetle}
+%\usecolortheme{crane}
+%\usecolortheme{dolphin}
+%\usecolortheme{dove}
+%\usecolortheme{fly}
+%\usecolortheme{lily}
+%\usecolortheme{orchid}
+%\usecolortheme{rose}
+%\usecolortheme{seagull}
+%\usecolortheme{seahorse}
+%\usecolortheme{whale}
+%\usecolortheme{wolverine}
+
+%\setbeamertemplate{footline} % To remove the footer line in all slides uncomment this line
+%\setbeamertemplate{footline}[page number] % To replace the footer line in all slides with a simple slide count uncomment this line
+
+%\setbeamertemplate{navigation symbols}{} % To remove the navigation symbols from the bottom of all slides uncomment this line
+}
+%\usepackage{bibentry}
+\usepackage{graphicx} % Allows including images
+\usepackage{booktabs} % Allows the use of \toprule, \midrule and \bottomrule in tables
+\usepackage{array}
+
+\newcommand{\Latt}{\mathcal{L}}
+
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+\title[Cyclic CRH Functions]{Efficient Collision-Resistant Hashing from Worst-Case Assumptions on Cyclic Lattices} % The short title appears at the bottom of every slide, the full title is only on the title page
+
+\author{
+Chris Peikert
+\and
+Alon Rosen
+}
+\date{ } % Date, can be changed to a custom date
+
+\begin{document}
+
+\begin{frame}
+\titlepage % Print the title page as the first slide
+\centering
+{\footnotesize Presented By \\ \footnotesize Rachit Garg \\ \scriptsize CS14B050 \\ \scriptsize IIT Madras}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Motivation}
+\begin{enumerate}
+\item Collision-resistant hash functions
+are one of the most widely-employed cryptographic primitives.
+\item Usually faster heuristic constructions such as MD5 and SHA-1 are employed. [cryptanalysis possible? \cite{Wang:2005:FCF:2153419.2153421},\cite{Wang:2005:BMO:2154598.2154601}]
+\item Paper proposes a practical hash function with rigorous security guarantees.
+\end{enumerate}
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{Definitions}
+\begin{itemize}
+\item \textbf{Collision resistant functions}: A function family $\{f_a\}, a \in A$ is said to be collision-resistant if given a uniformly chosen $a \in A$, it is infeasible to find elements $x_1 \neq x_2$ so that $f_a(x_1) = f_a(x_2)$.
+\end{itemize}
+\end{frame}
+%------------------------------------------------
+
+\begin{frame}
+	\frametitle{Definitions}
+	\begin{itemize}
+		\item \textbf{Collision resistant functions}: A function family $\{f_a\}, a \in A$ is said to be collision-resistant if given a uniformly chosen $a \in A$, it is infeasible to find elements $x_1 \neq x_2$ so that $f_a(x_1) = f_a(x_2)$.
+		\item \textbf{Generalized Knapsacks}: For a ring R, key $a = (a_1 , . . . , a_m) \in R^m$, and input $x = (x_1 , . . . , x_m)$.
+		\\
+		$f_a(x) = \sum_{i=1}^{m}a_i·x_i$. 
+	\end{itemize}
+\end{frame}
+%------------------------------------------------
+
+\begin{frame}
+	\frametitle{Definitions}
+	\begin{itemize}
+		\item \textbf{Collision resistant functions}: A function family $\{f_a\}, a \in A$ is said to be collision-resistant if given a uniformly chosen $a \in A$, it is infeasible to find elements $x_1 \neq x_2$ so that $f_a(x_1) = f_a(x_2)$.
+		\item \textbf{Generalized Knapsacks}: For a ring R, key $a = (a_1 , . . . , a_m) \in R^m$, and input $x = (x_1 , . . . , x_m)$.
+		\\
+		$f_a(x) = \sum_{i=1}^{m}a_i·x_i$. 
+		\item \textbf{Cyclic Lattices}: A lattice Λ is said to be cyclic if for any
+		vector $x \in Λ$, its cyclic rotation also belongs to Λ. The cyclic rotation of $x = (x_0 , . . . , x_{n−1})^T \in R^n$ is defined as $(x_{n-1}, x_0, . . . , x_{n-2})^T$.
+	\end{itemize}
+\end{frame}
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{Micciancio's Result}
+\begin{itemize}
+\item Micciancio suggested a specific choice of the ring R and a large subset S(for the input) for which inverting the function (for random a, x) is at least as hard as solving certain worst-case problems on cyclic lattices \cite{Micciancio:2002:GCK:645413.652130}.
+\item Here, for a different choice of $S \subset R$, the generalized knapsack function can enjoy even stronger
+cryptographic properties.
+\end{itemize}
+\end{frame}
+%------------------------------------------------
+
+\begin{frame}
+	\frametitle{Micciancio's Result}
+	\begin{itemize}
+		\item Micciancio suggested a specific choice of the ring R and a large subset S(for the input) for which inverting the function (for random a, x) is at least as hard as solving certain worst-case problems on cyclic lattices \cite{Micciancio:2002:GCK:645413.652130}.
+		\item Here, for a different choice of $S \subset R$, the generalized knapsack function can enjoy even stronger
+		cryptographic properties.
+		\item \textbf{Generalized Knapsacks}: For a ring R, key $a = (a_1 , . . . , a_m) \in R^m$, and input $x = (x_1 , . . . , x_m)$.
+		\\
+		$f_a(x) = \sum_{i=1}^{m}a_i·x_i$. $x_i \in  S$
+	\end{itemize}
+\end{frame}
+%------------------------------------------------
+\begin{frame}
+\frametitle{Paper Idea}
+\begin{itemize}
+\item Formulated a reduction showing that for cyclic lattices of prime dimension n, the short independent vectors problem SIVP reduces to (a slight variant of) the shortest vector problem SVP with only a factor of 2 loss in approximation factor.
+\item Note that factor of loss in approximation is not trivial and the prime dimension constraint is not restricting.
+\end{itemize}
+\end{frame}
+%------------------------------------------------
+
+\begin{frame}
+	\frametitle{Paper Idea}
+	\begin{itemize}
+		\item Formulated a reduction showing that for cyclic lattices of prime dimension n, the short independent vectors problem SIVP reduces to (a slight variant of) the shortest vector problem SVP with only a factor of 2 loss in approximation factor.
+		\item Note that factor of loss in approximation is not trivial and the prime dimension constraint is not restricting.
+		\item Showed a worst case to average case reduction, where the worst case problem was SVP with an approximation factor up to $\tilde{O}(n)$.
+	\end{itemize}
+\end{frame}
+%------------------------------------------------
+\begin{frame}
+\frametitle{Papers Results}
+\begin{itemize}
+\item The choice of ring admits very efficient implementations of the knapsack function: using a Fast Fourier Transform algorithm. The resulting time complexity of the function is $O(m · n $ . poly$(\log n))$, with key size $O(m · n \log n)$.
+\end{itemize}
+
+\end{frame}
+
+%------------------------------------------------
+\begin{frame}
+	\frametitle{Papers Results}
+	\begin{itemize}
+		\item The choice of ring admits very efficient implementations of the knapsack function: using a Fast Fourier Transform algorithm. The resulting time complexity of the function is $O(m · n $ . poly$(\log n))$, with key size $O(m · n \log n)$.
+	\end{itemize}
+	\footnotesize{
+		\begin{table}
+			\begin{tabular}{|m{2cm} | m{1.3cm} | m{1.5cm} | m{1.3cm} | m{1.8cm} | m{1.5cm}|}
+				\hline
+				\textbf{ } & \textbf{Security} & \textbf{Efficiency} & \textbf{Lattice Class} & \textbf{Assumption} & \textbf{Approx. Factor}\\
+				\hline
+				Ajtai & CRHF & $O(n^2)$ & General & SVP etc. & poly(n) \\
+				Cai, Nerurkar & CRHF & $O(n^2)$ & General & SVP etc. & $n^{4+\epsilon}$ \\
+				Micciancio & OWF & $\tilde{O}(n)$ & Cyclic & GDD & $n^{1+\epsilon}$ \\
+				Micciancio, Regev & CRHF & $O(n^2)$ & General & SVP etc. & $\tilde{O}(n)$ \\
+				This work & CRHF & $\tilde{O}(n)$ & Cyclic & SVP etc. & $\tilde{O}(n)$ \\
+				\hline
+			\end{tabular}
+			\caption{\scriptsize{Comparison of results in lattice-based cryptographic functions with worst-case to average
+					case security reductions, to date. “Efficiency” means the key size and computation time, as a
+					function of the lattice dimension n. “Security” denotes the function’s main cryptographic property.}}
+		\end{table}
+	}
+\end{frame}
+%------------------------------------------------
+\begin{frame}
+\frametitle{Some More Definitions}
+\begin{block}{Cyclotomic Subspace}
+\begin{align*}
+H_\Phi = \{x \in \mathbb{R}^n:\Phi(\alpha)\text{ divides }x(\alpha) \in \mathbb{R}[\alpha]\}.
+\end{align*}
+\end{block}
+\end{frame}
+%------------------------------------------------
+
+\begin{frame}
+	\frametitle{Some More Definitions}
+	\begin{block}{Cyclotomic Subspace}
+		\begin{align*}
+		H_\Phi = \{x \in \mathbb{R}^n:\Phi(\alpha)\text{ divides }x(\alpha) \in \mathbb{R}[\alpha]\}.
+		\end{align*}
+	\end{block}
+	\begin{block}{SubSIVP}
+		The cyclotomic (generalized) short independent vectors problem,
+		$SubSIVP_\gamma^\zeta$ , given an $n$-dimensional full-rank cyclic lattice basis $B$ and an integer polynomial $\Phi(\alpha) \neq 0$ mod $(\alpha^n - 1)$ that divides $\alpha^n - 1$, asks for a set of $dim(H_\Phi)$ linearly independent
+		(sub)lattice vectors $S \subset \Latt(B) \cap H_\Phi$ such that $||S|| \leq \gamma(n) · \zeta(\Latt(B) \cap H_\Phi )$.
+	\end{block}
+\end{frame}
+%------------------------------------------------
+\begin{frame}
+\frametitle{Some More Definitions}
+\begin{block}{SubSVP}
+The cyclotomic (generalized) short vectors problem,
+$SubSVP_\gamma^\zeta$ , given an $n$-dimensional full-rank cyclic lattice basis $B$ and an integer polynomial $\Phi(\alpha) \neq 0$ mod $(\alpha^n - 1)$ that divides $\alpha^n - 1$, asks for a (sub)lattice vector $c \in \Latt(B) \cap H_\Phi$ such that $||c|| \leq \gamma(n) · \zeta(\Latt(B) \cap H_\Phi )$.
+\end{block}
+\end{frame}
+%------------------------------------------------
+\begin{frame}
+	\frametitle{Some More Definitions}
+	\begin{block}{SubSVP}
+		The cyclotomic (generalized) short vectors problem,
+		$SubSVP_\gamma^\zeta$ , given an $n$-dimensional full-rank cyclic lattice basis $B$ and an integer polynomial $\Phi(\alpha) \neq 0$ mod $(\alpha^n - 1)$ that divides $\alpha^n - 1$, asks for a (sub)lattice vector $c \in \Latt(B) \cap H_\Phi$ such that $||c|| \leq \gamma(n) · \zeta(\Latt(B) \cap H_\Phi )$.
+	\end{block}
+	\begin{block}{SubIncSVP}
+		The cyclotomic (generalized) short vectors problem,
+		$SubIncSVP_\gamma^\zeta$ , given an $n$-dimensional full-rank cyclic lattice basis $B$ and an integer polynomial $\Phi(\alpha) \neq 0$ mod $(\alpha^n - 1)$ that divides $\alpha^n - 1$, and a nonzero (sub)lattice vector $c \in \Latt(B) \cap H_\Phi$ such that $||c|| > \gamma(n) · \zeta(\Latt(B) \cap H_\Phi )$, asks for a non-zero (sub)lattice vector $c' \in \Latt(B) \cap H_\Phi$ such that $||c'|| \leq ||c||/2$.
+	\end{block}
+\end{frame}
+%------------------------------------------------
+\begin{frame}
+\frametitle{Intuition}
+The divisors of $(\alpha^n - 1)$ in $\mathbb{Z}[\alpha]$ correspond to special cyclotomic linear subspaces of $\mathbb{R}^n$ . These
+subspaces admit a natural partitioning into complementary pairs of orthogonal subspaces. Even more importantly, the subspaces are closed under cyclic rotation of vector coordinates, and under certain other conditions, these rotations are linearly independent. These facts imply a new connection between the SIVP and SVP problems in cyclic lattices.
+\end{frame}
+%------------------------------------------------
+\begin{frame}
+\frametitle{Lemmas}
+\textbf{Lemma} $H_\Phi$ is closed under rotation, thats if $c \in H_\Phi$, then $rot(c) \in H_\Phi$.
+\\
+\textbf{Proof:}
+\\
+{
+\centering
+$rot(c) = \alpha \cdot c(\alpha)$ mod $(\alpha^n - 1)$
+\\
+$(\alpha^n-1) | rot(c) - \alpha \cdot c(\alpha)$
+\\
+$\Phi(\alpha) | rot(c) - \alpha \cdot c(\alpha)$
+\\
+$\Phi(\alpha) | rot(c)$\par
+}
+\end{frame}
+%------------------------------------------------
+\begin{frame}
+	\frametitle{Lemmas}
+	\textbf{Lemma} $H_\Phi$ is closed under rotation, thats if $c \in H_\Phi$, then $rot(c) \in H_\Phi$.
+	\\
+	\textbf{Proof:}
+	\\
+	{
+		\centering
+		$rot(c) = \alpha \cdot c(\alpha)$ mod $(\alpha^n - 1)$
+		\\
+		$(\alpha^n-1) | rot(c) - \alpha \cdot c(\alpha)$
+		\\
+		$\Phi(\alpha) | rot(c) - \alpha \cdot c(\alpha)$
+		\\
+		$\Phi(\alpha) | rot(c)$\par
+	}
+	\textbf{Lemma} Let $c \in \mathbb{Z}^n$, and suppose $\Phi(\alpha) \in \mathbb{Z}[\alpha]$ divides $(\alpha^n-1)$ and is coprime to $c(\alpha)$. Then $c, rot(c)....,rot^{deg(\Phi)-1}(c)$ are linearly independent.
+\end{frame}
+%------------------------------------------------
+\begin{frame}
+	\frametitle{Lemmas}
+	\textbf{Lemma} $H_\Phi$ is closed under rotation, thats if $c \in H_\Phi$, then $rot(c) \in H_\Phi$.
+	\\
+	\textbf{Proof:}
+	\\
+	{
+		\centering
+		$rot(c) = \alpha \cdot c(\alpha)$ mod $(\alpha^n - 1)$
+		\\
+		$(\alpha^n-1) | rot(c) - \alpha \cdot c(\alpha)$
+		\\
+		$\Phi(\alpha) | rot(c) - \alpha \cdot c(\alpha)$
+		\\
+		$\Phi(\alpha) | rot(c)$\par
+	}
+	\textbf{Lemma} Let $c \in \mathbb{Z}^n$, and suppose $\Phi(\alpha) \in \mathbb{Z}[\alpha]$ divides $(\alpha^n-1)$ and is coprime to $c(\alpha)$. Then $c, rot(c)....,rot^{deg(\Phi)-1}(c)$ are linearly independent.
+	\\
+	\textbf{Lemma} Let $a,b \in \mathbb{R}^n$ with $a(\alpha) \cdot b(\alpha) = 0$ mod $(\alpha^n-1)$. Then $\langle a,b \rangle = 0$.
+\end{frame}
+%------------------------------------------------
+\begin{frame}
+	\frametitle{Lemmas}
+	\textbf{Lemma} $H_\Phi$ is closed under rotation, thats if $c \in H_\Phi$, then $rot(c) \in H_\Phi$.
+	\\
+	\textbf{Proof:}
+	\\
+	{
+		\centering
+		$rot(c) = \alpha \cdot c(\alpha)$ mod $(\alpha^n - 1)$
+		\\
+		$(\alpha^n-1) | rot(c) - \alpha \cdot c(\alpha)$
+		\\
+		$\Phi(\alpha) | rot(c) - \alpha \cdot c(\alpha)$
+		\\
+		$\Phi(\alpha) | rot(c)$\par
+	}
+	\textbf{Lemma} Let $c \in \mathbb{Z}^n$, and suppose $\Phi(\alpha) \in \mathbb{Z}[\alpha]$ divides $(\alpha^n-1)$ and is coprime to $c(\alpha)$. Then $c, rot(c)....,rot^{deg(\Phi)-1}(c)$ are linearly independent.
+	\\
+	\textbf{Lemma} Let $a,b \in \mathbb{R}^n$ with $a(\alpha) \cdot b(\alpha) = 0$ mod $(\alpha^n-1)$. Then $\langle a,b \rangle = 0$.
+	\\
+	\textbf{Lemma} $H_\Phi$ is a linear subspace of $\mathbb{R}^n$ of dimension $n - deg(\Phi)$.
+\end{frame}
+
+%------------------------------------------------
+\begin{frame}
+\frametitle{Reductions}
+\textbf{Proposition} For any $\zeta, \gamma(n)$, there is a deterministic, polynomial-time sublattice-preserving
+reduction from $SubSVP_\gamma^\zeta$ to $SubIncSVP_\gamma^\zeta$.
+\end{frame}
+%------------------------------------------------
+\begin{frame}
+	\frametitle{Reductions}
+	\textbf{Proposition} For any $\zeta, \gamma(n)$, there is a deterministic, polynomial-time sublattice-preserving
+	reduction from $SubSVP_\gamma^\zeta$ to $SubIncSVP_\gamma^\zeta$.
+	\\
+	\textbf{Informal Proof:}
+	\\
+	Given an instance of $(B,\Phi(\alpha))$, iteratively reduce the length of $c$ by invoking oracle for $SubIncSVP_\gamma^\zeta$ on $(B,\Phi(\alpha),c)$. If oracle fails we have solved $SubSVP_\gamma^\zeta$. (Note it is easy to show that the iterative process lasts poly number of times).
+\end{frame}
+%------------------------------------------------
+\begin{frame}
+	\frametitle{Reductions}
+	\textbf{Proposition} For any $\zeta, \gamma(n)$, there is a deterministic, polynomial-time sublattice-preserving
+	reduction from $SubSIVP_\gamma^\zeta$ to $SubSVP_\gamma^\zeta$ which makes one oracle call where $\Phi(\alpha) = (\alpha^n - 1)/\Phi_k(\alpha)$ for some $k | n$.
+\end{frame}
+
+%------------------------------------------------
+\begin{frame}
+	\frametitle{Reductions}
+	\textbf{Proposition} For any $\zeta, \gamma(n)$, there is a deterministic, polynomial-time lattice-preserving
+	reduction from $SIVP_{\max(n,2\gamma)}$ on a cyclic lattice of prime dimension to $SubSVP_\gamma^{\lambda_1}$ which makes one oracle call where $\Phi(\alpha) = \Phi_1(\alpha) = \alpha - 1$.
+\end{frame}
+%------------------------------------------------
+\begin{frame}
+	\frametitle{Reductions}
+	\textbf{Proposition} For any $\zeta, \gamma(n)$, there is a deterministic, polynomial-time lattice-preserving
+	reduction from $SIVP_{\max(n,2\gamma)}$ on a cyclic lattice of prime dimension to $SubSVP_\gamma^{\lambda_1}$ which makes one oracle call where $\Phi(\alpha) = \Phi_1(\alpha) = \alpha - 1$.
+	\\
+	\textbf{Intuition:}
+	\\
+	The main idea behind the proof is as follows: first, we use the $SubSVP$ oracle to find a
+	short vector in $\Latt(B) \cap H_{\Phi_1}$ , then rotate it to yield $n - 1$ linearly independent vectors. For the nth
+	vector, we take the shortest vector in $\Latt(B) \cap H_{\Phi_n}$ , which can be found efficiently; furthermore, it
+	is an n-approximation to the shortest vector in $L(B) \setminus H_{\Phi_1}.$
+	\\~\\
+	$\mathbf{s}_i = \mathbf{b}_i \otimes (1,1,.....) = (s_i,s_i....s_i) \in \Latt(B)$. Let $g = gcd(s_1,s_2....s_n)$. Output $\mathbf{g} = (g,g....g)$ as the shortest vector.
+\end{frame}
+%------------------------------------------------
+\begin{frame}
+	\frametitle{Reductions}
+	\textbf{Proposition} For any $\gamma(n)$, there is a deterministic, polynomial-time lattice-preserving
+	reduction from $SVP_{\max(n,\gamma)}$ on a cyclic lattice of prime dimension to $SubSVP_\gamma^{\lambda_1}$ which makes one oracle call where $\Phi(\alpha) = \Phi_1(\alpha) = \alpha - 1$.
+	\\
+	\textbf{Idea:}
+	\\
+	The idea is same as in the previous reduction where we used the oracle to solve $SIVP$. To use the oracle to solve $SVP$, output minimum of norm of c, and the norm of the $n^{th}$ vector as chosen before.
+\end{frame}
+%------------------------------------------------
+\begin{frame}
+\frametitle{Finding Collisions}
+\textbf{Generalized Compact Knapsacks}: For any ring R, subset $S \subset R$ and integer $m \geq 1$, the generalized function family $H(R,S,m) = \{f_a : S^m \rightarrow R\}_{a\in R^m}$ is defined by:
+\begin{align*}
+f_a(x) = \sum_{i=1}^{m}x_i \cdot a_i
+\end{align*}
+\textbf{Observation:} $f_A$ is linear:
+\begin{align*}
+f_A(X) + f_A(X') = f_A (X + X')
+\end{align*}
+For random key $A$, to find a collision with $X'$ it suffices to find a non-zero $X \in S^m$ such that $f_A(X) = 0$, and $||X||_\infty$ is small.(So that the bound on $||X||_\infty$ is still satisfied).
+\end{frame}
+%------------------------------------------------
+\begin{frame}
+	\frametitle{Finding Collisions}
+	\begin{align*}
+		f_a(x) = \sum_{i=1}^{m}x_i(\alpha) \cdot a_i(\alpha) mod (\alpha^n - 1)
+	\end{align*}
+	We define $X = (x_1,x_2...x_m)$ as follows, for any q that is a divisor of n:
+	\begin{align*}
+		x_1(\alpha) = \frac{\alpha^n-1}{\alpha^q-1}
+		\\
+		x_j(\alpha) = 0 | j \neq 1
+	\end{align*}
+	Now $f_A(X) = 0$ if $a_1(\alpha)$ is divisible by $a^q - 1$, note that this happens with probability $1/p^q$. Over a uniform choice of A, so we have found a specific $X \neq 0$, such that $f_A(X) \neq 0$ with non-negligible probability.
+\end{frame}
+
+%------------------------------------------------
+\begin{frame}
+	\frametitle{Removing Collisions}
+	The fact enabling this attack is that $(\alpha^n-1)$ is not irreducible in $\mathbb{Z}_p[\alpha]$. So it easy to find $x(\alpha)$ with small coefficients such that $a(\alpha)x(\alpha) = 0$ mod $(\alpha^n-1)$ and for each divisor of $(\alpha^n-1)$ either $x(\alpha) = 0$ or $a(\alpha) = 0$.
+\end{frame}
+
+%------------------------------------------------
+\begin{frame}
+	\frametitle{Removing Collisions}
+	The fact enabling this attack is that $(\alpha^n-1)$ is not irreducible in $\mathbb{Z}_p[\alpha]$. So it easy to find $x(\alpha)$ with small coefficients such that $a(\alpha)x(\alpha) = 0$ mod $(\alpha^n-1)$ and for each divisor of $(\alpha^n-1)$ either $x(\alpha) = 0$ or $a(\alpha) = 0$.
+	\\~\\
+	To prevent this we enforce an algebraic constraint on X, informally we require every $x_i(\alpha)$ to be divisible over $\mathbb{Z}[\alpha]$ by $\frac{\alpha^n-1}{\Phi_k(\alpha)}$ for some fixed k dividing n. Now essentially the evaluation is performed mod $\Phi_k(\alpha)$. And hence we show a reduction.
+	\begin{center}
+	$S_{D,\Phi} = \{x \in \mathbb{Z}^n_p : ||x||_\infty \leq D$ and $\Phi(\alpha)$ divides $x_\mathbb{Z}(\alpha)$ in $\mathbb{Z}[\alpha]\}$
+	\end{center}
+\end{frame}
+
+%------------------------------------------------
+\begin{frame}
+	\frametitle{The main reduction}
+	We reduce from $SubIncSVP_\gamma^{\eta_\epsilon}$ to collision function $H(\mathbb{Z}_{p(n)} , S_{D(n),\Phi}, m(n))$. Note that this is a worst case to average case reduction on cyclic lattices.
+	\\
+	Here we try to show three main properties:
+	\begin{enumerate}
+		\item Sampling an average instance.
+		\item Outputting a new vector and showing that it belongs in $\Latt(B) \cap H$.
+		\item It has a norm smaller than half the norm of input vector in $SubIncSVP$, with non negligible probability.
+	\end{enumerate}
+\end{frame}
+
+%------------------------------------------------
+\begin{frame}
+	\frametitle{The algorithm}
+	\begin{enumerate}
+	\item For $i = 1$ to $m$,
+		\begin{itemize}
+			\item Generate uniform $\mathbf{v}_i \in \Latt(B)\cap H \cap P(Rot^d(\mathbf{c}))$. \cite{Micciancio2002}
+			\item Generate noise $\mathbf{y}_i \in H$, according to $D_{H,s}$ for $s = 2||c||/\gamma(n)$. Let $y'_i = y_i$ mod $P(B)$.
+			\item Choose $b_i$ (as described below) so that $Rot^n(\mathbf{c}) \cdot \mathbf{b} = \mathbf{v_i} + \mathbf{y'_i}$ , and let $\mathbf{a_i} = \lfloor \mathbf{b_i} \cdot p \rceil $
+		\end{itemize}	
+	\end{enumerate}
+\end{frame}
+
+%------------------------------------------------
+\begin{frame}
+	\frametitle{The algorithm}
+	\begin{enumerate}
+		\item For $i = 1$ to $m$,
+		\begin{itemize}
+			\item Generate uniform $\mathbf{v}_i \in \Latt(B)\cap H \cap P(Rot^d(\mathbf{c}))$. \cite{Micciancio2002}
+			\item Generate noise $\mathbf{y}_i \in H$, according to $D_{H,s}$ for $s = 2||c||/\gamma(n)$. Let $y'_i = y_i$ mod $P(B)$.
+			\item Choose $b_i$ so that $Rot^n(\mathbf{c}) \cdot \mathbf{b} = \mathbf{v_i} + \mathbf{y'_i}$ , and let $\mathbf{a_i} = \lfloor \mathbf{b_i} \cdot p \rceil $
+		\end{itemize}
+		\item Pass A to collision finding oracle, and get collission pairs $X,X'$, let $Z = X - X'$, such that $||Z||_\infty \leq 2D$ and $\Phi(\alpha)$ divides every $z_i(\alpha)$.
+		\item Output 
+		\begin{align*}
+		c' = \sum_{i=1}^m(\mathbf{v_i}+\mathbf{y'_i} - \mathbf{y_i}) \otimes \mathbf{z_i} - \mathbf{c} \otimes \frac{\sum_{i=1}^m \mathbf{a_i} \otimes \mathbf{z_i}}{p}
+		\end{align*} 	
+	\end{enumerate}
+\end{frame}
+%------------------------------------------------
+\begin{frame}
+	\frametitle{Correctness}
+	\begin{enumerate}
+		\item It is uniform because for choosing b we sample the latter half uniformly from $I^{n-d}$. And the former half is chosen such that ${(I_{d \times d})}^{-1}(v_i + y'_i - w)$, where $w = Rot^n(c) \cdot {(0,0,...(b_i)_d,..,(b_i)_n)}^T$. Since y' is statistically uniform from our choice of c such that the spread in the guassian is more than the smoothing parameter, and v is uniform. We have the former half is uniform, and since the latter half is already sampled uniformly we have that the $b_i's$ are uniform.
+	\end{enumerate}
+\end{frame}
+%------------------------------------------------
+\begin{frame}
+	\frametitle{Correctness}
+	\begin{enumerate}
+		\item Convolution of a lattice vector with an integer vector also lies in the lattice, hence the second property holds true. Note that the second term in the output vector is c convoluted with an integer vector due to a convolution z being congruent to zero mod p as we have constructed z from a collision. 
+	\end{enumerate}
+\end{frame}
+%------------------------------------------------
+\begin{frame}
+	\frametitle{Putting it together}
+	Showed a reduction from $SubIncSVP$ to generalized knapsack with a specific choice of ring. Showed a reduction from $SVP_{\max(n,\gamma)}$ to $SubSVP$, and $SubSVP$ to $SubIncSVP$. Hence with appropriate parameters, the given choice of function is collision resistant assuming hardness of SVP, with gamma approximation on cyclic lattices.
+\end{frame}
+%------------------------------------------------
+
+\begin{frame}{Bibliography}
+\frametitle{References}
+\footnotesize{
+\bibliographystyle{amsalpha}
+\bibliography{references}
+}
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}
+\Huge{\centerline{The End}}
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}

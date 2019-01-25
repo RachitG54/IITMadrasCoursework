@@ -1,0 +1,7 @@
+README
+Compile using make file by doing make all, to run, use ./emailserver portno at server side, and ./emailclient address and portno.
+You can give the inputs as mentioned in the question, please refer to the question for providing inputs. Errors have been handled and in case the user gives the wrong input, the user is asked again for the appropriate command.
+You can view the email files from each user as well.
+Also there is a file called LSTU that gives you the list of all users using the email service.
+There is a limit to the buffersize that can be sent. I have set it at 1024 bytes, it can be increased to a larger value such as 100000. 
+To run the script use the command, scriptreplay --timing=time.txt script.log

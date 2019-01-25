@@ -1,0 +1,181 @@
+\documentclass[solution,addpoints,12pt]{exam}
+\printanswers
+\usepackage{amsmath,amssymb,complexity,amsthm}
+\usepackage{xspace}
+\newcommand{\many}{\ensuremath{\le_m}\xspace}
+\newcommand{\nonadap}{\ensuremath{\le_T^{na}}\xspace}
+\newcommand{\turing}{\ensuremath{\le_T}\xspace}
+\newcommand{\KD}{\ensuremath{\mathrm{K}}\xspace}
+\renewcommand{\MP}{\ensuremath{\mathrm{MP}}\xspace}
+\newcommand{\HP}{\ensuremath{\mathrm{HP}}\xspace}
+\newcommand{\TM}{\ensuremath{\mathrm{TM}}\xspace}
+\newcommand{\OTM}{\ensuremath{\mathrm{OTM}}\xspace}
+\renewcommand{\W}{\ensuremath{\mathcal{W}}\xspace}
+\newcommand{\Ink}{{\sc Ink}}
+\newcommand{\ES}{{\sc Even-States}}
+\newcommand{\hturn}{{\sc HeadTurns}}
+\newcommand{\Energy}{{\sc Energy}}
+\newcommand{\Pol}{{\sc Police}}
+\newcommand{\Mx}{\ensuremath{(M,x)}\xspace}
+
+\begin{document}
+
+\hrule
+\vspace{3mm}
+\noindent 
+{\sf CS6014-2018 : Computability and Comp lexity  \hfill Max Marks : 42}
+\vspace{3mm}\\
+\noindent 
+{\sf Problem Set \#3 \hfill Due on : Oct 14, 22:00 (hard)}
+\vspace{3mm}
+\hrule
+{\small
+\begin{itemize}
+\item All submissions must be in PDF form produced using \LaTeX. Use the same \LaTeX file (from which this pdf file was produced) to add your information and answers.
+\item You are not expected to take ideas from sources other than textbooks and your classmates. And all collaborations should be explicitly cited in the solution that you submit.
+\end{itemize}}
+\hrule
+\vspace{3mm}
+{\sf Name : Rachit Garg \hfill Roll No: CS14B050}
+\vspace{3mm}
+
+%\begin{center}
+%\gradetable[v][questions]
+%\end{center}
+%\hrule
+\begin{questions}
+\question[16]\textbf{(Computational Resources)}
+Check whether the following functions qualifies as {\em computational resources}. Assume that all of them are defined as $\bot$ if and only if $M$ does not halt on $x$. Write down detailed arguments.
+\begin{parts}
+\part {\sc Ink}$(M,x)$ : The total number of times (over all cells) that the machine $M$ on input $x$ rewrites symbols (that is, writes a different symbol to the cell than what it read from that cell) on the tape before halting.
+\part {\sc Even-States}$(M,x)$: Number of even numbered states that the machine $M$ visits on input $x$ until it halts.
+\part {\sc HeadTurns}$(M,x)$ : Number of heard turns that the maching $M$'s tape makes on input $x$ until it halts.
+\part {\sc Energy}$(M,x)$ : Number of $1$s written to the tape when $M$ is run on input $x$ until the machine halt.
+\end{parts}
+\begin{solution}
+	\begin{parts}
+		\part 
+		\begin{proof} 
+			\Ink$(M,x)$ is a computational resource. 
+			
+			The first condition of Blum's Axiom is true from definition, i.e. the function is defined if $M$ halts on $x$ i.e. there is a unique number that denoted the total no of distinct writes on the tape after the machine halts. The only if part is true as we defined the function to output $\bot$ if the machine does not halt.
+			
+			The second condition is true as $\Pol_{\Ink}$ is decidable. This is because as seen in class in the example of bounding the work tape, here too we can bound the work tape. If we wish to check that \Ink $\Mx \leq k$, our work tape must be bound by $(|x| + k)$ as otherwise the symbol we rewrite will exceed $k$. Note that we do not get any useful information if we keep on copying the empty symbol at the end of the tape. If we are going beyond the length $(|x|+k)$, we must have performed $k$ writes to reach that stage. (We can actually define our transition function such that the tape alphabet that gets written, does not have the empty tape symbol and we still don't loose on any computation). Since now the work tape is bounded we have a similar proof as seen in class, we can now bound the number of different configurations by $|Q| \times n \times \Gamma^{n+k} \times (n+k)$, where $n = |x|$. We can now keep subtracting our count of distinct configurations from a threshhold and exit once these distinct configurations reach 0. If at any point we receive two similar configurations, we can conclude that we will loop and output $\bot$. At the end of the the compuation, if we have halted before count of the distinct configuration reaches 0, or if we have reached accept stage, we can simply check if the count of the number of distinct writes is less than or equal to $k$. Thus outputting yes/no.
+		\end{proof}
+		\part
+		\begin{proof}
+			\ES \Mx is not a computational resource. Consider the following reduction, for each state in our machine $M$ we create a machine $M'$ which has twice the number of states as $M$. We add $|Q|$ dummy states in $M'$ at all the even positions. At all the odd positions we have the meaningfull states. We make sure that every input goes through the first dummy state only once and the rest of the states are never reached. Now if we wish to find if a machine $M$ halts on an input $x$, we just have to query for \Pol$_\ES$ on $(M',x,1)$, the answer no implies that the machine has outputted $\bot$ and hence is not halting. The answer yes, implies that the machine has indeed halted, and passed through the one state we designed for it to go through. Thus answering halting problem for us. As we know that \HP is undecidable, this implies \Pol$_\ES$ is undecidable. 
+		\end{proof}
+		\part
+		\begin{proof}
+			
+			\hturn\Mx is a computational resource. 
+			
+			The first condition of Blum's Axiom is true from definition, i.e. the function is defined if $M$ halts on $x$ i.e. there is a unique number that denotes the total no of turns it has made during its run till the machine halted(We can assume that we are coming from the left direction). The only if part is true as we defined the function to output $\bot$ if the machine does not halt.
+			
+			The second condition is true as $\Pol_{\hturn}$ is decidable. This is because as seen in class in the example of bounding the work tape, here too we can bound the work tape. If we wish to check that \hturn $\Mx \leq k$, our work tape must be bound by $(k*|x|)$. We can imagine that we do not get any useful information if we keep on copying or working on the empty symbol at the end of the tape. We thus now work so that at the start of every new turn we make the following adjustment, we copy all the details of our previous $|x|$ length to the new $|x|$ part of the tape but in reverse, now if a new turn is reached, instead of turning on the configuration, we can go forward to the new part of the tape i.e. copied part and start working in the same direction. We continue the process till all $k$ turns have been finished. Since now the work tape is bounded we have a similar proof as seen in class, we can now bound the number of different configurations by $|Q| \times n \times \Gamma^{nk} \times (nk)$, where $n = |x|$. We can now keep subtracting our count of distinct configurations from a threshhold and exit once these distinct configurations reach 0. If at any point we receive two similar configurations, we can conclude that we will loop and output $\bot$. At the end of the the compuation, if we have halted before count of the distinct configuration reaches 0, or if we have reached accept stage, we can simply check if the number of attempted turns is less than or equal to $k$. Thus outputting yes/no. 
+			
+			Alternatively, this can also be seen as a consequence of the fact that we can just run the input on the machine, if we keep on looping, then the turns will at some point increase than $k$, and at that stage we simply output no, if instead the machine halts before reaching $k$ turns we just ouput yes, note that here also we assume that it isn't useful to keep on going to the right when there is nothing of use to read in the tape. This can be easily prevented by making some constraints on the transition function of our TM, such that on a read of empty symbol we always go left.
+		\end{proof}
+		\part
+		\begin{proof}
+			\Energy \Mx is not a computational resource. Consider the following reduction, for each state in our machine $M$ we create a machine $M'$ which removes the symbol $1$ from writing on the input, i.e. we create a dummy symbol $1'$ in our tape alphabet. We change our transition functions appropriately to now allow $1'$ to do the job that $1$ was doing. $M'$ on input $x$ now preprocesses first and replaces all instances of $1$ in the input with $1'$. In order to find out if  a machine $M$ halts on an input $x$, we just have to query for \Pol$_\Energy$ on $(M,x,0)$, the answer no implies that the machine has outputted $\bot$ and hence is not halting. The answer yes, implies that the machine has indeed halted, and has not written any $1$ on the input tape. Thus answering halting problem for us. As we know that \HP is undecidable, this implies \Pol$_\Energy$ is undecidable. 
+		\end{proof}
+	\end{parts}
+\end{solution}
+\question[7]\textbf{(Making TMs Oblivious)}
+Define a Turing Machine $M$ to be \textit{oblivious} if its head movements do not depend on the input but only on the input length. That is, $M$ is oblivious if for every input $x \in \{0,1\}^*$ and $i \in \mathbb{N}$, the location of each of $M$'s heads at the $i$-th step of execution on input $s$ is only a function of $|x|$ and $i$. Show that for every time constructible function $t: \mathbb{N} \to \mathbb{N}$, if $L \in \DTIME(t(n))$, then there is an oblivious TM that decides $L$ in time $O(t(n)^2)$ (Hint : Use the idea of the simulation in tape reduction theorem).
+
+\begin{solution}
+	\begin{proof}
+		If $L \in \DTIME(t(n)) \implies \exists$ TTM $M$, s.t. $\forall x~time(M,x) \leq t(|x|)$ and $L(M) = L$.
+		
+		The idea is to construct a machine $M'$ that simulates $M$. We observe that whenever $M$ is at step $j$ of its execution, it only reads inputs less than equal to $j$. This is because if it was reading an input at a tape position more than $j$ it must have taken more than $j$ steps to reach the reach that tape position. To construct an oblivious turing machine that uses this property, when we are simulating step $j$ of execution of $M$ we will visit all positions till $j$ in the tape of $M'$ and then head back to the starting position. Note that since $t(n)$ is time constructible we will always be able to calculate the position $j$ in $O(t(n))$ time (Since $j$ is less than $t(n)$). The running time of such an algorithm is $(2\times1) + (2\times2) + (2\times3) + \ldots+(2\times t(n))$ during the execution (twice because we are going back to the head position). The total execution time is $(t(n)+1)(t(n))$ i.e. $O(t(n)^2)$. 
+		
+		To see that such an $M'$ is oblivious, observe that the head position of $i^{th}$ execution can be clearly defined in terms of $n$ and $i$. Based on $i$ find which execution step of $M$ are we currently in. (find $i'$ st $\sum_{j=1}^{i'}(2j) \leq i < \sum_{j=1}^{i'+1}(2j)$ and then let $h = i - \sum_{j=1}^{i'}(2j)$. If $h \leq i'$ then we are at head position $h$ otherwise we are at head position $2(i') - h$). 
+		The transition states are appropriately defined for $M'$ so that $M$ can be simulated accurately.    
+	\end{proof}
+\end{solution}
+\question[7]\textbf{(Undecidability of Time Bounds)}
+When we attempted to prove the time hierarchy thereom, we said we do not have an enumeration of Turing machines running in time $t_1(n)$. We substantiate this by this exercise. Let $t(n)$ be a function such that for all $n \in \mathbb{N}$, it holds $t(n) \ge n+1$, then the problem is of given a Turing machine $M$ testing if it runs in time $t(n)$ is undecidable. (Hint : Reduce from $\MP_\epsilon$).
+\begin{solution}
+	\begin{proof}
+			 We claim that $\MP_\epsilon \many Q3$.
+			 
+			 Let $\sigma : \Sigma^* \rightarrow \Sigma^*$ be the reduction.
+			 \\
+			 Input: $(M)$
+			 \\
+			 Output: $(M')$
+			 \\
+			 We will construct a machine $M'$ that is as follows:
+			 \\
+			 \begin{center}
+			 \fbox{\parbox[t]{8cm}{
+			 		$M'$ on input $z$ where $|z| = n$
+			 		\\
+			 		\rule{3cm}{0.4pt}
+			 		\\
+			 		Run $M$ on input $\epsilon$ for $n+1$ steps
+			 		\\ 
+			 		If $M$ accepts, then accept $z$
+			 		\\
+			 		else run for $t(n)^2$ time and reject.
+			 }}
+			 \end{center}
+			 Clearly, if $M$ accepts input $\epsilon$, it must except in a fixed number of steps, i.e. $\exists n$ such that $M$ accepts $\epsilon$ in $n+1$ steps. Thus all strings $z$ of length $n$ will be accepted by $M'$ and hence $M'$ runs in time $t(n)$, because $\forall n, t(n) \geq n+1$. If $M$ does not accept $\epsilon$ we have that $M'$ will run for atleast $t(n)^2$ time  on all inputs and hence will not run in time $t(n)$ for any input. Thus if we have a machine that can decide $Q3$, then we have a machine that can decide $\MP_\epsilon$ which we know is undecidable. Thus $Q3$ must be undecidable.
+	\end{proof}
+\end{solution}
+\textbf{Extra Credit(7 points):} Show that the condition $t(n) \ge n+1$ is necessary in the above claim. That is, if there is at least one $n_0$ such that $t(n_0) \le n_0$, then show that the problem of given a Turing machine $M$ testing if it runs in time $t(n)$ is actually decidable.
+\begin{solution}
+	\begin{proof}
+		The above reduction doesn't work as if there is a machine $M$ that accepts $\epsilon$ in exactly $n_0 + 1$ steps, then it will be accepted by our machine $M'$ in $n_0+1$ steps, this is not within $t(n)$. 
+		%To show decidability we can just construct a $M'$ that runs on 
+	\end{proof}
+\end{solution}
+\question[7]\textbf{(Tape Reduction for Non-deterministic Turing Machines)}
+Explore a definition of time in non-deterministic Turing machines : A non-deterministic Turing machine is said to run in time $t(n)$ if it runs in time $t(n)$ in all its non-deterministic computation paths. Let $t(n) \ge n$. Show that any language in $\NTIME(t(n))$ can be accepted by a non-deterministic 2-tape Turing Machine in time $O(t(n))$.
+
+\begin{solution}
+	\begin{proof}
+		In short we wish to show tape reduction for non deterministic turing machines, i.e. any NTM $N$ running in time $t(n)$ with $k$ tapes can be simulated by a NTM $N'$ running in time $O(t(n))$ with two tapes. To do this, we follow a similar approach in class, i.e. we change our encoding of tape alphabets and include hat symbols to denote our head postion. i.e $\Gamma' = (\Gamma \cup \hat \Gamma)^k$. Now we must note the head position. We realize that the head position is the only reason that we had to be content with a quadratic time in the algorithm we studied in class. Instead, here we can extract the non determistic capability of the machine. Let $q$ on input tape symbols(assuming $4$ tape) $(a_1,a_2,a_3,a_4)$ we can have multiple head positions, though the head position will always be a subset of $2^4$ i.e. $16$.
+	\end{proof}
+\end{solution}
+\question[5]\textbf{(Extension of Crossing Sequences Argument)}
+We showed in class (Oct 8, 2018) that any 1-tape Turing machine for {\sc Palindrome} language should run in $\Omega(n^2)$ time. Extend this argument to show that for  $t(n)\ge n$ and $s(n) \ge \log n$ and for any Turing machine that is both $t(n)$ time-bounded and $s(n)$ space-bounded and deciding {\sc Palindrome}, it must hold that the product $t(n)s(n)$ is $\Omega(n^2)$. \\ 
+(Note that this shows a time-space trade-off for palindrome language, and this trade-off is valid even for the 2-tape linear-time Turing machine that we designed in class.)
+\begin{solution}
+	\begin{proof}
+		Going along the same proof in class, we claim that 
+		
+		Let $M$ be a turing machine accepting $PAL$ and having space $s(n)$, $\exists x, x \in \{0,1\}^{n/4}$ such that $x\#^{n/2}x^R$ runs on time $\Omega(\frac{n^2}{s(n)})$. 
+		
+		Let $C_i(x)$ be a sequence of (states,worktape) on which $M$ crosses the index $i$. Let 
+		\[C(x) = \{C_i(x) | n/4 \leq i \leq 3n/4 \}\]
+		Claim seen in class, $\forall x \neq y, C(x) \cap C(y) = \phi$. This is still true in our case as we store all the relevant information in order to simulate the turing machines given the states. The cut and paste argument still holds as the work tape is also now same when we cut and paste one part over the other. Since the work tape and the state, input is same, we proceed in an exact same manner and we would end up excepting a string that is not pallindrome if the claim was not true. We don't prove this claim rigorously in this exercise. (Its exactly same to that studied in class).
+		
+		Analysis:
+		
+		Let, $r(x) = $ shortest crossing sequence in $C(x)$. Let $r_i$ be $r(x_i)$ where $x_i \in \{0,1\}^{n/4}$.
+		Then all of $r_1,r_2,\ldots,r_{2^{n/4}}$ must be distinct due to the uniqueness of crossing sequences at any position.
+		
+		Let $l$ be the $\max_x|r_x|$. Number of sequences of length $j$ are given by $(|Q||\Gamma|^{s(n)})^j$, where $\Gamma$ is the tape alphabet and $s(n)$ is the size of our work tape. (The different possibilites of the work tape are $|\Gamma|^{s(n)}$, this gets included with every state.) 
+		Let $|Q||\Gamma|^{s(n)} = q$. We count the number of distince crossing sequences that can be produced with length $\leq l$ i.e. $ = q^l + q^{l-1} + \ldots 1$. This must be greater than equal to the distinct crossing sequences that we have i.e.
+		\begin{align*}
+			q^l + q^{l-1} + \ldots + 1 \geq 2^{n/4}
+			\\
+			\frac{q^{l+1} - 1}{q-1} \geq 2^{n/4}
+			\\
+			q^{l+1} \geq 2^{n/4}
+			\\
+			l = \Omega(\frac{\log {2^{n/4}}}{\log q})
+			\\
+			l = \Omega(\frac{n/4}{\log |Q||\Gamma|^{s(n)}})
+			\\
+			l = \Omega(\frac{n}{s(n)})
+		\end{align*}   
+		Hence there exists some string such that the running time of $M$ is $(n/2)\Omega(\frac{n}{s(n)}) = \Omega(\frac{n^2}{s(n)})$.
+	\end{proof}
+\end{solution}
+\end{questions}
+\end{document}

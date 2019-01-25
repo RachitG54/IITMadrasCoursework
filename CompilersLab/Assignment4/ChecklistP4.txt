@@ -1,0 +1,25 @@
+1) Have you tarred + gzipped the file as XXXXXXXX.tar (your 8-digit roll number) ?
+YES
+2) Does your tar file expand (by using the command tar xzf) to the base directory named XXXXXXXX (your 8-digit roll number) ?
+YES
+3) Have you removed all the class files and jar files from your tar ball?
+YES
+4) Does your base folder contain P4.java that can be compiled using javac?
+YES
+5) Does your P4.java take input from the standard input (for usage of redirection) ?
+YES
+6) Does your P4.java write output to the standard output (for usage of redirection) ?
+YES
+7) Have you removed all the debugging messages that your program may output to the standard output?
+YES
+8) Is (some part of) the assignment plagiarized?
+NO
+8.1) If yes, Plagiarism Declarations (if any):
+
+9) Is this checklist present in your folder XXXXXXXX (your 8-digit roll number) ?
+YES
+10) Is this checklist named "ChecklistP4.txt" ?
+YES
+Any other comments:
+
+

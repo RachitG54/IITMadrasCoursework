@@ -1,0 +1,4 @@
+Comments The assignment was very painful in terms of synchronization of
+threads, since I was using global variables for two threads it became very
+difficult for me to resolve concurrency issues. In the end I had to use a lot
+of mutexes and hours of debugging. All and all a good learning experience but time consuming.

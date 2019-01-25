@@ -1,0 +1,29 @@
+\section{The main reduction}
+We reduce from $SubIncSVP_\gamma^{\eta_\epsilon}$ to collision function $H(\mathbb{Z}_{p(n)} , S_{D(n),\Phi}, m(n))$. Note that this is a worst case to average case reduction on cyclic lattices.
+\\
+Here we try to show three main properties:
+\begin{enumerate}
+	\item Sampling an average instance.
+	\item Outputting a new vector and showing that it belongs in $\Latt(B) \cap H$.
+	\item It has a norm smaller than half the norm of input vector in $SubIncSVP$, with non negligible probability.
+\end{enumerate}
+\subsection{The algorithm}
+\begin{enumerate}
+	\item For $i = 1$ to $m$,
+	\begin{itemize}
+		\item Generate uniform $\mathbf{v}_i \in \Latt(B)\cap H \cap P(Rot^d(\mathbf{c}))$. \cite{Micciancio2002}
+		\item Generate noise $\mathbf{y}_i \in H$, according to $D_{H,s}$ for $s = 2||c||/\gamma(n)$. Let $y'_i = y_i$ mod $P(B)$.
+		\item Choose $b_i$ so that $Rot^n(\mathbf{c}) \cdot \mathbf{b} = \mathbf{v_i} + \mathbf{y'_i}$ , and let $\mathbf{a_i} = \lfloor \mathbf{b_i} \cdot p \rceil $
+	\end{itemize}
+	\item Pass A to collision finding oracle, and get collission pairs $X,X'$, let $Z = X - X'$, such that $||Z||_\infty \leq 2D$ and $\Phi(\alpha)$ divides every $z_i(\alpha)$.
+	\item Output 
+	\begin{align*}
+	c' = \sum_{i=1}^m(\mathbf{v_i}+\mathbf{y'_i} - \mathbf{y_i}) \otimes \mathbf{z_i} - \mathbf{c} \otimes \frac{\sum_{i=1}^m \mathbf{a_i} \otimes \mathbf{z_i}}{p}
+	\end{align*} 	
+\end{enumerate}
+\subsection{Correctness}
+\begin{itemize}
+\item \textit{Property - Instance sampled is average instance}: It is uniform because for choosing b we sample the latter half uniformly from $I^{n-d}$. And the former half is chosen such that ${(I_{d \times d})}^{-1}(v_i + y'_i - w)$, where $w = Rot^n(c) \cdot {(0,0,...(b_i)_d,..,(b_i)_n)}^T$. Since $y'$ is statistically uniform from our choice of c such that the spread in the guassian is more than the smoothing parameter, and $v$ is uniform. We have the former half is uniform, and since the latter half is already sampled uniformly we have that the $b_i's$ are uniform.
+\item \textit{Property - Outputting a new vector and showing that it belongs in $\Latt(B) \cap H$}: Convolution of a lattice vector with an integer vector also lies in the lattice, hence the second property holds true. Note that the second term in the output vector is c convoluted with an integer vector due to a convolution z being congruent to zero mod p as we have constructed z from a collision.
+\item \textit{Property - Outputted vector is smaller than half of the input vector}: Idea is to use Markov's Inequality and bound on the expected value of the new vector that is outputted.
+\end{itemize}

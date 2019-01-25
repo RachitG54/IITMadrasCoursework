@@ -1,0 +1,5 @@
+README
+The command line arguments are followed as in the question.
+Type make to compile the scripts.
+
+make SenderGBN or make ReceiverGBN for respective makes.

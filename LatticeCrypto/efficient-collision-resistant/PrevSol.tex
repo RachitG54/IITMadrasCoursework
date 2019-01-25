@@ -1,0 +1,19 @@
+\section{Comparison with known solutions}
+	\begin{table}[H]
+		\begin{tabular}{|m{2cm} | m{2.1cm} | m{2.3cm} | m{2.6cm} | m{3.1cm} | m{3cm}|}
+			\hline
+			\textbf{ } & \textbf{Security} & \textbf{Efficiency} & \textbf{Lattice Class} & \textbf{Assumption} & \textbf{Approx. Factor}\\
+			\hline
+			Ajtai & CRHF & $O(n^2)$ & General & SVP etc. & poly(n) \\ \hline
+			Cai, Nerurkar & CRHF & $O(n^2)$ & General & SVP etc. & $n^{4+\epsilon}$ \\ \hline
+			Micciancio \vspace{0.3cm} & OWF & $\tilde{O}(n)$ & Cyclic & GDD & $n^{1+\epsilon}$ \\ \hline
+			Micciancio, Regev & CRHF & $O(n^2)$ & General & SVP etc. & $\tilde{O}(n)$ \\ \hline
+			This \vspace{0.3cm} work& CRHF & $\tilde{O}(n)$ & Cyclic & SVP etc. & $\tilde{O}(n)$ \\
+			\hline
+		\end{tabular}
+		\caption{Comparison of results in lattice-based cryptographic functions with worst-case to average case security reductions, to date. “Efficiency” means the key size and computation time, as a function of the lattice dimension n. “Security” denotes the function’s main cryptographic property.}
+	\end{table}
+The work studied was similar to Micciancio's work on cylic lattices. However the reduction used to establish collision-resistance differs in many significant ways. Micciancio’s function is proven to be one-way, while the authors is collision-resistant. On the other hand, Micciancio relies on a presumably weaker worst-case assumption than theirs. The stronger assumption, combined with the algebraic
+view of cyclic lattices, makes the security reduction tighter and conceptually simpler.
+\par
+Other works considered are slower in efficiency. The structure of cyclic lattices and the choice of ring admits very efficient implementations of the knapsack function: using a Fast Fourier Transform algorithm. The resulting time complexity of the function is $O(m \cdot n \cdot poly(\log n))$, with key size $O(m \cdot n \log n)$. Where $m$ denotes the number of elements in the key.
